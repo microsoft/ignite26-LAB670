@@ -8,3 +8,9 @@ architecture/context.
 If this repository intentionally uses MkDocs or another docs-site pattern,
 attendee instructions can remain here. Link the attendee entry point clearly
 from the root README.
+
+**Draft — native setup pending.** These learner documents do not establish live
+capability. The original template marker above remains for owner review.
+
+- [Learner setup checklist](learner-setup.md)
+- [Core S01–S05 lab guide](../instructions/core-lab.md)
