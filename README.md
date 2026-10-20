@@ -1,29 +1,3 @@
-## Before you're done
-
-This repo has been created for your Microsoft Ignite 2026 session. Here's how to get it ready.
-
-**Easiest path — use the agent (recommended):**
-
-- Open GitHub Copilot Chat and say `help me initialize repo`. The agent will walk you through getting the README populated.
-- When you're ready to publish, say `help me finalize repo`. The agent will clean up unused folders, validate everything, and remove this "Before you're done" section and other extra stuff that attendees don't need to see.
-- Curious how it works? Read the [agent workflow](.github/AGENT-WORKFLOW.md).
-
-**Doing it manually?**
-
-Fill in the sections below yourself, then:
-
-- Delete any placeholder folders you don't need (`data/`, `infra/`, etc.)
-- Delete this "Before you're done" section
-- Delete `.github/agents/`, `.github/tests/`, `.github/copilot-instructions.md`, and `.github/AGENT-WORKFLOW.md` — these are template tooling, not part of your published repo
-
-**Folder conventions:**
-
-- Attendee step-by-step guidance goes in `instructions/`. If you use MkDocs or a docs site instead, put it in `docs/` and link to it from this README.
-- Reference material and background reading go in `docs/`.
-- You can add a `.devcontainer/` folder if needed.
-
----
-
 <a name="start-building"></a>
 
 <p align="center">
@@ -35,41 +9,54 @@ Fill in the sections below yourself, then:
 ## 🔥LAB670: Build your first Microsoft IQ playbook
 ### Session description
 
-Add your session description here. Keep it concise — 2-3 sentences about what attendees will learn and why it matters.
+Build a governed Microsoft IQ playbook for a synthetic customer-readiness review, then save, reopen, and inspect its guidance. Curate authorized source references with human review and use Work IQ to prepare a cited internal briefing without sending messages or changing business records.
+
+**Current state:** Content draft; native setup, target-build screenshots, and the proposed 75-minute timing still need validation.
 
 ### 🚀 Getting started
 
+**[Start the lab →](instructions/README.md)**
+
+The workbook is the single path for guided and self-paced participation. Authorized native resources and the synthetic source pack are issued separately; this repository contains instructions, not a provisioned environment.
+
 #### In a guided session
 
-If you're following along during a live session:
-
-1. Step 1
-2. Step 2
-3. Open [`instructions/`](instructions/README.md) when this session includes
-   attendee step-by-step guidance
+1. Confirm your issued identity, approved client, private draft scope, and independent read-only source access with the instructor.
+2. Complete the workbook's prerequisite table before running the first prompt.
+3. Follow S01–S05 with the instructor and retain only approved, redacted checkpoint evidence.
 
 #### On your own
 
-If you're learning at your own pace:
+1. Obtain the same instructor-issued authorized resources and target-build action card required for guided participation.
+2. Read the workbook's setup and safety boundaries; cloning or downloading this repository does not provision services or grant permissions.
+3. Work through S01–S05 in order, stopping for support if a required capability is unavailable.
 
-1. Clone this repository
-2. Set up your environment
-3. Follow the session guidance in [`instructions/`](instructions/README.md), or
-   use the linked docs-site entry point when this repository uses that pattern
+#### Lab agenda
+
+| Part | Proposed time |
+|------|---------------|
+| [Orientation and setup](instructions/README.md#orientation-and-setup) | 8 minutes |
+| [S01: Baseline and context gaps](instructions/README.md#s01-baseline-and-context-gaps) | 6 minutes |
+| [S02: Create and curate your first playbook](instructions/README.md#s02-create-and-curate-your-first-playbook) | 18 minutes |
+| [S03: Scope and guidance composition](instructions/README.md#s03-scope-and-guidance-composition) and [S04: Review a curation proposal](instructions/README.md#s04-review-a-curation-proposal) | 12 minutes combined |
+| [S05: Draft a Work IQ briefing](instructions/README.md#s05-draft-a-work-iq-briefing) | 12 minutes |
+| [Provider concepts](instructions/README.md#provider-concepts) | 8 minutes |
+| [Safe recovery](instructions/README.md#safe-recovery-and-troubleshooting) | 7 minutes |
+| [Debrief and finish](instructions/README.md#debrief-and-finish) | 4 minutes |
 
 ### 🎯 Learning outcomes
 
 By the end of this session, you will be able to:
 
-- Outcome 1
-- Outcome 2
-- Outcome 3
+- Create and reopen a governed Microsoft IQ playbook.
+- Curate sources and guidance with explicit scope and human review.
+- Produce a cited, draft-only Work IQ briefing.
 
 ### 💻 Technologies used
 
-- Technology 1
-- Technology 2
-- Technology 3
+- **Microsoft IQ** — governed playbook authoring, reviewed guidance composition, and saved-item readback.
+- **Work IQ** — authorized read-only source retrieval for a cited, draft-only internal briefing.
+- **GitHub Copilot CLI** — planned consuming host, subject to seat admission; not a tested delivery path.
 
 ### 📚 Continue your learning
 
@@ -82,38 +69,18 @@ Pick your next step based on your learning style:
 | **[Microsoft Learn](https://aka.ms/ignite26-learn)** | Official documentation and guided learning paths on these topics |
 | **[Microsoft Foundry Community](https://aka.ms/MicrosoftFoundryDiscord-Ignite26)** | Connect with other learners and experts in our Discord community |
 
-### 🌟 Microsoft Learn MCP Server
-
-<!-- Remove this section if the Microsoft Learn MCP Server is not relevant to the session. -->
-
-The Microsoft Learn MCP Server gives your AI agent direct access to Microsoft's official documentation — grounded, up-to-date answers about the topics in this session.
-
-**GitHub Copilot CLI** — Install with:
-
-```shell
-copilot plugin install microsoftdocs/mcp
-```
-
-**VS Code** — One-click install:  
-[![Install in VS Code](https://img.shields.io/badge/VS_Code-Install_Microsoft_Learn_MCP-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect/mcp/install?name=microsoft-learn&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Flearn.microsoft.com%2Fapi%2Fmcp%22%7D)
-
-For more information, visit the [Learn MCP Server repo](https://aka.ms/learnmcp).
-
 ### 👥 Content owners
-
-<!-- TODO: Add yourself as a content owner
-1. Change the src in the image tag to {your github url}.png
-2. Change INSERT NAME HERE to your name
-3. Change the github url in the final href to your url. -->
 
 <table>
 <tr>
-    <td align="center"><a href="http://github.com/yourGitHubHandle">
-        <img src="https://github.com/yourGitHubHandle.png" width="100px;" alt="INSERT NAME HERE"/><br />
-        <sub><b>INSERT NAME HERE</b></sub></a><br />
-            <a href="https://github.com/yourGitHubHandle" title="talk">📢</a>
+    <td align="center"><a href="https://github.com/santhoshravindran7">
+        <img src="https://github.com/santhoshravindran7.png" width="100px;" alt="Santhosh Kumar Ravindran"/><br />
+        <sub><b>Santhosh Kumar Ravindran</b></sub></a><br />
+            <a href="https://github.com/santhoshravindran7" title="talk">📢</a>
     </td>
 </tr></table>
+
+Santhosh Kumar Ravindran ([@santhoshravindran7](https://github.com/santhoshravindran7)).
 
 ### ⚖️ Trademarks
 
