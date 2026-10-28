@@ -1,0 +1,203 @@
+{
+  "scenario": "LAB670-ZAVA-1",
+  "mode": "LOCAL_BUILD_DRY_RUN",
+  "generated_at": "2026-10-28T00:08:36.866801+00:00",
+  "docx_generator": "python-docx 1.2.0; Python fallback selected in the original Node-unavailable authoring environment",
+  "native_status": "NOT_RUN",
+  "tenant_plan_sha256": "37ab677f2ccb7f9f7eff53de64c6a898040c5b17648940d3433854a05ed600da",
+  "counts": {
+    "unsent_emails": 8,
+    "word_documents": 5,
+    "web_archives": 2,
+    "csv_tables": 11,
+    "semantic_model_contracts": 3,
+    "data_agent_contracts": 1,
+    "ontology_intents": 1,
+    "knowledge_contracts": 1,
+    "plugin_snapshots": 2,
+    "tasks": 6,
+    "opportunities": 3
+  },
+  "files": [
+    {
+      "path": "bindings.template.json",
+      "bytes": 697,
+      "sha256": "dc3856eeeaa0c07254f922316a3016e983a414dc4de74f4e9c725894b54f1d54"
+    },
+    {
+      "path": "contracts/ontology-intent.json",
+      "bytes": 2004,
+      "sha256": "ae89de51122e90ee69ad7907cf445c28f000b136ccfd88357d192f948474673a"
+    },
+    {
+      "path": "contracts/providers.json",
+      "bytes": 3915,
+      "sha256": "a3b016fc95f2e929759bd01fd5dc3a6b29dc193eacc1d825a62fc310112d714f"
+    },
+    {
+      "path": "contracts/semantic-models.json",
+      "bytes": 9288,
+      "sha256": "1d9a7325873fde5e5db83954ea6014697672a1d1def31cfdf0575b2b2f57fc36"
+    },
+    {
+      "path": "demo-prompt.txt",
+      "bytes": 649,
+      "sha256": "6db2c45d60ef120cc9b46d48225138b7c69641c307feee20ec96d585e6f5f993"
+    },
+    {
+      "path": "fabric/accounts.csv",
+      "bytes": 46,
+      "sha256": "8b846713e043c9a65efc595555563f9da609e76d718fd16dcf0ec345f50fd1af"
+    },
+    {
+      "path": "fabric/batches.csv",
+      "bytes": 195,
+      "sha256": "84ee10a44629c3844b1a87a4a070b8049e8582112ae0756cbc674007589c1a62"
+    },
+    {
+      "path": "fabric/calendar.csv",
+      "bytes": 1674,
+      "sha256": "e0eadac5008f341fb24cd45f46928e14e3785b1777f2f8a2a3e04fdb28751df2"
+    },
+    {
+      "path": "fabric/commercial.csv",
+      "bytes": 245,
+      "sha256": "7760b2e9d11c2f8353c24ed6bf822ab65da9e3e57e1e25d821c25dbd2f9ea7f7"
+    },
+    {
+      "path": "fabric/finance.csv",
+      "bytes": 438,
+      "sha256": "605c7d7ebc54e069290512644a03f7b28557805534641a9d7053515451a88c4d"
+    },
+    {
+      "path": "fabric/operations.csv",
+      "bytes": 300,
+      "sha256": "6293447f18c62a2517e8585ea4cc879eed515d1db61585e7842c97658ce6466a"
+    },
+    {
+      "path": "fabric/opportunities.csv",
+      "bytes": 258,
+      "sha256": "7ea1beb2810b10c6690f2b4cdc5bf52094870f689ce1c2883869ad1dfdb977c5"
+    },
+    {
+      "path": "fabric/periods.csv",
+      "bytes": 54,
+      "sha256": "dbdad411a72d7bc55cbfba85dff91dc7a266690f3e39b42899f482dd0b6e3e39"
+    },
+    {
+      "path": "fabric/recovery_tasks.csv",
+      "bytes": 208,
+      "sha256": "a4623e9df92a86f673cd5e27e38343a17665dbc969e749b6939719bf6500c149"
+    },
+    {
+      "path": "fabric/segments.csv",
+      "bytes": 23,
+      "sha256": "d71d8d4049c6ce9d28b731f3cd7cc7de1553fb0baa2eb1bf8b181f5ca2c438a8"
+    },
+    {
+      "path": "fabric/suppliers.csv",
+      "bytes": 77,
+      "sha256": "1db1440f8c498f5be9202aa4def4efa8ea11608a4514b61ddd504ac35d89f09b"
+    },
+    {
+      "path": "playbook-guidance-proposal.md",
+      "bytes": 2361,
+      "sha256": "bff8f3a279ebf3609bdac4f82f11d4f62926e3d3c1172af74deae4826b210af4"
+    },
+    {
+      "path": "plugins/asana-project.json",
+      "bytes": 2354,
+      "sha256": "f69bad365b48b43db63393f3c3a0811713c0716a44c3d15baef1a91226cd7394"
+    },
+    {
+      "path": "plugins/salesforce-opportunities.json",
+      "bytes": 910,
+      "sha256": "da4d824dc5e665280c26168fde4c3fd1416715f564008d9a4e327e0f8dfc3a9b"
+    },
+    {
+      "path": "source-register.json",
+      "bytes": 4152,
+      "sha256": "5f9b4e2b79032ed279f5374dd600f07007aff87f5d61f17d067b99267a88cb23"
+    },
+    {
+      "path": "tenant-action-plan.json",
+      "bytes": 7754,
+      "sha256": "5fdc90b38fdef49bf52a59c9ebbc8cd6c8e4907c04f57f4a465dfe80d53725ee"
+    },
+    {
+      "path": "web/WEB-01.md",
+      "bytes": 416,
+      "sha256": "083a1657091404fc81bbd719901605c020d207a623aea12d20e78f6e55b99789"
+    },
+    {
+      "path": "web/WEB-02.md",
+      "bytes": 524,
+      "sha256": "af96ff1c2432b87934bca7b8d937bdaadf71a95eb8e2bdbe6fe62db0efd9d97f"
+    },
+    {
+      "path": "work/DOC-01-commercial-review-charter.docx",
+      "bytes": 38896,
+      "sha256": "363c5ed3092cf69a82f7462ea185d6d31b2feeb9f27603827ecaeca5bbcf1435"
+    },
+    {
+      "path": "work/DOC-02-recognition-procedure-v1-superseded.docx",
+      "bytes": 38482,
+      "sha256": "e8422a454eeecb035e01026a133a2212d2c0bba6c7d7fc4e737921c8d4cc79c6"
+    },
+    {
+      "path": "work/DOC-03-recognition-and-expedite-policy-v2.docx",
+      "bytes": 39088,
+      "sha256": "2a35fb4598115d8037f1613a162a65b0921048fd134572106cfb83842c6c600d"
+    },
+    {
+      "path": "work/DOC-04-supplier-and-freight-evidence-review.docx",
+      "bytes": 38832,
+      "sha256": "1cf7329154a3cb7f0e2851d2e26473a08a752b3dc54afe7306c237ffec8c7684"
+    },
+    {
+      "path": "work/DOC-05-customer-commitments-and-communications.docx",
+      "bytes": 38674,
+      "sha256": "ef738b0fdf5107aee0c4d3cf053df68060383e3ed5a39edc7a4ed85be4b16671"
+    },
+    {
+      "path": "work/MAIL-01.eml",
+      "bytes": 1153,
+      "sha256": "e994f5458b881570ca84586657cefe7b105c4714b03008e769c2a6f7505c49fd"
+    },
+    {
+      "path": "work/MAIL-02.eml",
+      "bytes": 918,
+      "sha256": "b4f8bea4562b20d71968dbf88163f4cba424f05e55d4f8a78163e7538478c49d"
+    },
+    {
+      "path": "work/MAIL-03.eml",
+      "bytes": 951,
+      "sha256": "3f9d42d2892b2a1f2404d268bf456329556a10fe531b22573bcb1f3967950624"
+    },
+    {
+      "path": "work/MAIL-04.eml",
+      "bytes": 955,
+      "sha256": "312850f03983cd5820d2594653b40a4e11b85001ba76b4fb2b12cfd7beb56e3d"
+    },
+    {
+      "path": "work/MAIL-05.eml",
+      "bytes": 1123,
+      "sha256": "e53aeebf55d4fcb2f43e3cd66fbe075e858f090915eb5bc4ed9f949c9ef672ac"
+    },
+    {
+      "path": "work/MAIL-06.eml",
+      "bytes": 873,
+      "sha256": "b61af7db89b46b8a39eda470b36ce71188e80578f65ad5ffac759d3cb688133b"
+    },
+    {
+      "path": "work/MAIL-07.eml",
+      "bytes": 843,
+      "sha256": "622a8a9e021197971dbf55ec3c3a53fe926efeae1a01c07332eceea5ed3c776b"
+    },
+    {
+      "path": "work/MAIL-08.eml",
+      "bytes": 910,
+      "sha256": "f62348d2764573bb628a045465ff5b107d606b658fdafba05c7385e21e91705b"
+    }
+  ]
+}

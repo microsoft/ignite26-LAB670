@@ -17,7 +17,7 @@ Build a governed Microsoft IQ playbook for a synthetic customer-readiness review
 
 **[Start the lab →](instructions/README.md)**
 
-The workbook is the single path for guided and self-paced participation. Authorized native resources and the synthetic source pack are issued separately; this repository contains instructions, not a provisioned environment.
+The workbook is the single path for guided and self-paced participation. Authorized native resources and the Alpine Retail source pack are issued separately. The optional Zava extension below includes local synthetic sources; this repository does not provision an environment.
 
 #### In a guided session
 
@@ -51,6 +51,21 @@ By the end of this session, you will be able to:
 - Create and reopen a governed Microsoft IQ playbook.
 - Curate sources and guidance with explicit scope and human review.
 - Produce a cited, draft-only Work IQ briefing.
+
+### Optional extension: Zava Commercial
+
+**[Open the Zava Commercial Margin Recovery Desk extension](instructions/zava-commercial.md)** after the core lab or in a separate demo session. Explore how source curation connects enterprise email and Word context, governed Fabric models, a data agent, ontology relationships, Foundry IQ policy knowledge, Web IQ market context, and Asana/Salesforce third-party plugins.
+
+The [synthetic source pack](data/zava-commercial) includes 8 unsent email files, 5 Word documents, 11 CSV tables, market archives and plugin snapshots, with unbound configuration and an approval-gated tenant action plan. Local rehearsal is available; native providers, target-build screenshots and timing remain unvalidated. The Alpine Retail S01–S05 path is unchanged.
+
+<details>
+<summary>Preview an actual synthetic Word source</summary>
+
+![Zava's fictional recognition and expedite policy, rendered from the supplied Word document.](img/zava-policy-preview.png)
+
+This is a local Microsoft Word rendering of DOC-03, not a Microsoft IQ or provider-setup screenshot.
+
+</details>
 
 ### 💻 Technologies used
 
