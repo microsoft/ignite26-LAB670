@@ -1,0 +1,294 @@
+{
+  "operation": "PROPOSE_ZAVA_EXTENSION_SETUP",
+  "state": "DRAFT_NOT_APPROVABLE_UNTIL_TARGETS_PERMISSIONS_AND_COSTS_RESOLVED",
+  "execution_available": false,
+  "tenant_id": null,
+  "principal_ids": null,
+  "capacity_id": null,
+  "budget_limit": null,
+  "license_confirmation": null,
+  "new_accounts": 0,
+  "new_capacities": 0,
+  "sent_messages": 0,
+  "mailbox_messages": 0,
+  "invitations": 0,
+  "deletions": 0,
+  "actions": [
+    {
+      "id": "PLAN-01",
+      "provider": "M365",
+      "action": "Create one isolated synthetic SharePoint source library",
+      "resources": [
+        "LAB670 Zava Sources"
+      ],
+      "count": 1,
+      "target_id": null,
+      "approved": false,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "PLAN-02",
+      "provider": "M365",
+      "action": "Upload unsent email archives as files; do not create or send mailbox messages",
+      "resources": [
+        "MAIL-01",
+        "MAIL-02",
+        "MAIL-03",
+        "MAIL-04",
+        "MAIL-05",
+        "MAIL-06",
+        "MAIL-07",
+        "MAIL-08"
+      ],
+      "count": 8,
+      "target_id": null,
+      "approved": false,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "PLAN-03",
+      "provider": "M365",
+      "action": "Upload the synthetic Word sources, including the labelled superseded archive",
+      "resources": [
+        "DOC-01",
+        "DOC-02",
+        "DOC-03",
+        "DOC-04",
+        "DOC-05"
+      ],
+      "count": 5,
+      "target_id": null,
+      "approved": false,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "PLAN-04",
+      "provider": "Fabric",
+      "action": "Create one isolated workspace on an existing approved capacity",
+      "resources": [
+        "LAB670 Zava"
+      ],
+      "count": 1,
+      "target_id": null,
+      "approved": false,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "PLAN-05",
+      "provider": "Fabric",
+      "action": "Create one lakehouse",
+      "resources": [
+        "LAB670 Zava Sources"
+      ],
+      "count": 1,
+      "target_id": null,
+      "approved": false,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "PLAN-06",
+      "provider": "Fabric",
+      "action": "Import CSV sources as managed tables",
+      "resources": [
+        "accounts",
+        "batches",
+        "calendar",
+        "commercial",
+        "finance",
+        "operations",
+        "opportunities",
+        "periods",
+        "recovery_tasks",
+        "segments",
+        "suppliers"
+      ],
+      "count": 11,
+      "target_id": null,
+      "approved": false,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "PLAN-07",
+      "provider": "Fabric",
+      "action": "Manually create and validate semantic models",
+      "resources": [
+        "LAB670 Zava Finance",
+        "LAB670 Zava Commercial",
+        "LAB670 Zava Operations"
+      ],
+      "count": 3,
+      "target_id": null,
+      "approved": false,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "PLAN-08",
+      "provider": "Fabric",
+      "action": "Create a data agent over the three admitted models",
+      "resources": [
+        "LAB670 Zava Data Agent"
+      ],
+      "count": 1,
+      "target_id": null,
+      "approved": false,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "PLAN-09",
+      "provider": "Fabric",
+      "action": "Create the ontology after preview and actual binding validation",
+      "resources": [
+        "LAB670 Zava Ontology"
+      ],
+      "count": 1,
+      "target_id": null,
+      "approved": false,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "PLAN-10",
+      "provider": "Foundry",
+      "action": "Create an isolated knowledge project",
+      "resources": [
+        "LAB670 Zava Knowledge"
+      ],
+      "count": 1,
+      "target_id": null,
+      "approved": false,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "PLAN-11",
+      "provider": "Search",
+      "action": "Create an isolated search service and index",
+      "resources": [
+        "LAB670 Zava Search",
+        "zava-current-policy"
+      ],
+      "count": 2,
+      "target_id": null,
+      "approved": false,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "PLAN-12",
+      "provider": "Foundry",
+      "action": "Create a knowledge base over DOC-01, DOC-03, DOC-04 and DOC-05",
+      "resources": [
+        "LAB670 Zava Policy Knowledge"
+      ],
+      "count": 1,
+      "target_id": null,
+      "approved": false,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "PLAN-13",
+      "provider": "Web",
+      "action": "Publish two synthetic pages to an approved host",
+      "resources": [
+        "WEB-01",
+        "WEB-02"
+      ],
+      "count": 2,
+      "target_id": null,
+      "approved": false,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "PLAN-14",
+      "provider": "Asana",
+      "action": "Create one isolated synthetic project",
+      "resources": [
+        "LAB670 Zava Recovery"
+      ],
+      "count": 1,
+      "target_id": null,
+      "approved": false,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "PLAN-15",
+      "provider": "Asana",
+      "action": "Create open, unassigned tasks with no due dates",
+      "resources": [
+        "TASK-01",
+        "TASK-02",
+        "TASK-03",
+        "TASK-04",
+        "TASK-05",
+        "TASK-06"
+      ],
+      "count": 6,
+      "target_id": null,
+      "approved": false,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "PLAN-16",
+      "provider": "Salesforce",
+      "action": "Create three synthetic opportunities in an approved existing sandbox",
+      "resources": [
+        "OPP-01",
+        "OPP-02",
+        "OPP-03"
+      ],
+      "count": 3,
+      "target_id": null,
+      "approved": false,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "PLAN-17",
+      "provider": "Connectors",
+      "action": "Establish the reviewed provider connections and consent grants",
+      "resources": [
+        "Work IQ",
+        "Fabric IQ",
+        "Fabric data agent",
+        "Fabric ontology",
+        "Foundry IQ",
+        "Web IQ",
+        "Asana",
+        "Salesforce"
+      ],
+      "count": 8,
+      "target_id": null,
+      "approved": false,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "PLAN-18",
+      "provider": "Permissions",
+      "action": "Grant only separately reviewed reader scopes to the admitted analyst group",
+      "resources": [
+        "M365 source library",
+        "Fabric sources",
+        "Foundry knowledge",
+        "Asana project",
+        "Salesforce sandbox"
+      ],
+      "count": 5,
+      "target_id": null,
+      "approved": false,
+      "status": "NOT_RUN"
+    }
+  ],
+  "per_learner_action": {
+    "action": "Create one private reviewed draft playbook per admitted seat",
+    "seat_count": null,
+    "scope_ids": null,
+    "approved": false
+  },
+  "required_before_approval": [
+    "Resolve exact tenant, region, account, target IDs and supported feature/licensing flags.",
+    "Resolve exact connector scopes, recipients of permissions and role assignments; no broad grants.",
+    "Resolve service SKU, capacity, model/embedding deployment, billing owner and hard cost envelope.",
+    "Resolve actual knowledge API/build and index schema; no invented deployment identifiers.",
+    "Resolve a fresh-session path and a full-Zava analyst identity; no role-boundary test sources in this pack.",
+    "If any new account, capacity, deployment or changed scope is needed, revise the plan before approval.",
+    "Produce an exact ordered action plan with resolved resource locators, owner, cost and expiry.",
+    "Bind explicit approval to that resolved plan's SHA-256; this draft's digest is not authorization."
+  ],
+  "rollback": "No automatic rollback. Record exact IDs actually created. Any cleanup/deletion requires its own reviewed resource/action plan and separate explicit approval."
+}
