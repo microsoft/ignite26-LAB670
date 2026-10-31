@@ -9,9 +9,7 @@
 ## 🔥LAB670: Build your first Microsoft IQ playbook
 ### Session description
 
-Build a governed Microsoft IQ playbook for a synthetic customer-readiness review, then save, reopen, and inspect its guidance. Curate authorized source references with human review and use Work IQ to prepare a cited internal briefing without sending messages or changing business records.
-
-**Current state:** Content draft; native setup, target-build screenshots, and the proposed 75-minute timing still need validation.
+Get hands-on with Microsoft IQ and build an intelligence playbook that agents can use across your organization. Learn how to organize, govern, and publish business context from data, workflows, and knowledge sources. Explore how shared intelligence improves agent reasoning and discover how Microsoft IQ enables trusted context to be reused across Copilot, Agent 365, and custom AI applications.
 
 ### 🚀 Getting started
 
