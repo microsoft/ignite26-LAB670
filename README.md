@@ -17,7 +17,7 @@ Build a governed Microsoft IQ playbook for a synthetic customer-readiness review
 
 **[Start the lab →](instructions/README.md)**
 
-The workbook is the single path for guided and self-paced participation. Authorized native resources and the Alpine Retail source pack are issued separately. The optional Zava extension below includes local synthetic sources; this repository does not provision an environment.
+The workbook is the single path for guided and self-paced participation. Authorized native resources and the Alpine Retail source pack are issued separately. The optional Zava extension includes local synthetic sources and a separate approval-gated Skillable setup bundle; cloning this repository does not provision an environment.
 
 #### In a guided session
 
@@ -57,6 +57,14 @@ By the end of this session, you will be able to:
 **[Open the Zava Commercial Margin Recovery Desk extension](instructions/zava-commercial.md)** after the core lab or in a separate demo session. Explore how source curation connects enterprise email and Word context, governed Fabric models, a data agent, ontology relationships, Foundry IQ policy knowledge, Web IQ market context, and Asana/Salesforce third-party plugins.
 
 The [synthetic source pack](data/zava-commercial) includes 8 unsent email files, 5 Word documents, 11 CSV tables, market archives and plugin snapshots, with unbound configuration and an approval-gated tenant action plan. Local rehearsal is available; native providers, target-build screenshots and timing remain unvalidated. The Alpine Retail S01–S05 path is unchanged.
+
+**[All-IQ Zava scenarios](instructions/zava-scenarios.md)** describe the complete enterprise journey. **[Skillable PowerShell setup](infra/zava/README.md)** expands it to 105 Word documents, 128 email archives, 60 transcript archives, eight fictional personas, 20 semantic-model definitions, three data-agent drafts, one ontology, three actual knowledge-base creation plans and ServiceNow records. Default execution is offline Plan; approved native creation requires verified Skillable targets. Web publication, Teams history, connector admission and agent publication have explicit manual lanes. The 10–20 minute warm-setup target and all native retrieval remain unverified.
+
+The setup wrapper reuses a checksum-pinned revision of the public
+[Zava Enterprise Context repository](https://github.com/santhoshravindran7/zava-enterprise-context).
+[Business-process reference candidates](instructions/zava-business-playbooks.md)
+cover MBR, supply chain, recognition, sales, service and procurement. Actual
+MSIT creation/curation screenshots and gold-standard validation remain pending.
 
 <details>
 <summary>Preview an actual synthetic Word source</summary>

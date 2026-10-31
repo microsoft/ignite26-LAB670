@@ -1,5 +1,13 @@
 # Optional extension: Zava Commercial - Margin Recovery Desk
 
+Read the expanded [all-IQ scenarios](zava-scenarios.md), then use the
+[approval-gated Skillable PowerShell setup](../infra/zava/README.md).
+Native provisioning/retrieval is NOT_RUN; the original source pack stays unchanged.
+
+Use [Zava business-process reference candidates](zava-business-playbooks.md)
+for MBR, supply-chain, recognition, sales, service and procurement curation.
+Actual MSIT screenshots and gold-standard validation are still pending.
+
 [Session overview](../README.md) | [Core Alpine Retail workbook](README.md) | [Synthetic source pack](../data/zava-commercial)
 
 **This is an additional scenario, not a replacement for S01-S05.**

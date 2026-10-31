@@ -4,6 +4,11 @@
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
 # User-specific files
+# Zava generated content and tenant-bound operator evidence belong outside the repo.
+/infra/zava/output/
+/infra/zava/*.private.json
+/infra/zava/skillable.local.json
+__pycache__/
 *.rsuser
 *.suo
 *.user
