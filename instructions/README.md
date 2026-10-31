@@ -2,15 +2,56 @@
 
 ## First: what is Microsoft IQ?
 
-**Microsoft IQ is the context-curation experience used in this lab.** It helps
-people package business intent, selected enterprise references and reusable
-guidance into a **playbook**. An admitted Copilot or custom-agent client can
-retrieve and apply that curated context when the business process matches.
-The underlying providers still supply the actual evidence and current data.
+**Trusted agents need trusted context.** Microsoft IQ brings organizational
+intelligence together so agents can understand how employees work, how the
+business operates and the institutional knowledge behind its decisions. Its
+broader platform connects this context with agent capabilities and enterprise
+governance. This lab focuses on **Microsoft IQ context and playbooks**.
 
-Think of a playbook as the process's **context contract**, not a saved monthly
+### Your enterprise intelligence, brought together
+
+| Context source | What it contributes | Example at Zava |
+|---|---|---|
+| Work IQ | How employees work: workplace conversations, meetings and files | Avery's MBR request, review decisions and the current policy document |
+| Fabric IQ | How the business operates: analytical data, semantic models and business relationships | Revenue/margin measures, fulfillment analysis, data agents and supplier/batch ontology |
+| Foundry IQ | Institutional knowledge from curated knowledge sources | Department knowledge and controlling policy passages |
+| Web IQ | Context from selected web references | Approved market bulletins or authoritative technical guidance |
+| Business connectors | Context from other business systems | Salesforce commitments, Asana recovery tasks, ServiceNow incidents and Azure DevOps release evidence |
+
+These are complementary sources, not interchangeable answers. For example,
+a meeting can explain a commitment, but the financial model owns the revenue
+measure. Use the provider that owns each sub-question, not every provider for
+every prompt.
+
+### Why agents need playbooks
+
+When a new employee joins Zava, a handbook, wiki or Teams site tells them where
+to find the information needed for their job. Agents need the same orientation.
+A **playbook** makes that routing explicit: *when you need to do this, use
+these sources and follow this guidance*.
+
+Microsoft IQ playbooks provide a central place to **curate, discover and use
+organizational context** across agents and tools. They connect a business
+process to selected enterprise references and reusable guidance, rather than
+require every user to rediscover the right files, models and policies.
+
+For Zava's MBR: use the manager's request to establish intent, the authoritative
+Finance model for financial measures, Operations for fulfillment, and the
+current policy for decision rules. A similarly named archive report or a
+copied policy is not an equally good substitute.
+
+The broader playbook model includes hierarchical organization with inherited
+context, certification, sensitivity labeling, governance and auditability.
+These are product concepts, **not claims that every feature is available or
+verified in this lab build**. Use native hierarchy and governance controls only
+when supported and admitted; otherwise follow the explicitly reviewed flat
+composition in the workbook.
+
+Think of your playbook as the process's **context contract**, not a saved monthly
 answer: when to use it, which sources own which questions, how to resolve
-conflicts, what to produce and which actions require human approval.
+conflicts, what to produce and which actions require human approval. An admitted
+Copilot or custom-agent client applies the saved context, while the underlying
+providers still supply the actual evidence and current data.
 
 | Concept | What it means for your Zava workday |
 |---|---|
@@ -19,12 +60,6 @@ conflicts, what to produce and which actions require human approval.
 | Reusable guidance | Scope, source routing, authority/freshness, reconciliations and draft-output boundaries |
 | Playbook consumption | Use the saved context through the issued supported client, then read authorized sources |
 | Human review | Verify citations, numbers, unresolved evidence and the actual document/app draft |
-
-Work IQ supplies workplace intent and discussion; Fabric IQ supplies scoped
-analytics and relationships; Foundry IQ supplies institutional knowledge;
-Web IQ supplies approved URL evidence; business connectors supply recorded
-application state. Use the provider that owns each sub-question, not every
-provider for every prompt.
 
 A playbook does **not** grant permissions, turn copies into independent
 evidence, freeze current KPIs, or authorize sends and business-system changes.

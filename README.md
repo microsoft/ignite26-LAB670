@@ -10,11 +10,21 @@
 
 ### What is Microsoft IQ?
 
-Microsoft IQ is the context-curation experience used in this lab. A
-**playbook** packages a business process, selected enterprise references and
-reusable guidance for an admitted Copilot or custom-agent client. The agent
-still reads authorized sources to produce current, grounded output; a
-playbook is neither a frozen answer nor a permission grant.
+**Trusted agents need trusted context.** Microsoft IQ brings together
+intelligence about how employees work (**Work IQ**), how the business operates
+(**Fabric IQ**) and its institutional knowledge (**Foundry IQ**), alongside
+**Web IQ** and context from connected business systems.
+
+**Playbooks** give people a central place to curate, discover and reuse that
+organizational context across agents and tools. Think of the handbooks,
+policies and reporting instructions given to a new employee: *when you need
+to do this business process, use these sources and follow this guidance*.
+In this lab, you create that reusable context for Zava's monthly business
+review, rather than paste the whole enterprise into each prompt.
+
+The agent still reads authorized sources to produce current, grounded output;
+a playbook is neither a frozen answer nor a permission grant. The issued
+environment determines which integrations and governance features you can use.
 
 [Read the one-minute introduction](instructions/README.md#first-what-is-microsoft-iq),
 then follow Zava's workday from a manager's request through curation,

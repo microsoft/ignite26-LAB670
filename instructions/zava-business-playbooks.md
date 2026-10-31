@@ -8,6 +8,23 @@ NOT_RUN. This page contains guidance proposals, not instructor numerical answers
 Actual MSIT screenshots will be added only after approved native creation and
 redacted-image review. No screenshot is fabricated or substituted with a mockup.
 
+## From organizational knowledge to a reusable playbook
+
+[Start with the Microsoft IQ introduction](README.md#first-what-is-microsoft-iq).
+The curation pattern is the same orientation you would give a Zava employee:
+**when you need to do this process, use these sources and follow this guidance**.
+Microsoft IQ brings the different kinds of enterprise intelligence together;
+the playbook makes their use specific to the business process.
+
+For the MBR, do not simply attach a folder called "Monthly Review." Establish
+the manager's intent, identify which exact models own the measures, select the
+current policy and relevant decisions, and explain how to handle conflicts.
+Save that routing and guidance for reuse, not this month's numeric answer.
+Then verify that the issued client applied the saved context and read the
+authorized sources. Reuse across agents remains conditional on supported
+integrations; hierarchy, inheritance and governance controls require their
+own admission checks.
+
 ## Enterprise foundation and product separation
 
 The standalone Zava Enterprise Context repository contains synthetic enterprise
