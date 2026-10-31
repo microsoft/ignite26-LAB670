@@ -22,9 +22,8 @@ to do this business process, use these sources and follow this guidance*.
 In this lab, you create that reusable context for Zava's monthly business
 review, rather than paste the whole enterprise into each prompt.
 
-The agent still reads authorized sources to produce current, grounded output;
-a playbook is neither a frozen answer nor a permission grant. The issued
-environment determines which integrations and governance features you can use.
+The agent still reads sources you can access to produce current, grounded
+output; a playbook is neither a frozen answer nor a permission grant.
 
 [Read the one-minute introduction](instructions/README.md#first-what-is-microsoft-iq),
 then follow Zava's workday from a manager's request through curation,
@@ -34,25 +33,27 @@ save/reopen, document drafting and specialist business processes.
 
 Start your workday as a business analyst at Zava. Your manager needs a monthly business review, but decisions, duplicate files, similarly named reports, semantic models and business-system records are spread across the enterprise. Curate a Microsoft IQ playbook, save and reopen it, then use Copilot to prepare a grounded review document. Change business hats and design approval-bounded processes for Zava's agent factory.
 
-**Current state:** Content draft; native setup, target-build screenshots, and the proposed 75-minute timing still need validation.
-
 ### 🚀 Getting started
 
 **[Start the lab →](instructions/README.md)**
 
-The workbook is the single path for guided and self-paced participation. **The lab provisioning team prepares Zava's context before participants start. Participants do not generate, hydrate, upload or deploy context.** The instructor issues the ready clients, learner identity, authoring scope and authorized source card.
+The workbook is the single path for guided and self-paced participation.
+Use the lab's Microsoft IQ and Copilot links and your learner account.
+You do not need to run setup scripts. If business sources are not available
+yet, create the playbook and guidance first, then return to context selection
+and Copilot testing later.
 
 #### In a guided session
 
-1. Confirm your issued identity, approved client, private draft scope, and independent read-only source access with the instructor.
-2. Check the issued source card; report missing lanes to the instructor instead of provisioning services.
-3. Follow S01–S05 and retain only approved, redacted checkpoint evidence.
+1. Open the lab links and find the lab workspace.
+2. Choose a learner prefix so your playbooks are easy to find.
+3. Follow S01–S05; ask the instructor if a workspace or source is missing.
 
 #### On your own
 
-1. Obtain the same instructor-issued authorized resources and target-build action card required for guided participation.
-2. Use an already provisioned environment. Cloning or downloading the repository does not grant source access.
-3. Work through S01–S05 in order, stopping for support if a required capability is unavailable.
+1. Use Microsoft IQ and Copilot with sources you can access.
+2. Follow the [creation guide](instructions/zava-business-playbooks.md#create-your-first-playbook).
+3. Choose one business process, then try a connected journey.
 
 #### Lab agenda
 
@@ -76,6 +77,7 @@ By the end of this session, you will be able to:
 - Produce a cited internal MBR document or an admitted read-only app draft.
 - Curate role-specific processes over Work, Web, Fabric, Foundry and business-connector context.
 - Design governed, human-reviewed business automation without blanket write access.
+- Connect business processes through evidence handoffs, conditional branches and explicit stop conditions.
 
 ### One company, multiple business processes
 
@@ -87,7 +89,15 @@ supply chain, recognition, sales, service, procurement and data stewardship.
 Each recipe has a specific source set, curation decisions, prompt, draft
 deliverable and human-approval boundary.
 
-### Provisioning team only
+**The MBR is one process, not the whole agent factory.** The
+[connected business journeys](instructions/zava-agent-factory.md) start from
+sales commitments, campaign opportunities or incidents and integrate
+fulfillment, procurement, Finance, policy, launch and customer-review work.
+The guide provides Copilot prompts, evidence briefs and checks for each handoff.
+Start with two connected steps and keep the output as an internal draft.
+
+<details>
+<summary>For lab instructors and the provisioning team</summary>
 
 The [provisioning handoff](infra/zava/provisioning-handoff.md) defines the
 enterprise readiness contract, same-named report challenge and learner-safe
@@ -96,31 +106,14 @@ source card. The [operator setup guide](infra/zava/README.md), pinned public
 and [source-pack reference](instructions/zava-commercial.md) belong to this
 pre-lab lane, not the participant agenda.
 
-The target corpus has 105 Word documents, 128 email archives, 60 transcript
-archives, eight fictional personas, twenty model definitions, three data-agent
-drafts, one ontology and three knowledge-base creation plans. Reports,
-dashboards, native mail/transcript semantics, publication, indexing and
-connector admission require the team's independent checks. Definitions and
-archives alone do not prove a hydrated, readable enterprise.
-
-Native curation screenshots and consumption validation remain pending; no
-gold-standard result or guaranteed "just works" claim is made.
-
-<details>
-<summary>Preview an actual synthetic Word source</summary>
-
-![Zava's fictional recognition and expedite policy body, rendered from the supplied Word document; header omitted. Not a native curation screenshot.](img/zava-policy-preview.png)
-
-This is a local Microsoft Word rendering of DOC-03, not a Microsoft IQ or provider-setup screenshot.
-
 </details>
 
 ### 💻 Technologies used
 
-- **Microsoft IQ** — governed playbook authoring, reviewed guidance composition, and saved-item readback.
-- **Work IQ, Web IQ, Fabric IQ and Foundry IQ** — admitted source routes with independent authority, freshness and permission checks.
-- **Salesforce, Asana, ServiceNow and Azure DevOps** — admitted read-only business-state and release evidence; manual lanes are labelled separately.
-- **GitHub Copilot CLI** — planned consuming host, subject to seat admission; not a tested delivery path.
+- **Microsoft IQ** — create and reuse business-process playbooks.
+- **Work IQ, Web IQ, Fabric IQ and Foundry IQ** — workplace, web, analytical and institutional context.
+- **Salesforce, Asana, ServiceNow and Azure DevOps** — business records relevant to the selected scenarios.
+- **Copilot** — test the playbooks and prepare internal business drafts.
 
 ### 📚 Continue your learning
 

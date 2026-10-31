@@ -2,7 +2,11 @@
 
 [Participant workbook](README.md) | [Curation recipes](zava-business-playbooks.md)
 
-Begin with the Zava MBR journey in the workbook. Choose one specialist scenario during S04; use the remaining scenarios as self-paced extensions. Context is provisioned before participants start. Native provider readiness must be confirmed independently; a generated file or connection is not proof of a retrieved source.
+Begin with the Zava MBR journey in the guided workbook, or choose a non-MBR
+entry point in the [connected agent-factory journeys](zava-agent-factory.md).
+Choose one specialist process during S04; use the remaining processes for
+self-paced practice. You can create the playbook and guidance first, then add
+business sources and test it when those sources are available.
 
 ## One enterprise story
 
@@ -14,9 +18,9 @@ The analyst begins with a broad MBR. Each exception then becomes a focused proce
 
 The named colleagues are fictional story roles, not credentials. You keep your issued identity and authorized source scope. A role switch requiring different access needs a separately issued account and clean session; it never authorizes copying another user's context.
 
-| Scenario / business hat | Request you receive | Curate these admitted sources | Draft deliverable / automation boundary |
+| Scenario / business hat | Request you receive | Relevant context | Draft deliverable / automation boundary |
 |---|---|---|---|
-| Z01: Business-review analyst supporting Avery Chen, Commercial Director | "Prepare my September MBR; tell me what needs a decision." | Work request/decisions, current policy, exact Finance/Commercial/Operations report-model routes, relevant agent and commitments | Cited MBR Word draft or admitted read-only app; no sends or approvals |
+| Z01: Business-review analyst supporting Avery Chen, Commercial Director | "Prepare my September MBR; tell me what needs a decision." | Work request/decisions, current policy, exact Finance/Commercial/Operations report-model routes, relevant agent and commitments | Cited MBR Word draft or read-only app draft if supported; no sends or approvals |
 | Z02: Jordan Okafor, Operations Lead | "Explain the fulfillment/freight exceptions and which batches need investigation." | Operations report/model, batch/supplier ontology, operating reviews, current market URLs, Asana recovery state | Exception brief and investigation proposals; no causal claims from links, no task edits |
 | Z03: Morgan Patel, Finance Controller | "Which recognition conclusions have supporting acceptance evidence?" | Current policy knowledge, full DOC-03, Finance and Commercial measures, Salesforce stage/amount/currency, commitment sources | Acceptance-evidence checklist; no accounting entries or recognition approval |
 | Z04: Quinn Garcia, Sales Operations Lead | "Which commitments can we substantiate before a handoff?" | Salesforce opportunity fields, Commercial model, commitment documents and communication policy | Sales risk/handoff draft; no CRM update, promised date or customer message |
@@ -29,9 +33,8 @@ Casey Nguyen, Customer Success Lead, is a referenced collaborator for commitment
 ## Hero-scenario pathways
 
 The seven heroes below extend the MBR and specialist processes into Zava's
-customer-facing commerce business. Pick only a pathway admitted on your source
-card; these are curriculum targets, not a claim that all underlying datasets
-and policies have already been generated or published.
+customer-facing commerce business. Choose a process that interests you.
+To test it with Copilot, use its relevant datasets and policies when available.
 
 | Hero / business process | Source routes required by the hero | Draft output |
 |---|---|---|
@@ -48,11 +51,11 @@ and connectors 3/7. Extra sources can be reviewed enrichment, not an excuse
 to call unrelated providers. Do not query Fabric merely because H06 concerns
 a business process: the controlling-policy question belongs to Work/Foundry.
 
-The existing generator's seventeen extra model views reuse core facts; they
-are not distinct adoption, campaign, release or checkout datasets. Those
-facts, customer-level keys, launch policies and supported Azure DevOps reads
-are additional provisioning requirements. DOC-03 is not a substitute for an
-unprovided EU launch/privacy policy. Missing routes remain blocked.
+Each process needs its own evidence: adoption data for customer reviews,
+campaign data for campaign decisions, checkout measurements for experience
+reviews and controlling policies for launch decisions. The MBR's models and
+recognition policy do not answer all of those questions. If a required source
+is missing, finish the playbook guidance and return to evidence testing later.
 
 Use the [hero curation recipes](zava-business-playbooks.md#additional-hero-curation-recipes)
 for these extensions. Each changes business intent and the minimal source
@@ -61,24 +64,39 @@ basket, not the learner's identity, permissions or authority to act.
 ## Repeat the curation loop for your selected process
 
 1. Read the role's request and define scope, avoid conditions and internal output.
-2. Open a separate namespaced playbook draft in your issued authoring location.
+2. Create a separate playbook using your learner prefix in the lab workspace.
 3. Preview relevant full sources; resolve exact IDs, report/model lineage, owner, period, units, freshness and source permissions.
 4. Exclude irrelevant, duplicate and superseded sources from current-authority selection. Preserve a labelled historical source only when comparison is needed.
 5. Add the complete common guidance plus the matching process guidance from the recipes. Keep business answers out of reusable instructions.
-6. Review the source basket and guidance, save, leave and reopen. Inspect actual persisted references and local/inherited origin where supported.
-7. Ask the role's prompt in a clean conversation. Validate actual citations, query/agent/knowledge routes and the draft deliverable.
-8. Record completed, blocked and unknown lanes. Do not substitute a local fixture or handwritten answer for native execution evidence.
+6. Review the context and guidance, save, return to the list and reopen.
+7. Ask the role's prompt in a new conversation and check the citations and draft.
+8. Record missing evidence and what you would need to complete the review.
 
 ## Zava's agent-factory catalog
 
-Build a catalog from the MBR and your specialist playbook. Use the following design sequence; deployment is not a participant task.
+The [integrated factory guide](zava-agent-factory.md) connects the catalog into
+three business journeys:
+
+| Journey | Connected processes | Decision draft |
+|---|---|---|
+| Commitment to revenue assurance | Sales -> Operations -> conditional Procurement -> Finance -> MBR | Substantiated commitments, recovery options and recognition-evidence gaps |
+| Market to commerce launch | Campaign -> Checkout + Policy -> Launch -> conditional Customer Review | Readiness recommendation retaining all uncleared gates |
+| Incident to customer assurance | Service -> relevant Operations / conditional Procurement -> Sales -> Customer Review; optional MBR | Supported impact and internal customer/recovery brief |
+
+Branches require relevant evidence and verified joins; they are not mandatory
+provider calls. The guide supplies Copilot prompts, a common evidence packet,
+rules for combining outputs and checks for each handoff. You guide the
+handoffs in Copilot rather than automatically deploy a workflow.
+
+Build a catalog and connect at least two processes using the following design
+sequence; deployment is not a participant task.
 
 | Stage | What becomes reusable | Human checkpoint |
 |---|---|---|
 | Intake | Business question, applicability and a user-request trigger | Confirm the request and reporting scope |
-| Evidence acquisition | Authorized source contract, routing, freshness and duplicate-family handling | Resolve ambiguity or missing access |
+| Evidence gathering | Relevant sources, routing, freshness and duplicate-family handling | Resolve ambiguity or missing access |
 | Analysis | Explicit measures/filters, reconciliations and evidence limitations | Review unsupported claims and conflicts |
-| Artifact drafting | MBR document, exception brief, checklist or admitted read-only app | Open and inspect the actual output |
+| Artifact drafting | MBR document, exception brief, checklist or read-only app draft if supported | Open and inspect the actual output |
 | Handoff | Proposed next steps mapped to human roles | Accept/reject separately; no business-system mutation in this lab |
 | Evaluation and maintenance | Prompt, source versions, saved guidance, grounding checks and owner | Revalidate after source/version/permission changes |
 
@@ -98,4 +116,6 @@ Potential future event or scheduled triggers, incident updates, CRM changes, tas
 
 ## Finish
 
-Show the role's focused source set, saved guidance, supported draft and approval boundary. Retain only approved, redacted evidence. Leave enterprise records unchanged. Native gold-standard promotion requires independent source grounding, persisted curation and safety checks; a convincing story or screenshot alone does not pass.
+Show the role's focused context, saved guidance and internal draft. Explain what
+the evidence supports, what is still missing and who should review the proposed
+next step. Leave enterprise records unchanged.

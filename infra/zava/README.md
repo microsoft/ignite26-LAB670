@@ -19,6 +19,42 @@ generation, artifact definitions, approval/tenant guards and mocked provisioning
 **NOT_RUN:** live Microsoft/Skillable provisioning, native source access, MSIT candidate
 creation/curation and end-to-end consumption. Local tests are not tenant evidence.
 
+## Authoring evidence and participant-content separation
+
+Participant pages now contain the business story, creation steps, process
+guidance, Copilot comparisons and connected-process exercises. Environment
+names, automation diagnostics, publication/redaction procedures and native
+release status belong here, not in the participant instructions.
+
+The creation guide uses the inspected creation-form labels: Name, Description,
+Add members and curators, and Where this playbook lives. Guidance/context editor
+controls are described generically until they can be read back in a working
+session. The latest browser attempt showed a blank page and stale accessibility
+content from other tabs; active user input interrupted further navigation.
+No new candidate creation, guidance save or usable creation screenshot was
+verified. Do not publish blank captures or claim native execution.
+
+Source-specific screenshots are deliberately deferred. First capture actual
+playbook-list/create-form, names/descriptions, guidance, saved-item and reopened
+views for the approved candidates without attaching enterprise sources. Review
+and redact real images before publication. Persistent source attachments, new
+sharing scopes and additional candidate writes remain subject to resolved
+targets and exact action approval; the participant creation guide is not an
+operator authorization.
+
+Participants can complete creation and guidance before Zava sources appear.
+The evidence-based baseline/comparison and connected-process tests require
+independently readable sources. Keep those activities separate; an empty
+playbook is not a successful provider test.
+
+The connected factory guide defines twelve processes, three business journeys,
+cross-journey routes and a shared evidence packet. It is curriculum, not an
+implemented orchestrator. The user-mediated Copilot chain, additional hero
+datasets/joins, new release/policy evidence and actual 75-minute timing remain
+unverified. A future harness requires authenticated service/source adapters,
+dependency and permission enforcement, visible failure handling and separately
+approved triggers/costs/actions. No autonomous deployment is part of this update.
+
 ## One implementation, two responsibilities
 
 [Zava Enterprise Context](https://github.com/santhoshravindran7/zava-enterprise-context)
