@@ -26,7 +26,10 @@ sources there. Unknown native references stay unbound.
 
 The six named candidate creations and guidance saves have been approved for
 the operator's authoring scope. Current UI automation has not opened the
-creation dialog; no new save, source binding or creation screenshot is verified.
+creation dialog, and the latest desktop check reports a locked/disconnected
+Windows session. Unlock/reconnect before resuming visible curation; no script
+may bypass that access gate. No new save, source binding or creation screenshot
+is verified.
 Do not turn this automation limitation into a product-bug or gold-standard claim.
 
 ## Proposed reference set

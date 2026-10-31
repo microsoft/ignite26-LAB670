@@ -124,7 +124,10 @@ approval rather than trying to bypass denied self-service creation or API access
 
 After admitted source reads, curate the MSIT candidates and capture their
 saved/reopened guidance and source references. Current authoring is blocked:
-the available UI actions did not open the creation dialog. No candidate save,
+the available UI actions did not open the creation dialog, and the latest
+computer-use check reports a locked/disconnected Windows session. The operator
+must unlock/reconnect the session; scripts must not bypass that desktop gate.
+No candidate save,
 source attachment or creation screenshot has been verified. This is an
 automation limitation, not a confirmed product defect.
 
