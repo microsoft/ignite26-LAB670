@@ -15,12 +15,19 @@ sources and setup only. Product instructions and screenshots belong in this
 LAB670 repository, **not** in that enterprise-context repository.
 
 The [lab setup wrapper](../infra/zava/README.md) pins the public implementation.
-Use its actual Skillable readiness evidence before admitting learner sources.
+Use separate Microsoft-test and Skillable readiness evidence. Microsoft/MSIT
+may validate the first deployment; learner-source admission still requires the
+actual Skillable tenant rehearsal.
 
 Use admitted native sources or explicitly labelled local fixtures. A source
 generated locally or seeded into Skillable is not automatically available in
 MSIT. MSIT authoring does not authorize copying tenant content or provisioning
 sources there. Unknown native references stay unbound.
+
+The six named candidate creations and guidance saves have been approved for
+the operator's authoring scope. Current UI automation has not opened the
+creation dialog; no new save, source binding or creation screenshot is verified.
+Do not turn this automation limitation into a product-bug or gold-standard claim.
 
 ## Proposed reference set
 

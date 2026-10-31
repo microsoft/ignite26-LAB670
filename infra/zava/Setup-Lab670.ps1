@@ -6,15 +6,15 @@ param(
     [string]$Config,
     [string]$SourceDirectory,
     [string]$Python = 'python',
-    [string]$SkillableTenantId,
+    [Alias('SkillableTenantId')][string]$TenantId,
     [string]$ApprovedPlanSha256,
     [string]$ApprovalText,
     [ValidateRange(30, 3600)][int]$MaxWaitSeconds = 1200
 )
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
-$revision = '69232b0ee904d2ba93bce916be98c1f61ae60956'
-$expectedArchiveHash = 'beda293f13d401df532ea02dc2372bbdb5740d97d2b6a1c0acea2bfc249dfa06'
+$revision = '06a15f2c8f83123d311826d5d5198df1cf4383b4'
+$expectedArchiveHash = '1d2dd152e1531ebf21016b8e4fb9fc4dd1918048479fc299c879bda8f03060ea'
 $labRoot = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..\..'))
 $Bundle = [IO.Path]::GetFullPath($Bundle)
 if (-not $SourceDirectory) { $SourceDirectory = "$Bundle-source" }
@@ -27,11 +27,11 @@ foreach ($path in @($Bundle, $SourceDirectory)) {
 if ($Phase -ne 'Plan') {
     if (-not $ApprovedPlanSha256) { throw 'Live phases require the exact approved resource/action plan hash.' }
     $tenant = [guid]::Empty
-    if (-not [guid]::TryParse($SkillableTenantId, [ref]$tenant) -or $tenant -eq [guid]::Empty) {
-        throw 'Live phases require the Skillable-issued tenant GUID. A profile number is not a tenant GUID.'
+    if (-not [guid]::TryParse($TenantId, [ref]$tenant) -or $tenant -eq [guid]::Empty) {
+        throw 'Live phases require the exact approved tenant GUID. A profile number or environment label is not a tenant GUID.'
     }
     $boundConfig = Get-Content -LiteralPath (Join-Path $Bundle 'config.json') -Raw | ConvertFrom-Json
-    if ($boundConfig.tenantId -ne $SkillableTenantId) { throw 'STOP: configuration is not bound to the approved Skillable tenant.' }
+    if ($boundConfig.tenantId -ne $TenantId) { throw 'STOP: configuration is not bound to the approved tenant.' }
     if ($Config) { throw 'Use the approved bundle configuration for live phases; create a new Plan to change it.' }
 }
 $null = New-Item -ItemType Directory -Path $SourceDirectory -Force
