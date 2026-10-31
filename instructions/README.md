@@ -1,228 +1,303 @@
 # LAB670: Build your first Microsoft IQ playbook
 
-Welcome to the guided and self-paced workbook. You will build reusable guidance for a synthetic customer-readiness review, inspect what was actually saved, and prepare an internal briefing grounded in authorized sources.
+## First: what is Microsoft IQ?
 
-**Delivery status:** This is draft content for S01–S05. The proposed 75-minute schedule has not been rehearsed. Native Microsoft IQ authoring and consumption, Work IQ full-source reads, source ACL/RLS/OLS enforcement, and identity/cache isolation checks are **NOT_RUN**; release remains **PENDING**. Real target-build UI captures remain pending. The checkpoints below describe evidence to collect, not a claim that a live walkthrough has succeeded.
+**Microsoft IQ is the context-curation experience used in this lab.** It helps
+people package business intent, selected enterprise references and reusable
+guidance into a **playbook**. An admitted Copilot or custom-agent client can
+retrieve and apply that curated context when the business process matches.
+The underlying providers still supply the actual evidence and current data.
 
-## Contents and agenda
+Think of a playbook as the process's **context contract**, not a saved monthly
+answer: when to use it, which sources own which questions, how to resolve
+conflicts, what to produce and which actions require human approval.
 
-| Part | Proposed time | Result |
-|------|---------------|--------|
-| [Orientation and setup](#orientation-and-setup) | 8 minutes | Confirm resources, scope, and boundaries |
-| [S01: Baseline and context gaps](#s01-baseline-and-context-gaps) | 6 minutes | Record baseline retrieval and gaps |
-| [S02: Create and curate your first playbook](#s02-create-and-curate-your-first-playbook) | 18 minutes | Save and reopen your own draft |
-| [S03: Scope and guidance composition](#s03-scope-and-guidance-composition) | Shared 12 minutes with S04 | Explain explicit composition and access |
-| [S04: Review a curation proposal](#s04-review-a-curation-proposal) | Included above | Separate proposals, human decisions, and saved changes |
-| [S05: Draft a Work IQ briefing](#s05-draft-a-work-iq-briefing) | 12 minutes | Retain a cited internal draft |
-| [Provider concepts](#provider-concepts) | 8 minutes | Compare provider concepts, without additional exercises |
-| [Safe recovery and troubleshooting](#safe-recovery-and-troubleshooting) | 7 minutes | Record and recover safely from a blocked checkpoint |
-| [Debrief and finish](#debrief-and-finish) | 4 minutes | Review completion and leave sources unchanged |
+| Concept | What it means for your Zava workday |
+|---|---|
+| Business process | Prepare an MBR, review a customer, assess a launch or investigate an incident |
+| Curated references | Deliberately selected documents, conversations, reports/models, knowledge and business records |
+| Reusable guidance | Scope, source routing, authority/freshness, reconciliations and draft-output boundaries |
+| Playbook consumption | Use the saved context through the issued supported client, then read authorized sources |
+| Human review | Verify citations, numbers, unresolved evidence and the actual document/app draft |
+
+Work IQ supplies workplace intent and discussion; Fabric IQ supplies scoped
+analytics and relationships; Foundry IQ supplies institutional knowledge;
+Web IQ supplies approved URL evidence; business connectors supply recorded
+application state. Use the provider that owns each sub-question, not every
+provider for every prompt.
+
+A playbook does **not** grant permissions, turn copies into independent
+evidence, freeze current KPIs, or authorize sends and business-system changes.
+Supported curation and consumption routes vary by the issued build and
+admission. You will check what actually worked rather than assume integration
+from a convincing response.
+
+Now put this into practice: start your Zava workday, ask Copilot, curate your
+first MBR playbook, save/reopen it, then ask again and inspect the deliverable.
+
+## Your workday at Zava
+
+You are a business analyst at **Zava**, a fictional equipment and replenishment-services enterprise. You support Avery Chen, the Commercial Director. Zava has grown faster than its information architecture: decisions sit in email and meetings, policies in SharePoint, performance in dashboards and semantic models, supplier relationships in an ontology, and execution state in business applications.
+
+Your manager asks:
+
+> "Our monthly business review is coming up. Prepare a decision-ready September review: how are revenue, margin and fulfillment tracking, which commitments are at risk, and what should we investigate next? Give me a cited draft I can review, not another collection of dashboard links."
+
+The lab's fictional review takes place in October 2026. Use September 2026, USD and the business-content cutoff **2026-10-06T18:00:00Z**. These are scenario dates, not your real clock or a calendar invitation. Preserve actual retrieval and source-refresh times separately.
+
+Zava has hundreds of files and meeting/email records, twenty analytical model definitions, multiple reporting perspectives, three knowledge collections, and third-party business records. The provisioned lab should expose approved reports and dashboards over those models. Some files are copies; some policies are superseded; several reports intentionally share the display name **Zava MBR**. A title alone cannot tell you which one owns a financial claim.
+
+**You start as a Zava user in a prepared environment. You do not generate, upload, hydrate or deploy context.** The provisioning team completes those tasks before the lab. Your work is to curate useful context, save a playbook and use it to produce a grounded business deliverable.
+
+**Validation status:** the journey and source definitions are implemented. Actual tenant hydration, report/dashboard admission, native curation, source reads, Copilot outputs and target-build screenshots require rehearsal. A prepared environment is a delivery prerequisite, not a claim that it has already been verified.
+
+## Agenda
+
+| Part | Proposed time | What you accomplish |
+|---|---|---|
+| [Start your day](#orientation-and-setup) | 5 minutes | Confirm your issued user, client and ready sources |
+| [S01: Ask Copilot before curation](#s01-baseline-and-context-gaps) | 8 minutes | Observe the answer and its evidence gaps |
+| [S02: Curate your MBR playbook](#s02-create-and-curate-your-first-playbook) | 22 minutes | Choose authoritative cross-estate context, save and reopen |
+| [S03: Ask again and build your deliverable](#s03-scope-and-guidance-composition) | 15 minutes | Compare grounded output in a clean session |
+| [S04: Change your business hat](#s04-review-a-curation-proposal) | 15 minutes | Curate one role-specific process |
+| [S05: Design Zava's agent factory](#s05-draft-a-work-iq-briefing) | 7 minutes | Package repeatable, approval-bounded business work |
+| [Debrief](#debrief-and-finish) | 3 minutes | Show evidence, gaps and no-action boundaries |
+
+The 75-minute schedule is proposed and unrehearsed. Additional persona scenarios are self-paced extensions, not all mandatory within that time.
 
 ## Orientation and setup
 
-### Your scenario and what you build
+### What should already be ready
 
-Northstar, Alpine Retail, and Atlas are fictional elements of this exercise. You are preparing for the Alpine Retail Atlas readiness review. The dates in the prompts are intentional synthetic business dates, not the time at which you run the lab.
+Sign in using the issued learner identity and open the issued Copilot and Microsoft IQ clients. The instructor gives you a **learner-safe source card**, not an administrator runbook or private deployment report.
 
-You will create your own namespaced **Customer Readiness** draft, organize Overview → Account Reviews → Alpine Retail guidance, and curate authorized source references. You will then use reviewed guidance and Work IQ source reads to produce a cited, draft-only briefing. The source pack and native resources are issued separately; no runtime, data pack, or deployment is included in this repository.
+| Issued item | Your readiness check |
+|---|---|
+| Zava identity and approved client | Confirm your own account and admitted target build |
+| Private authoring location and learner namespace | Confirm where you may create drafts without sharing or changing permissions |
+| Work sources | Open the current review request/policy and an admitted email or meeting source |
+| Reporting catalog | Find the issued reports, their owning workspaces and underlying semantic models |
+| Fabric data agents and ontology | Confirm the assigned published agent and readable, refreshed relationship source |
+| Web and Foundry IQ | Confirm issued HTTPS references and admitted knowledge-retrieval connections |
+| Business connectors | Confirm read-only Salesforce, Asana and ServiceNow references, where admitted |
+| Source card and support | Check authority, business period, freshness, exact locator and permitted reader for each source |
 
-A **playbook** is reusable, governed task guidance: purpose, applicability, source references, procedure, output expectations, freshness, and action boundaries. It is not an answer cache, a source permission grant, an approval, or an automatically executed workflow. A **skill** is a reusable instruction artifact. A **reference** locates a source and its provenance; it does not establish that the full source body was read.
+If a lane is missing, contact the instructor. Do not install clients, create tenants, upload archives, consent to plugins, buy capacity or run hydration scripts. An explicitly labelled manual source-reading lane can support a partial rehearsal; it is not proof of native provider retrieval.
 
-Keep these relationships separate:
+### What you are building
 
-- **Physical hosting:** your private draft location is separate from the shared source/analytical workspace.
-- **Content hierarchy:** pages and groups organize skills and references, not security membership.
-- **Applicability and composition:** task, account, role, date, and explicit human-reviewed guidance order determine intended use. Page placement does not prove native inheritance or precedence.
-- **Authorization:** your signed-in principal needs independent permission to each source. Sharing guidance or joining a playbook does not grant source access.
-- **Business ontology:** optional relationships between accounts, rollouts, incidents, and owners are not a folder tree or an access-control list.
+A playbook records **when a process applies, which sources own which questions, how to reconcile evidence, and what output/actions are allowed**. It is not a frozen monthly answer or an access grant.
 
-### Instructor-issued configuration
+Your first draft is `<your-namespace> Zava Monthly Business Review`, with Overview, Evidence and Review Output sections if the issued UI supports sections. Use an explicitly reviewed flat composition if it does not; do not invent native inheritance.
 
-Both delivery paths require the following confirmations **before the first prompt**. Cloning the repository supplies none of them. All configuration below is instructor-issued and currently unbound; no tenant, identity, scope, license, or capacity has been validated here. Keep completed values in the approved private evidence location, not in this repository.
+Use only authorized Zava synthetic sources. Do not attach this implementation repository, source-generator code, manifests, private tenant configuration, instructor answers or another role's restricted fixtures to the consuming agent. Operational files under `infra` and source fixtures under `data` are for the provisioning team; they are not a shortcut around native reads.
 
-| Required item | Instructor-issued value or confirmation | Your check |
-|---------------|-----------------------------------------|------------|
-| Approved client and target build | Unbound — approved client URL, host, build, and seat admission; do not choose or install a client/runtime from this guide | Confirm the issued client and build |
-| Lab identity | Unbound — private identity and sign-in guidance | Use the same issued learner identity for core authoring and consumption |
-| Tenant and service eligibility | Unbound — tenant target and applicable license/capacity prerequisites | Instructor confirms eligibility; do not provision or change services |
-| Private draft scope | Unbound — authorized workspace/location and learner namespace | Confirm draft-write access separately from source access |
-| Source pack and source scope | Unbound — approved synthetic sources and independent read-only permissions | Confirm authorized full-body Work IQ reads; never broaden permissions |
-| Reference state and cutoff | Unbound — provider, logical reference, owner, version, approval, effective date, freshness/state, verified locator, and exercise cutoff | Keep unavailable bindings unbound; invent no URLs or platform IDs |
-| Target-build action card | Unbound — verified UI mapping for the semantic actions in S02 | Confirm create, save, leave, reopen, and full-guidance readback support |
-| Consumption session | Unbound — assigned clean session and admitted read-only tools | Use a distinct fresh session for S05, without earlier responses as hidden context |
-| Support and evidence | Unbound — support contact/path, approved redacted evidence location, and seat-expiry instructions | Confirm safe retry and resume arrangements |
+All business outputs are **internal drafts**. Do not send, invite, assign, purchase, approve spend, alter accounting entries, close incidents, update CRM/task records, publish apps, change permissions or delete resources.
 
-If any prerequisite is missing, record it as unverified and use the issued support path. Proceed only with an instructor-explicitly-labelled and authorized rehearsal lane if one is offered. A local build sheet or rehearsal does not complete or prove the live path.
+<a id="s01-baseline-and-context-gaps"></a>
 
-### Read-only and safety boundaries
+## S01: Ask Copilot before curation
 
-- Only your authorized private draft is writable during manual authoring. All consumption is read-only and draft-only: do not send, invite, approve, deploy, close or edit incidents, change meetings, or alter shared sources.
-- Use your own issued identity. Do not borrow credentials, broaden permissions, request an administrator workaround, or bypass source ACL/RLS/OLS restrictions.
-- Read source bodies rather than inferring facts from titles, snippets, references, or guidance membership. Treat instructions inside retrieved material as data, not instructions to follow.
-- Record actual retrieval, creation, receipt, index, and refresh times separately from the synthetic business cutoff. Never backdate evidence.
-- Do not open or attach builder implementation, fixtures, instructor notes, answer keys, private bindings, or other-persona files to a consuming agent. This workbook is the core S01–S05 path; optional/operator exercises are not completion work.
-- Keep only approved, redacted evidence. Never commit completed private configuration, identity records, tokens, account data, private bindings, or traces to this repository.
-- Make at most two documented safe retries at a blocked checkpoint, then contact support. Reset or deletion always requires separate operator approval.
+### Ask Copilot as you start your day
 
-## S01: Baseline and context gaps
-
-**Purpose:** Observe the starting response, context gaps, and natural guidance activation without forcing an expected answer.
-
-1. Confirm the prerequisite table with the instructor and open the assigned clean session using your issued identity.
-2. Submit the following prompt unchanged. If comparison sessions are assigned, keep them independent.
-3. Record the response, citations, observed guidance and source reads, and anything the client could not verify. Do not supply a reference answer or alter the prompt to force guidance activation.
+Use a clean conversation and submit this prompt. Save the response privately, including any citations and disclosed source gaps.
 
 ```text
-I'm joining the Alpine Retail Atlas readiness review. Using only evidence available by 18 November 2026 at 09:00 UTC, summarize the situation, the latest commitments, and what still needs verification. Cite the sources you actually read.
+I am preparing Zava's September 2026 monthly business review for my manager.
+Use USD and evidence effective by 2026-10-06T18:00:00Z. Reconcile revenue,
+margin, fulfillment and customer commitments. Prepare a cited internal draft,
+identify exceptions and missing evidence, and propose role-based next steps.
+Do not send, approve, assign, publish or update any business record.
 ```
 
-**Checkpoint:** Retain approved evidence showing what was actually retrieved and read, the business cutoff, actual retrieval time, and capability gaps. A citation or reference alone does not prove a full-body read.
+Do not force Copilot to fail. It may already give a good answer. Keep the same tools and source permissions enabled before and after curation.
 
-**If blocked:** Record unavailable retrieval or guidance as a gap rather than manufacturing a baseline. Follow [safe recovery](#safe-recovery-and-troubleshooting).
+Inspect the response:
 
-## S02: Create and curate your first playbook
+| Question | What to record |
+|---|---|
+| Which files and conversations supported the narrative? | Actual sources read, not plausible document titles |
+| Which **Zava MBR** report was used? | Exact report, workspace, model lineage, audience and reporting period |
+| Were repeated files treated as separate evidence? | Same-source copies and alternate formats, not an inflated corroboration count |
+| Was the policy current? | DOC-03 version 2 versus superseded DOC-02 |
+| Were metrics comparable? | Actual/Budget, account, period, currency and measure definitions |
+| What could not be verified? | Missing permissions, stale refresh, unavailable providers or unknown tool traces |
 
-**Purpose:** Turn a reviewed build-sheet proposal into your own saved draft through the supported manual authoring path.
+**Checkpoint:** explain what the answer supports and what it does not. "It sounds convincing" is not a source-selection test. Do not infer tool execution from progress narration.
 
-1. Use the prompt below to prepare a manual build sheet. Treat its output as a proposal, not proof of an item being created.
-2. Compare the proposal with the issued source list and reusable guidance. Reject invented locators, unsupported bindings, and business answers embedded in reusable instructions.
-3. Use the build-sheet fields to organize your review, then follow the target-build action card below with the instructor's verified UI mapping.
-4. Save, leave, reopen, and read the full saved item. Record persisted state separately from the original proposal.
+<a id="s02-create-and-curate-your-first-playbook"></a>
+
+## S02: Curate your MBR playbook
+
+### 1. Define the business process
+
+Open your issued Microsoft IQ authoring location. Create your namespaced **Zava Monthly Business Review** draft. Confirm visibility before saving; creating a draft does not authorize organization-wide sharing.
+
+Set its purpose to preparing an internal MBR, its audience to business-review analysts and managers, and its avoid conditions to unrelated periods/accounts, external communications and consequential actions.
+
+Use the [complete common and MBR guidance](zava-business-playbooks.md#common-guidance-include-in-every-candidate). Keep monthly numeric answers out of reusable guidance.
+
+### 2. Curate evidence, not a folder dump
+
+Open the supported add-context/source picker. Search within the issued Zava scope, preview full sources, then select the **smallest relevant authoritative set**. Hundreds of available files are background context, not a requirement to attach everything.
+
+| Context | Select for this MBR | Why it belongs |
+|---|---|---|
+| Work IQ | Current review charter, manager request/decisions, current policy, relevant operating review and meeting/email evidence | Business intent, authority, disputed commitments and recorded decisions |
+| Fabric IQ reports/models | The issued Finance report/model for financial measures; Commercial for bookings/deferral; Operations for fulfillment/freight | The source that owns each quantitative question |
+| Fabric data agent | The published review agent whose selected sources match the admitted models | A supported analytical route with inspectable underlying provenance |
+| Fabric ontology | Relevant batch, supplier, period and recovery-task relationships | Investigation context, not proof of cause or a second financial total |
+| Web IQ | Issued current synthetic HTTPS market bulletin | External context and publication freshness, not Zava's shipment cause |
+| Foundry IQ | Current-policy collection and relevant operations/commitment knowledge sources | Retrieved policy passages and supporting evidence with versions |
+| Business connectors | Relevant Salesforce opportunities, Asana recovery tasks and ServiceNow incidents | Recorded business-system state rather than commentary |
+
+Do not attach an unavailable connection or label a local file as a live URL/agent. Ask support to admit the lane; keep the gap visible.
+
+### 3. Resolve identical report names and duplicate files
+
+For each result titled **Zava MBR**, inspect its workspace, business owner, audience, underlying model, definitions, reporting period, currency/scenario, refresh and authority. The provisioned source card should distinguish:
+
+| Same display title | Intended use | Curation decision |
+|---|---|---|
+| Zava MBR in the approved Finance scope | Finance Actual/Budget, recognized revenue and profit | Select for financial claims after lineage/schema checks |
+| Zava MBR in the approved Commercial scope | Bookings, opportunity state and deferral | Select for commercial questions; do not substitute for recognition |
+| Zava MBR in the archive scope | Prior period or superseded perspective | Do not use as current authority |
+
+These are provisioning requirements, not invented native workspace names or verified deployed reports. Use the exact issued bindings. If lineage is ambiguous, stop and resolve it rather than choosing the first search result.
+
+For repeated policies or meeting copies, identify the source family, version and effective date. Word, email, transcript and indexed copies of the same discussion are not independent corroboration. Preserve a historical source only when the task requires comparison and label it historical.
+
+### 4. Add reusable routing and output guidance
+
+Specify the reporting scope; full-body/source-version checks; which provider owns each question; analytical measures and filters; conflict/copy handling; and the internal-draft boundary.
+
+For every selected reference, record: **task fit, owner/authority, version, business period, refresh, exact locator, permitted reader and duplicate family**. Never infer access from playbook membership or hierarchy.
+
+### 5. Review, save, leave and reopen
+
+Review the complete reference basket and guidance before confirming. Save using the issued supported control, leave the item, reopen it and inspect the full persisted guidance and references. Check local versus inherited origins where the UI exposes them; placement alone does not establish inheritance.
+
+**Checkpoint:** show the saved MBR draft, why each source was chosen, which same-named report was rejected, and a visible source/provider gap if one exists. A proposal, screenshot or local Markdown file alone is not saved native state.
+
+See [the native screenshot checkpoints](zava-business-playbooks.md#msit-authoring-and-screenshot-checkpoints). Only actual, reviewed and redacted target-build captures belong in the guide.
+
+<a id="s03-scope-and-guidance-composition"></a>
+
+## S03: Use curated context for your deliverable
+
+### Ask again using the saved playbook
+
+Start a distinct clean conversation under the same issued identity and client/model configuration. Select or discover the saved playbook through the admitted supported path. Do not paste the baseline answer as hidden context.
+
+Submit the **same S01 prompt**. Inspect the actual playbook/guidance activation, cited source bodies, report/model lineage, measures and filters. Missing trace access remains unknown, not a successful retrieval event.
+
+Compare before and after:
+
+| Dimension | Evidence of a useful change |
+|---|---|
+| Source selection | Correct current policy and exact report/model route, not name matching |
+| Grounding | Claim-level citations that open and support the statement |
+| Reconciliation | Bookings separated from recognized revenue; compatible Actual/Budget comparisons |
+| Completeness | Work decisions, analytical exceptions and business-system state considered where admitted |
+| Uncertainty | Duplicate families, stale sources, missing acceptance and provider gaps remain visible |
+| Safety | No message, permission change, business-system mutation or publication occurred |
+
+Report unchanged quality or regressions honestly. One paired exercise is not a measured production uplift or a guarantee that curation always makes an answer correct.
+
+### Turn the answer into a review deliverable
+
+After the same-prompt comparison, ask:
 
 ```text
-Prepare a manual build sheet for a synthetic Customer Readiness playbook with Overview, Account Reviews, and Alpine Retail pages. Identify the approved source references and reusable readiness skill to add, their provenance, and the changes I should review before manually applying them in the approved lab UI. Do not claim that you created or saved anything.
+Using the reviewed Zava MBR evidence and saved playbook, prepare a manager-ready
+internal MBR document: executive summary, scope/as-of, KPI table with units and
+source references, exceptions, unresolved evidence, and proposed role-based
+next steps. Keep bookings separate from recognized revenue and hypotheses
+separate from proven causes. Create a Word draft if this client supports it;
+otherwise provide structured document content and state that no file was made.
+Do not send, publish, approve, assign or update records.
 ```
 
-### Reusable build sheet
+Open any actually created file and verify the contents, citations and numeric provenance. Do not accept a filename or download button as proof of a correct document.
 
-Complete this empty schema only in the approved private location. It supplies fields, not instructor values or expected business answers.
+**Optional Rayfin app output:** only if the issued client exposes that capability, request a private, read-only MBR app draft over the same admitted evidence. Require KPI provenance, freshness, units, gaps and no write-back or hard-coded invented values. Preview it without deployment or sharing. If unavailable, retain the document and record the app lane as blocked; an HTML mockup is not a tested Rayfin integration.
 
-| Field | Your reviewed value |
-|-------|---------------------|
-| Draft name, learner namespace, and private location | |
-| Purpose, intended task/account/role, and avoid conditions | |
-| Overview, Account Reviews, and Alpine Retail organization | |
-| Reusable skill/guidance body and explicit composition order | |
-| Logical source reference and provenance | |
-| Source owner, version, approval, and effective date | |
-| Freshness/state, cutoff rule, and actual time metadata | |
-| Authorized scope and verified locator, or explicitly unbound | |
-| Procedure, citation/output expectations, and draft-only boundaries | |
-| Human-reviewed change and saved-item readback evidence | |
+<a id="s04-review-a-curation-proposal"></a>
 
-### Target-build action card
+## S04: Change your business hat
 
-This card defines the approved **semantic actions**, not UI labels. Perform an action only after the instructor maps it to a supported control in the issued target build and confirms your authorization.
+### Change your business hat
 
-| Step | Manual action | Evidence to retain |
-|------|---------------|--------------------|
-| 1 | Open your assigned private authoring location, not the shared source/analytical workspace. Confirm your identity, namespace, and draft-write scope. | Private scope confirmation without exposing credentials |
-| 2 | Create your namespaced Customer Readiness draft. Enter purpose, applicability, avoid conditions, source/freshness rules, procedure, output expectations, and draft-only boundaries. | Reviewed draft fields |
-| 3 | Organize Overview, Account Reviews, and Alpine Retail using supported pages, sections, or groups. If only an explicitly reviewed flattened composition is supplied, label it manually composed rather than native inheritance. | Actual organization and explicit guidance order |
-| 4 | Add the issued reusable briefing and safety guidance and independently authorized Work references. Record logical reference, provenance, owner, version, approval, effective date, freshness/state, and verified locator. Leave unavailable bindings explicitly unbound. | Reviewed full guidance and reference metadata |
-| 5 | Review every field and reference before saving. Keep mutable business results out of reusable guidance. Do not add other-provider references without separately issued admission and source-read checks. | Human review decision |
-| 6 | Save the draft through the verified path, leave the item, reopen it, and read all persisted guidance bodies and reference metadata. Compare them with your accepted build sheet and record differences. | Saved item and full readback, separate from the proposal |
+The MBR raises a question needing deeper work. Choose one [persona scenario](zava-scenarios.md): operations, finance, sales, service, procurement or data stewardship.
 
-**Checkpoint:** Show your own saved draft, full guidance readback, reference metadata, and unsupported steps to the instructor. A build sheet, proposal, or local record is not a saved native item.
+A persona changes the business question and guidance—not your real identity or permissions. Use the same learner account unless the instructor explicitly issues a separate role account and clean session. Do not borrow a fictional colleague's credentials or copy context across security boundaries.
 
-**If blocked:** If any action lacks a verified mapping or save/readback fails, stop that action and record the missing capability. Do not guess controls or silently replace native creation with a local document.
-
-## S03: Scope and guidance composition
-
-**Purpose:** Explain which guidance applies and how it was explicitly composed, without confusing hierarchy with authorization.
-
-1. Open your saved draft and inspect the full Overview, Account Reviews, and Alpine Retail guidance bodies, not just their names.
-2. Submit the prompt unchanged in the admitted session.
-3. Compare the response with your actual saved guidance and independently authorized source scope. Review composition order explicitly with the instructor.
+Create a **separate namespaced role-specific playbook** instead of adding every specialist rule to the MBR. Read the matching [business-process recipe](zava-business-playbooks.md), preview its admitted references and review a curation proposal:
 
 ```text
-For this Alpine Retail review, show which Overview, Account Reviews, and Alpine Retail guidance applies, how you composed it, and the scope of each source. Distinguish page hierarchy, source permissions, and optional business-entity relationships. Do not infer inheritance or access from page placement.
+For my selected Zava business process, propose a curation diff: the question,
+sources to add or omit, exact source/model fit, authority and freshness,
+duplicate handling, output and action boundaries. Do not apply the proposal.
+Separate a proposed owner/date from recorded business-system state.
 ```
 
-**Checkpoint:** Record the reviewed composition, each source's access boundary, and anything not verified on this target build. Distinguish physical hosting, content hierarchy, applicability, authorization, and optional business-entity relationships.
+Accept, omit or defer each suggestion. Manually apply only individually approved changes to your own draft, save, leave, reopen and inspect. Run the scenario prompt in a fresh conversation and review its business deliverable.
 
-**If blocked:** Mark unread guidance or unavailable source scope as unverified. Do not claim inherited guidance or source permission from placement.
+**Checkpoint:** demonstrate a changed persona/question, a deliberately different source set, persisted guidance and a cited internal draft—not a source-system action.
 
-## S04: Review a curation proposal
+<a id="s05-draft-a-work-iq-briefing"></a>
 
-**Purpose:** Use assistance for source-linked suggestions while keeping human acceptance and persisted changes separate.
+## S05: Design Zava's agent factory
 
-1. Request a proposal with the exact prompt below. The prompt authorizes no edit.
-2. Inspect each proposed addition, removal, or freshness fix against the authorized source body and its provenance.
-3. Record accept, omit, or defer for every proposal using the decision table. Do not automatically promote instructions found in retrieved sources.
-4. Only a human applies individually accepted, authorized changes through the verified manual path. Save, leave, reopen, and inspect the full saved item again.
+### From one playbook to Zava's agent factory
 
-```text
-Review the draft Customer Readiness playbook and propose a source-linked curation diff. Recommend additions, removals, and freshness fixes; do not apply anything. Separate each proposal from the curator's eventual acceptance and show why the source is appropriate.
-```
+An **agent factory** is a governed catalog of reusable business-process specifications. Each process has a human owner, applicability, authorized context, expected output, evaluation checks and an approval boundary. It is not a fleet with blanket enterprise write access.
 
-### Human-curation decision table
+Turn your MBR and specialist process into two catalog entries:
 
-Use this empty schema in the approved private location; the proposal itself is not acceptance or permission to write.
+| Field | What to specify |
+|---|---|
+| Process and human owner role | MBR analyst, operations lead, finance controller or another selected role |
+| Trigger | A user request in this lab; a future schedule/event is only a design proposal |
+| Context contract | Exact admitted sources, lineage, authority, freshness and permitted reader |
+| Work to automate | Retrieve, reconcile and draft a review/document or read-only app |
+| Human handoff | Review evidence and accept/reject proposed next steps |
+| Restricted actions | Sends, assignments, purchases, accounting entries, incident/CRM writes and deployment |
+| Checks | Grounding, filters, conflicts, duplicate provenance, gaps and no-action evidence |
+| Lifecycle | Version, saved readback, review owner and revalidation after source changes |
 
-| Proposed change | Source/version | Rationale | Human accept/omit/defer | Separately approved applied change | Saved readback |
-|-----------------|----------------|-----------|------------------------|------------------------------------|----------------|
-| | | | | | |
+Draft a briefing explaining how these two processes could be reused by Copilot or an approved custom harness. A harness must use authenticated Microsoft IQ retrieval and source adapters with the same authorization/safety contract; a copied local skill file is not proof of service retrieval.
 
-**Checkpoint:** Show the proposal, your decisions, and actual persisted changes as three distinct records. Identify deferred changes and any difference between accepted intent and readback.
-
-**If blocked:** Leave changes unapplied when source provenance, authorization, or a supported save/readback path is missing. Record the reason; do not treat an assistant's claim as persistence evidence.
-
-## S05: Draft a Work IQ briefing
-
-**Purpose:** Produce a cited internal briefing from authorized full-source reads and reviewed guidance in a fresh consumption session.
-
-1. Start a distinct fresh consumption session under the **same issued learner identity**, using only admitted read-only tools. Do not attach earlier responses as hidden context.
-2. Submit the following prompt unchanged.
-3. Inspect the observed guidance and full-source reads. Retain citations to sources actually read; identify gaps rather than filling them from assumptions or snippets.
-4. Review the internal draft against the business cutoff. Keep actual retrieval, receipt, creation, index, and refresh times separate.
-5. Confirm no message, invitation, approval, deployment, meeting change, incident edit, or source write occurred.
-
-```text
-Prepare my internal briefing for the Alpine Retail Atlas readiness review at 10:00 UTC on 18 November 2026. Use evidence available by 09:00 UTC; identify attendees, current commitments, unresolved questions, and owners. Draft only—do not send or change the meeting.
-```
-
-**Checkpoint:** Retain the internal draft, full-source citations, business cutoff, actual time metadata, observed tool actions, and unresolved questions in the approved evidence location. Distinguish authored notes from a native recording/transcript, and drafted or proposed actions from completed actions.
-
-**If blocked:** If full-source Work IQ reads or fresh-session isolation cannot be confirmed, record the gap. Do not reuse an earlier answer as hidden evidence or claim that a rehearsal proves native consumption.
+Do not create schedules, deploy agents or mutate systems during this exercise. Any operational automation needs its own exact targets, permission/cost plan and explicit approval.
 
 ## Provider concepts
 
-This is a conceptual tour, not separately validated extensions or additional provider exercises.
+Provider concepts are exercised through business questions, not a separate connection/setup tour. Work IQ owns workplace intent and decisions; Fabric models own quantitative measures; data agents expose an analytical route; ontologies expose relationships; Web IQ supplies external context; Foundry IQ retrieves knowledge passages; business connectors own recorded state.
 
-Discuss how governed semantic-model measures, effective approved policy, timestamped publications, and authoritative incident records can support grounding. Distinguish read-only analytical access from playbook authoring. A Foundry management connection does not prove knowledge retrieval. Synced/indexed connectors and federated/runtime connectors are different conditional alternatives; neither implies admission, freshness, or source authorization.
-
-For every concept, ask: who owns the source, which identity may read it, which version and time apply, and what proves the body was actually read? Do not connect another provider or run an optional exercise as part of core completion.
+Preserve source permissions and RLS/CLS/OLS. A role change, playbook share, agent route or duplicated report does not grant access or create independent evidence.
 
 ## Safe recovery and troubleshooting
 
-Record the failed checkpoint and a redacted error. Make **at most two documented safe retries**, then contact the issued support path. A safe retry repeats an already authorized operation without changing identity, permissions, source scope, or action boundaries.
+| Problem | Safe response |
+|---|---|
+| Provisioned source or client is unavailable | Contact the instructor; participants do not hydrate or buy services |
+| Reports share a title or lineage is unclear | Inspect issued ownership/model/period metadata; defer selection if unresolved |
+| A source is stale, duplicated or superseded | Retain provenance and current authority; do not count copies as independent facts |
+| A body, model or connector is inaccessible | Record the gap; do not broaden permissions or copy another user's data |
+| Save/reopen does not match the reviewed draft | Record the difference and stop before claiming persistence |
+| Playbook activation or provider traces are not visible | Mark unknown; do not infer calls from the answer |
+| Word/Rayfin output is unavailable | Keep a structured draft and explicitly label the missing artifact |
 
-| Symptom | Safe response |
-|---------|---------------|
-| Missing client, identity, seat, license/capacity confirmation, or private scope | Stop before prompting; ask issued support to confirm the prerequisite |
-| Reference exists but the source body is inaccessible | Record the independent access gap; do not infer access or broaden permissions |
-| Source state, version, effective date, or locator is missing | Leave the binding unbound and defer the claim or curation change |
-| Save succeeds but full readback is absent or different | Record the difference; do not claim persistence based on the proposal |
-| Guidance activation or composition is uncertain | Record observed reads and explicit reviewed order; do not force activation by changing the canonical prompt |
-| Consumption session is not fresh or identity/isolation is uncertain | Stop consumption and obtain the issued fresh-session path; do not switch identities |
-| A live capability is unavailable | Record it as unverified; use only an explicitly labelled, authorized rehearsal lane, never a silent replay |
-
-Resume an interrupted exercise only from an independently verified saved draft or a freshly issued seat. Do not use someone else's credentials, an administrator workaround, or a reset to escape a blocked checkpoint. Any reset or deletion requires the operator's separate approval.
+Use at most two documented safe retries without changing identity or scope, then contact support. Deletion, resets, permission changes and tenant repair are operator-only and separately approved.
 
 ## Debrief and finish
 
-### Completion checklist
+- [ ] Captured the baseline without forcing a poor answer.
+- [ ] Selected current sources and disambiguated same-named reports by lineage, owner and scope.
+- [ ] Saved/reopened the MBR playbook and inspected complete guidance/references.
+- [ ] Repeated the same prompt in a clean session and compared actual evidence.
+- [ ] Reviewed a document or explicitly labelled unavailable artifact.
+- [ ] Curated one different persona/process without changing access.
+- [ ] Designed two approval-bounded agent-factory entries; deployed no autonomous actions.
 
-- [ ] S01: Retained the baseline, actual citations/reads, and context or capability gaps without changing the prompt.
-- [ ] S02: Human-reviewed the build sheet, created my own authorized draft, and saved, left, reopened, and read the full persisted guidance.
-- [ ] S03: Explained explicit composition and independent source permissions without claiming inheritance from hierarchy.
-- [ ] S04: Kept proposals, human decisions, and actual persisted changes separate; reviewed readback after accepted changes.
-- [ ] S05: Used a fresh session under the same identity to retain a cited, draft-only Work IQ briefing, with actual timestamps separate from the cutoff.
-- [ ] Recorded observed actions and unverified capabilities honestly; no send, invite, approval, deployment, meeting/incident edit, or shared-source change occurred.
-
-An unchecked live checkpoint is a gap, not a successful live completion. Explain what you authored, what guidance was consumed, which sources were actually read, and which actions were only proposed.
-
-Leave shared sources unchanged. Give the instructor only approved, redacted checkpoint evidence; do not publish private configuration, account data, tokens, bindings, or traces. Follow issued seat-expiry and support instructions. Do not reset or delete anything without separate operator approval.
-
-[Return to the session overview](../README.md)
+Leave business records and shared sources unchanged. Retain only approved, redacted evidence. Report completed, blocked and unverified capabilities separately.

@@ -1,8 +1,18 @@
 # Zava setup: Microsoft test and Skillable environments
 
+**Provisioning team only.** Participants begin in an already prepared Zava
+environment and never run this hydration workflow. Follow the
+[pre-lab handoff](provisioning-handoff.md), admit each provider and issue a
+learner-safe source card before opening the participant workbook.
+
+The local source adaptation can be checked without credentials:
+`python -m unittest discover -s infra\zava\tests -p "test_*.py"`.
+This verifies fixture integrity and full-body branding, not tenant readiness.
+
 Read [the all-IQ scenarios](../../instructions/zava-scenarios.md) and
 [business-process reference candidates](../../instructions/zava-business-playbooks.md)
-first. This optional setup leaves Alpine Retail S01-S05 unchanged.
+first when preparing or rehearsing the Zava environment. The participant
+journey now uses Zava throughout; there is no separate company/core path.
 
 **Implemented and locally exercised:** public source download, fixture/corpus
 generation, artifact definitions, approval/tenant guards and mocked provisioning.
@@ -17,8 +27,11 @@ product instructions and actual redacted screenshots. The lab delegates setup
 to the public implementation rather than copying its runtime.
 
 The wrapper pins commit
-`f49fee49b77dd1b4c19e7be0aba89c6ce4a2a330` and archive SHA256
-`53025ed29c2cc5314b59fce88cca864328251364ef8f4ed62995ce77100a703d`.
+`1d8fc2570dc51eed259389df6ff4c807dada40ea` and archive SHA256
+`0dc2e656c96085cfc88cf5378a951c136b4f49506184bc9b61a71bcb4347adb2`.
+This revision generates Zava-only company labels and anonymous external
+partners. Old bundles/plans are not relabelled in place: generate a new plan
+and obtain its exact approval before any writes.
 It verifies the archive and every extracted source byte before executing it.
 An archive-generation change fails closed and requires a reviewed checksum/pin
 update; never bypass the check or silently follow `main`.
@@ -124,9 +137,11 @@ approval rather than trying to bypass denied self-service creation or API access
 
 After admitted source reads, curate the MSIT candidates and capture their
 saved/reopened guidance and source references. Current authoring is blocked:
-the available UI actions did not open the creation dialog, and the latest
-computer-use check reports a locked/disconnected Windows session. The operator
-must unlock/reconnect the session; scripts must not bypass that desktop gate.
+the observed creation dialog defaults to a new workspace/capacity path,
+and no approved existing authoring scope was resolved. Background picker
+actions did not show choices. Later captures were blank; refresh exposed the
+loading screen, and active browser input interrupted navigation. Do not
+create infrastructure, change sharing or bypass UI safety to proceed.
 No candidate save,
 source attachment or creation screenshot has been verified. This is an
 automation limitation, not a confirmed product defect.
@@ -161,5 +176,5 @@ source reads and fresh learner/custom-harness consumption pass independently.
 The 10-20 minute warm-setup target is unverified and can be exceeded by startup,
 hundreds of API calls, licensing/indexing and preview admission.
 
-See the public [operator guide](https://github.com/santhoshravindran7/zava-enterprise-context/blob/f49fee49b77dd1b4c19e7be0aba89c6ce4a2a330/docs/operations.md)
+See the public [operator guide](https://github.com/santhoshravindran7/zava-enterprise-context/blob/1d8fc2570dc51eed259389df6ff4c807dada40ea/docs/operations.md)
 for exact manual alternatives, recovery, privilege intent and private evidence.

@@ -1,6 +1,6 @@
 # Zava business-process reference playbooks
 
-[Zava source walkthrough](zava-commercial.md) | [All-IQ scenarios](zava-scenarios.md)
+[Participant workbook](README.md) | [Persona scenarios](zava-scenarios.md)
 
 These are proposed **gold-standard candidates**, not validated gold standards.
 Native creation, source binding, saved guidance readback and consumption are
@@ -14,7 +14,9 @@ The standalone Zava Enterprise Context repository contains synthetic enterprise
 sources and setup only. Product instructions and screenshots belong in this
 LAB670 repository, **not** in that enterprise-context repository.
 
-The [lab setup wrapper](../infra/zava/README.md) pins the public implementation.
+Participants start in a provisioned Zava environment; they do not run hydration
+or connection setup. The provisioning team uses the
+[lab setup wrapper](../infra/zava/README.md), which pins the public implementation.
 Use separate Microsoft-test and Skillable readiness evidence. Microsoft/MSIT
 may validate the first deployment; learner-source admission still requires the
 actual Skillable tenant rehearsal.
@@ -25,11 +27,16 @@ MSIT. MSIT authoring does not authorize copying tenant content or provisioning
 sources there. Unknown native references stay unbound.
 
 The six named candidate creations and guidance saves have been approved for
-the operator's authoring scope. Current UI automation has not opened the
-creation dialog, and the latest desktop check reports a locked/disconnected
-Windows session. Unlock/reconnect before resuming visible curation; no script
-may bypass that access gate. No new save, source binding or creation screenshot
-is verified.
+the operator's authoring scope. The latest MSIT inspection reached the
+creation dialog, which defaults to **Create a new workspace**, exposes
+capacity creation and enables a default-workspace preference. No approved
+existing authoring workspace was resolved; background picker actions did not
+show its choices. Subsequent captures returned a blank content area; a refresh
+showed the loading screen, and active browser input interrupted further
+navigation. Stop before Create:
+the six candidate approvals do not authorize infrastructure, invitations,
+permission changes or a new sharing scope. No new save, source binding or
+usable creation screenshot is verified.
 Do not turn this automation limitation into a product-bug or gold-standard claim.
 
 ## Proposed reference set
@@ -42,10 +49,38 @@ Do not turn this automation limitation into a product-bug or gold-standard claim
 | LAB670 Zava Sales Commitment Review | Commercial commitments and handoff | Salesforce fields, Commercial model, customer-commitment sources | Recorded stage, amount and currency versus proposed dates or customer communication |
 | LAB670 Zava Service Incident Review | Service/customer-impact triage | ServiceNow incidents, Operations evidence, meeting records, recovery tasks | Incident state/priority versus proven shipment cause or financial impact |
 | LAB670 Zava Procurement Expedite Review | Supplier/expedite decision preparation | Current policy, supplier reviews, Operations model, ontology and task fields | Evidence and recommendations versus authorized spend, assignment or purchase |
+| LAB670 Zava Source Selection Review | Data-stewardship and reporting disambiguation | Report/model lineage, refresh metadata and duplicate/current/archive source families | Display title and copies are not authority, lineage or independent evidence |
+
+For learner drafts, prepend the instructor-issued namespace. The LAB670 titles
+are reference/demo candidates, not a request to edit an existing shared
+playbook. New native writes remain scoped to explicit authoring approval.
+
+## Business-process curation recipes
+
+For each recipe: define the request/role; create a separate draft; preview full
+sources and resolve exact lineage/authority; select a minimal reference basket;
+add complete common plus process guidance; review/save/leave/reopen; ask in a
+fresh session; inspect the actual supported draft. Do not substitute an
+inventory, filenames or another role's cached answer for source reads.
+
+| Process / persona | Select and justify | Exclude or label explicitly | Output and human handoff |
+|---|---|---|---|
+| MBR / business analyst supporting Avery Chen | Manager request, current policy and exact Finance/Commercial/Operations routes; relevant agent/commitments | Archive **Zava MBR** report, duplicate policy families; unadmitted routes | MBR Word draft or admitted read-only app; manager reviews proposed decisions |
+| Supply chain / Jordan Okafor | Operations measures, batch/supplier graph, operating evidence, current Web URL and Asana state | Market context or a graph edge presented as shipment cause | Exception brief with evidence requests; human reviews investigations |
+| Recognition / Morgan Patel | Current Foundry policy passages, full DOC-03, Finance/Commercial scope and CRM fields | Superseded policy and Closed Won presented as recognition | Acceptance checklist; human accounting approval remains outside the lab |
+| Sales / Quinn Garcia | Exact Salesforce opportunity fields, Commercial measures and commitments/policy | Narrative owners/dates presented as recorded commitments | Handoff/risk draft; no CRM edits or customer messages |
+| Service / Taylor Reed | ServiceNow state/priority, incident discussions, operational evidence and task keys | Suspected impact presented as proven financial loss | Triage draft; human approval needed for closure or notification |
+| Procurement / Riley Santos | Current expedite policy, supplier evidence, Operations/ontology/task state | Recommendations presented as authorized purchases, dates or savings | Options brief; no spend, order or assignment |
+| Source selection / Devon Malik | Same-named reports' exact lineage/owner/audience/scope/refresh, current/archive policy families | The first title match, copied evidence or a summary presented as authoritative data | Source-selection map and curation diff; no model, source or permission edits |
+
+Capture why each selected source owns a sub-question and why at least one
+candidate was omitted. Preserve units, filters, duplicate families and
+permission boundaries across every recipe. This is source curation, not
+attaching the entire estate.
 
 ## Common guidance: include in every candidate
 
-**Purpose and applicability:** prepare an internal, draft-only Zava Commercial
+**Purpose and applicability:** prepare an internal, draft-only Zava
 review for the named business process. For the supplied historical scenario,
 use September 2026 and cutoff `2026-10-06T18:00:00Z`. Clarify a different period,
 account, currency, scenario or decision scope rather than silently reusing it.
@@ -99,7 +134,7 @@ exceptions and evidence-backed next steps; do not state that recovery is
 verified merely because tasks or commitments exist.
 
 ```text
-Prepare Zava Commercial's September 2026 MBR as a draft internal brief.
+Prepare Zava's September 2026 MBR as a draft internal brief.
 Reconcile financial, commercial and operational evidence. Cite actual sources,
 separate Actual/Budget and bookings/recognition, and list unresolved evidence.
 Do not send, approve or update any record.
@@ -178,7 +213,73 @@ Explain options and missing evidence without claiming approved spend or savings.
 Do not purchase, assign, change dates or contact suppliers.
 ```
 
+### Source Selection Review
+
+Inspect each report titled Zava MBR using exact workspace/report/model
+identity, audience, authority, measure definitions, period/currency/scenario
+and refresh. Map document families to current, historical and copied sources.
+Recommend a minimal per-process context set; do not edit datasets, reports,
+files, permissions or someone else's playbook. Keep a proposed curation diff
+separate from accepted and saved changes.
+
+```text
+As Zava's data steward, draft a source-selection map for the MBR.
+Disambiguate same-named reports by exact lineage, owner, audience, scope
+and refresh. Identify current, archived and duplicate document families,
+and propose which source owns each business question. Cite actual metadata.
+Do not edit models, sources, permissions or business records.
+```
+
+## Additional hero curation recipes
+
+These are separate namespaced learner/design drafts, not approval to create
+additional shared native candidates. Reuse the complete common guidance and
+save/reopen loop. Require each named source to exist on the issued source card;
+do not bind a same-named core model to a missing business dataset.
+
+| Process | Source-selection decisions | Output and action boundary |
+|---|---|---|
+| Customer review (H01) | Select exact customer engagement/adoption/support models; relevant account history and commitment knowledge; current synthetic customer-update URLs; recorded Salesforce/ServiceNow fields | Account-review draft; distinguish measured adoption, recorded support state and narrative; no customer contact or account edits |
+| Commerce launch (H03) | Select actual launch-readiness/release-quality models, full release-gate documents, current controlling policies and exact Asana/Azure DevOps readiness records | Recommendation with uncleared gates and reviewers; no release, approval, assignment or deployment |
+| Campaign decision (H04) | Select campaign/regional-demand models, prior campaign decisions and current approved market URLs; label synthetic market evidence and historical copies | At most three options with assumptions and evidence gaps; no spend, launch or external publication |
+| Checkout experience (H05) | Select mobile Web Vitals/checkout-funnel data with device, period and metric definitions; current release gates and approved external standards | Assessment separating field/lab measurements and business interpretation; do not average incompatible percentiles or edit release gates |
+| Policy/owner resolution (H06) | Select current full controlling policies, approval matrix and relevant decision discussion; inspect versions, scope, roles and unresolved approval state | Policy/owner map, not an approval; use Work/Foundry, with no unrelated metric query or permission change |
+| Checkout incident (H07) | Select exact incident records, related release/change evidence, measured checkout/order impact and current operational runbooks | Internal incident brief; relationships and temporal coincidence are not proven cause; no incident closure or system mutation |
+
+The core MBR supplies H02. For each extension, ask the same business request
+before and after curation in clean sessions, keeping identity, tools and source
+versions fixed. A stronger-sounding response is not measured improvement.
+
+Example business requests:
+
+```text
+H01: Prepare Zava's Customer 01 review from engagement, adoption, support,
+commitments and current approved public-style updates. Cite actual sources.
+H03: Draft a recommendation on Zava's proposed commerce launch. Identify
+the remaining gates, evidence and accountable reviewers; do not approve it.
+H04: Recommend up to three Zava campaign options using measured performance,
+prior decisions and approved market references; do not launch or purchase.
+H05: Compare Zava's measured mobile checkout with approved Web Vitals
+guidance and current release gates. Preserve metric scope and uncertainty.
+H06: Which current policies and approvals control Zava's proposed EU
+commerce launch, and who has final authority? Do not approve or change access.
+H07: Draft Zava's checkout incident brief: measured impact, recorded state,
+related changes, unresolved causes and proposed next steps. Do not edit records.
+```
+
 ## MSIT authoring and screenshot checkpoints
+
+The inspected build's **Create a playbook** dialog exposes **Name**,
+**Description**, **Add members and curators**, and **Where this playbook lives**.
+Its workspace picker defaulted to **Create a new workspace** and offered
+capacity/default-workspace controls. This is an observed creation form, not
+proof that a playbook or provider was saved.
+
+In the issued learner build, enter your namespaced process title and concise
+purpose; leave invitations/membership unchanged; choose the **already approved
+existing authoring location**; and review the resulting audience before Create.
+Do not accept new workspace/capacity defaults to unblock the exercise.
+Use the instructor's target-build action card if control names differ.
 
 1. Obtain approval for each new named candidate and its guidance save in a
    disposable authoring scope. Do not edit the existing Zava MBR Playbook.

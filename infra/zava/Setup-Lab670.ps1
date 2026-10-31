@@ -13,8 +13,8 @@ param(
 )
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
-$revision = 'f49fee49b77dd1b4c19e7be0aba89c6ce4a2a330'
-$expectedArchiveHash = '53025ed29c2cc5314b59fce88cca864328251364ef8f4ed62995ce77100a703d'
+$revision = '1d8fc2570dc51eed259389df6ff4c807dada40ea'
+$expectedArchiveHash = '0dc2e656c96085cfc88cf5378a951c136b4f49506184bc9b61a71bcb4347adb2'
 $labRoot = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..\..'))
 $Bundle = [IO.Path]::GetFullPath($Bundle)
 if (-not $SourceDirectory) { $SourceDirectory = "$Bundle-source" }
