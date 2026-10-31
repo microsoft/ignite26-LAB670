@@ -17,8 +17,8 @@ product instructions and actual redacted screenshots. The lab delegates setup
 to the public implementation rather than copying its runtime.
 
 The wrapper pins commit
-`06a15f2c8f83123d311826d5d5198df1cf4383b4` and archive SHA256
-`1d2dd152e1531ebf21016b8e4fb9fc4dd1918048479fc299c879bda8f03060ea`.
+`f49fee49b77dd1b4c19e7be0aba89c6ce4a2a330` and archive SHA256
+`53025ed29c2cc5314b59fce88cca864328251364ef8f4ed62995ce77100a703d`.
 It verifies the archive and every extracted source byte before executing it.
 An archive-generation change fails closed and requires a reviewed checksum/pin
 update; never bypass the check or silently follow `main`.
@@ -158,5 +158,5 @@ source reads and fresh learner/custom-harness consumption pass independently.
 The 10-20 minute warm-setup target is unverified and can be exceeded by startup,
 hundreds of API calls, licensing/indexing and preview admission.
 
-See the public [operator guide](https://github.com/santhoshravindran7/zava-enterprise-context/blob/06a15f2c8f83123d311826d5d5198df1cf4383b4/docs/operations.md)
+See the public [operator guide](https://github.com/santhoshravindran7/zava-enterprise-context/blob/f49fee49b77dd1b4c19e7be0aba89c6ce4a2a330/docs/operations.md)
 for exact manual alternatives, recovery, privilege intent and private evidence.
