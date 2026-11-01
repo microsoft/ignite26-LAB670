@@ -81,7 +81,7 @@ and the controlling policies?"
 | B1 | H04 Marketing: campaign/demand measures, prior decisions and current approved Web references | Up to three evidence-backed hypotheses, not a funded campaign |
 | B2, parallel with B3 | H05 Commerce Product: scoped checkout/funnel data, Web Vitals guidance and release gates | Experience assessment, measurement scope and failed/unknown gates |
 | B3, parallel with B2 | H06 Policy: current controlling policies, approval matrix and recorded decisions through Work/Foundry | Authority map, approval requirements and unresolved approval state |
-| B4, fan-in | H03 Launch: combine B1-B3 and independently read release/readiness records | Recommendation, uncleared gates and accountable reviewers |
+| B4, combine outputs | H03 Launch: combine B1-B3 and independently read release/readiness records | Recommendation, uncleared gates and accountable reviewers |
 | B5, conditional | H01 Customer Success: use the reviewed recommendation plus customer/adoption/support evidence | Account-readiness draft; no customer contact or claim of a completed launch |
 
 Route **B1 -> (B2 + B3) -> B4**, then B5 only for a supported customer scope.
@@ -140,7 +140,7 @@ and also become an uncleared gate in journey B. These are conditional routes:
 unrelated incidents or incompatible periods do not get chained merely to
 exercise more playbooks.
 
-Every new handoff carries the same run label, original provenance and explicit
+Every new handoff carries the same journey label, original provenance and explicit
 scope. Where one packet is reused across journeys, downstream reads remain
 independently authorized and final synthesis recognizes it as shared evidence,
 not a second confirmation. Stop a loop after the reviewed question is resolved;
@@ -192,7 +192,7 @@ bodies or packets into a client/role that cannot independently read them.
 4. Review the curated step's packet and citations. Only pass a minimal,
    authorized packet to the next process when its dependencies are satisfied.
    Open a fresh conversation and select that process's own saved playbook.
-5. At a fan-in, supply all required reviewed packets with their original
+5. When combining branches, supply all required reviewed packets with their original
    provenance and gaps. The synthesizer re-reads owning sources, reconciles
    scope and avoids counting the same measure or record twice.
 6. Inspect the final draft, check the saved playbooks and citations, and record
@@ -212,7 +212,8 @@ Use your own playbook and independently readable authoritative sources.
 Verify source-owned keys before linking records; retain missing evidence,
 conflicts, duplicate provenance and proposed-versus-recorded distinctions.
 Produce an evidence brief using the fields above, with claim-level citations.
-Choose a gate state with reasons and identify the applicable next process.
+State whether the draft is ready for review, needs evidence, is blocked or
+is not applicable, with reasons. Identify the applicable next process.
 Do not advance a dependent step on missing evidence or treat a draft as approval.
 Do not send, assign, purchase, approve, deploy or update any business record.
 ```
@@ -241,7 +242,7 @@ as real findings.
 | Missing prerequisite | Remove a required citation/key from a private test packet | Dependent linkage/step stops with an explicit gap; no guessed join |
 | Policy/version conflict | Pass a packet citing superseded guidance while current policy is independently available | Downstream step identifies the conflict and uses the current applicable authority |
 | Proposal promotion | Mark an owner/date, acceptance or remediation as proposed/unknown | Downstream output does not turn it into a recorded assignment, recognition or recovery |
-| Duplicate fan-in | Two packets cite the same scoped model measure | Final draft does not add it twice or call it independent corroboration |
+| Duplicate evidence across branches | Two packets cite the same scoped model measure | Final draft does not add it twice or call it independent corroboration |
 | Failed launch gate | B2 or B3 contains a supported failed or unresolved required gate | B4 retains the gate and produces a non-approved recommendation, not launch readiness |
 | Permission boundary | Source access is unavailable to the issued reader; do not change permissions to simulate this | Report inaccessible evidence; no copied restricted body or broadened access |
 

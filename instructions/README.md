@@ -48,8 +48,8 @@ and clear guidance.
 Think of your playbook as the process's **working guide**, not a saved monthly
 answer: when to use it, which sources own which questions, how to resolve
 conflicts, what to produce and which actions require human approval. A
-Copilot or custom-agent client applies the saved context, while the underlying
-providers still supply the actual evidence and current data.
+supported agent client uses the saved context, while the underlying providers
+still supply the actual evidence and current data.
 
 | Concept | What it means for your Zava workday |
 |---|---|
@@ -91,6 +91,16 @@ guidance steps first. Return to source selection and the S01/S03 comparison
 when the sources are available. An empty playbook is not evidence for Zava's
 business results.
 
+### Choose your path
+
+| What you have | Follow this path | What you finish with |
+|---|---|---|
+| Microsoft IQ, Zava sources and Copilot with playbook selection | S01 -> S02 -> S03 -> S04 -> S05 | Two saved process playbooks, an evidence-based comparison, an internal draft and a connected-process design |
+| Microsoft IQ, but sources or Copilot playbook selection are not yet available | S02 name/guidance/save -> S04 second playbook -> S05 design | Two saved playbooks and a connected-process design; add sources and test answers later |
+
+You do not need all twelve process playbooks. The guided lab uses the MBR
+and **one** specialist process. The other recipes are optional extensions.
+
 ## Agenda
 
 | Part | Proposed time | What you accomplish |
@@ -116,7 +126,7 @@ find them.
 
 | Item | What to find |
 |---|---|
-| Microsoft IQ | Playbook list and Create a playbook |
+| Microsoft IQ | Playbook list and New playbook or Create |
 | Lab workspace | Where you will save your own playbooks |
 | Learner prefix | A prefix such as your first name to distinguish your drafts |
 | Copilot | A fresh conversation for each comparison |
@@ -178,9 +188,14 @@ Inspect the response:
 Follow [Create your first playbook](zava-business-playbooks.md#create-your-first-playbook).
 Use your learner prefix and select the lab workspace. Keep membership unchanged.
 
-Set its purpose to preparing an internal MBR, its audience to business-review analysts and managers, and its avoid conditions to unrelated periods/accounts, external communications and consequential actions.
+In the description and guidance, explain that this playbook prepares an
+internal MBR for business-review analysts and managers. This describes the
+business audience; it does not require inviting anyone or changing access.
 
-Use the [complete common and MBR guidance](zava-business-playbooks.md#common-guidance-include-in-every-candidate). Keep monthly numeric answers out of reusable guidance.
+Copy the [common guidance](zava-business-playbooks.md#common-guidance-include-in-every-candidate),
+then add the [MBR process guidance](zava-business-playbooks.md#monthly-business-review).
+Save and reopen your playbook before selecting sources. Keep monthly numeric
+answers out of reusable guidance.
 
 ### 2. Curate evidence, not a folder dump
 
@@ -194,7 +209,7 @@ available files are background context, not a requirement to attach everything.
 | Fabric IQ reports/models | The issued Finance report/model for financial measures; Commercial for bookings/deferral; Operations for fulfillment/freight | The source that owns each quantitative question |
 | Fabric data agent | The review agent using the relevant models | An analytical route whose underlying sources you can check |
 | Fabric ontology | Relevant batch, supplier, period and recovery-task relationships | Investigation context, not proof of cause or a second financial total |
-| Web IQ | Issued current synthetic HTTPS market bulletin | External context and publication freshness, not Zava's shipment cause |
+| Web IQ | Current Zava market bulletin | External context and publication freshness, not Zava's shipment cause |
 | Foundry IQ | Current-policy collection and relevant operations/commitment knowledge sources | Retrieved policy passages and supporting evidence with versions |
 | Business connectors | Relevant Salesforce opportunities, Asana recovery tasks and ServiceNow incidents | Recorded business-system state rather than commentary |
 
@@ -220,9 +235,13 @@ For repeated policies or meeting copies, identify the source family, version and
 
 ### 4. Add reusable routing and output guidance
 
-Specify the reporting scope; full-body/source-version checks; which provider owns each question; analytical measures and filters; conflict/copy handling; and the internal-draft boundary.
+Review the guidance you saved in step 1. Check that it explains which source
+owns each question, how to handle conflicts and what the internal draft should
+contain. You do not need to write model queries yourself.
 
-For every selected reference, record: **task fit, owner/authority, version, business period, refresh, exact locator, permitted reader and duplicate family**. Never infer access from playbook membership or hierarchy.
+For each selected source, be able to explain **why it belongs, who owns it,
+whether it is current and whether it copies another source**. Use the source
+preview and metadata rather than its display name alone.
 
 ### 5. Review, save, leave and reopen
 
@@ -242,6 +261,10 @@ you rejected.
 Start a new conversation with the same learner account, Copilot settings and
 source access. Select or discover your saved playbook. Do not paste the baseline
 answer into this conversation.
+
+If Copilot does not offer a way to use your saved playbook, ask the instructor
+and continue with S04/S05's creation and design steps. Pasting guidance into a
+prompt is not the same as using the saved playbook.
 
 Submit the **same S01 prompt**. Check the cited source bodies, report/model
 lineage, measures and filters.
@@ -285,7 +308,7 @@ document draft.
 
 ## S04: Change your business hat
 
-### Change your business hat
+### Choose one specialist process
 
 The MBR raises a question needing deeper work. Choose one [persona scenario](zava-scenarios.md):
 operations, finance, sales, service, procurement or data stewardship. Alternatively,
@@ -298,21 +321,27 @@ permissions. Keep your learner account and use only sources you can access.
 
 Create a **separate role-specific playbook with your learner prefix** instead
 of adding every specialist rule to the MBR. Read the matching
-[business-process recipe](zava-business-playbooks.md), preview its sources
-when available and review a curation proposal:
+[business-process recipe](zava-business-playbooks.md). Copy the common guidance
+and that process's guidance, then save and reopen it.
+
+When sources are available, preview the relevant evidence. You can ask
+Copilot for source-selection suggestions:
 
 ```text
-For my selected Zava business process, propose a curation diff: the question,
-sources to add or omit, exact source/model fit, authority and freshness,
-duplicate handling, output and action boundaries. Do not apply the proposal.
+For my selected Zava business process, suggest sources to include or leave out.
+Explain which question each source answers, whether it is current and whether
+it duplicates another source. Use only sources you can read. Do not change
+the playbook or any business record.
 Separate a proposed owner/date from recorded business-system state.
 ```
 
-Accept, omit or defer each suggestion in your own draft. Save and reopen it,
+Review each suggestion before selecting context in your own playbook. Save and reopen it,
 then run the scenario prompt in a fresh conversation when the business sources
 are available. Review its business deliverable.
 
-**Checkpoint:** demonstrate a changed persona/question, a deliberately different source set, persisted guidance and a cited internal draft—not a source-system action.
+**Checkpoint:** show a second saved playbook with a different question and
+guidance. With sources available, show its focused source set and cited
+internal draft. Without sources, explain what evidence you will add later.
 
 <a id="s05-draft-a-work-iq-briefing"></a>
 
@@ -345,43 +374,71 @@ the human reviewer and a missing-evidence stop condition. State which sources
 the downstream process must independently read and how duplicate provenance
 survives final synthesis. Integration is more than two unrelated catalog entries.
 
+Use this template to keep the design short:
+
+```text
+Business request: [what a Zava colleague needs].
+First process: [name and purpose].
+Next process: [name and why it follows].
+Handoff: [supported findings, citations, scope and unresolved questions].
+Next process checks: [its own sources and the relevant record identifiers].
+Stop if: [the evidence needed for the next conclusion is missing].
+Human reviewer: [business role, not a new assignment].
+Output: internal draft only; no sends, record updates, purchases or deployment.
+```
+
 For a self-paced extension, [rehearse at least two steps with Copilot](zava-agent-factory.md#rehearse-the-chain-with-copilot)
 and run the integration checks. Use separate saved playbooks and user-reviewed
 packet handoffs in clean sessions. This additional rehearsal is outside the
 seven-minute design exercise. You guide the handoffs between conversations;
 saving playbooks alone does not automatically run a workflow.
 
-Do not create schedules, deploy agents or mutate systems during this exercise. Any operational automation needs its own exact targets, permission/cost plan and explicit approval.
+This exercise ends with a reviewed draft and a process design. Do not create
+schedules, deploy agents or change business records. Future implementation
+must follow Zava's normal approval and access controls.
 
 ## Provider concepts
 
 Provider concepts are exercised through business questions, not a separate connection/setup tour. Work IQ owns workplace intent and decisions; Fabric models own quantitative measures; data agents expose an analytical route; ontologies expose relationships; Web IQ supplies external context; Foundry IQ retrieves knowledge passages; business connectors own recorded state.
 
-Preserve source permissions and RLS/CLS/OLS. A role change, playbook share, agent route or duplicated report does not grant access or create independent evidence.
+Use only sources your learner account can read. Changing business hats or
+sharing a playbook does not grant source access or make a copied report
+independent evidence.
 
 ## Safe recovery and troubleshooting
 
 | Problem | Safe response |
 |---|---|
-| Provisioned source or client is unavailable | Contact the instructor; participants do not hydrate or buy services |
+| A source or Copilot is unavailable | Finish the playbook guidance and process design; ask the instructor before testing |
+| Copilot has no playbook selection option | Ask the instructor; do not present pasted guidance as use of the saved playbook |
+| The optional cover cannot be saved | Skip the cover and continue; it does not affect the business guidance |
 | Reports share a title or lineage is unclear | Inspect issued ownership/model/period metadata; defer selection if unresolved |
 | A source is stale, duplicated or superseded | Retain provenance and current authority; do not count copies as independent facts |
 | A body, model or connector is inaccessible | Record the gap; do not broaden permissions or copy another user's data |
 | Save/reopen does not match the reviewed draft | Record the difference and stop before claiming persistence |
 | An answer has no usable source citations | Ask for supporting evidence and retain the gap |
-| Word/Rayfin output is unavailable | Keep a structured draft and explicitly label the missing artifact |
+| Document or app creation is unavailable | Keep structured document content; do not claim a file or app was created |
 
 If reopening or retrying once does not help, ask the instructor. Keep your
 account, source access and business records unchanged.
 
 ## Debrief and finish
 
-- [ ] Captured the baseline without forcing a poor answer.
-- [ ] Selected current sources and disambiguated same-named reports by lineage, owner and scope.
-- [ ] Saved/reopened the MBR playbook and inspected complete guidance/references.
-- [ ] Repeated the same prompt in a clean session and compared actual evidence.
-- [ ] Reviewed a document or explicitly labelled unavailable artifact.
-- [ ] Curated one different persona/process without changing access.
-- [ ] Connected two approval-bounded processes with an evidence packet, dependency and stop condition; deployed no autonomous actions.
+**Everyone:**
 
-Leave business records and shared sources unchanged. Retain only approved, redacted evidence. Report completed, blocked and unverified capabilities separately.
+- [ ] Saved and reopened the MBR playbook with common and process guidance.
+- [ ] Created one specialist playbook without changing account or access.
+- [ ] Designed a two-process handoff with a human reviewer and a missing-evidence stop condition.
+
+**With sources and Copilot playbook selection available:**
+
+- [ ] Captured the baseline without forcing a poor answer.
+- [ ] Selected current sources and resolved same-named reports and copies.
+- [ ] Repeated the same prompt in a fresh conversation using the saved playbook.
+- [ ] Compared citations, reconciliations, gaps and safety—not just writing style.
+- [ ] Reviewed the internal document draft or structured content.
+
+Tell your manager what improved, what stayed the same and what still needs
+evidence. If you followed the creation-only path, show the two playbooks and
+design instead of claiming a business answer was tested. Leave business records
+and shared sources unchanged.

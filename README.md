@@ -25,7 +25,7 @@ review, rather than paste the whole enterprise into each prompt.
 The agent still reads sources you can access to produce current, grounded
 output; a playbook is neither a frozen answer nor a permission grant.
 
-[Read the one-minute introduction](instructions/README.md#first-what-is-microsoft-iq),
+[Read the introduction](instructions/README.md#first-what-is-microsoft-iq),
 then follow Zava's workday from a manager's request through curation,
 save/reopen, document drafting and specialist business processes.
 
@@ -76,14 +76,15 @@ By the end of this session, you will be able to:
 - Create and reopen a governed Microsoft IQ playbook.
 - Curate sources and guidance with explicit scope and human review.
 - Disambiguate duplicate files and same-named reports using authority, lineage, scope and freshness.
-- Produce a cited internal MBR document or an admitted read-only app draft.
+- Produce a cited internal MBR document or a private read-only app draft, if supported.
 - Curate role-specific processes over Work, Web, Fabric, Foundry and business-connector context.
 - Design governed, human-reviewed business automation without blanket write access.
 - Connect business processes through evidence handoffs, conditional branches and explicit stop conditions.
 
 ### One company, multiple business processes
 
-**Zava is the only named fictional company.** Customer and supplier identifiers are anonymized; Finance, Commercial and Operations are business functions, not other companies. Existing storage paths and stable source keys are technical identifiers.
+Zava's teams share one enterprise but answer different business questions.
+Customer and supplier records use anonymous identifiers in this fictional story.
 
 [Persona scenarios](instructions/zava-scenarios.md) and
 [business-process recipes](instructions/zava-business-playbooks.md) cover MBR,

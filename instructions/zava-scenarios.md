@@ -16,7 +16,9 @@ The analyst begins with a broad MBR. Each exception then becomes a focused proce
 
 ## Persona rotations
 
-The named colleagues are fictional story roles, not credentials. You keep your issued identity and authorized source scope. A role switch requiring different access needs a separately issued account and clean session; it never authorizes copying another user's context.
+The named colleagues are fictional story roles, not accounts to sign in with.
+Keep your learner account when changing business hats and use only sources
+you can read.
 
 | Scenario / business hat | Request you receive | Relevant context | Draft deliverable / automation boundary |
 |---|---|---|---|
@@ -46,10 +48,9 @@ To test it with Copilot, use its relevant datasets and policies when available.
 | H06: Controlling policy and accountable owner | Work and Foundry | Applicable approvals, current authority and final decision owner |
 | H07: Checkout incident investigation and operational brief | Work, Fabric, Foundry and ServiceNow/Azure DevOps/Asana | Recorded state, measured impact, related changes and unresolved hypotheses |
 
-This preserves the hero coverage: Work 7/7, Fabric 6/7, Foundry 4/7, Web 3/7
-and connectors 3/7. Extra sources can be reviewed enrichment, not an excuse
-to call unrelated providers. Do not query Fabric merely because H06 concerns
-a business process: the controlling-policy question belongs to Work/Foundry.
+Use the sources that answer your question rather than every provider.
+For example, H06's controlling-policy question belongs to Work/Foundry;
+it does not need a financial-model query.
 
 Each process needs its own evidence: adoption data for customer reviews,
 campaign data for campaign decisions, checkout measurements for experience
@@ -100,18 +101,20 @@ sequence; deployment is not a participant task.
 | Handoff | Proposed next steps mapped to human roles | Accept/reject separately; no business-system mutation in this lab |
 | Evaluation and maintenance | Prompt, source versions, saved guidance, grounding checks and owner | Revalidate after source/version/permission changes |
 
-Potential future event or scheduled triggers, incident updates, CRM changes, task assignments, purchases and app deployment are **design proposals only**. Each would need exact targets, least-privilege authorization, cost/notification consequences and separate human approval. Do not create them as part of the lab.
+Event or scheduled triggers, incident updates, CRM changes, task assignments,
+purchases and app deployment are **design proposals only**. They belong to
+a separately approved implementation, not this lab.
 
 ## Provider coverage through business questions
 
 | Source route | Concrete question it owns | Do not confuse it with |
 |---|---|---|
-| Work IQ | What did the review request, policy discussion or meeting actually say? | A delivered email/Teams recording inferred from an archive |
-| Web IQ | Which issued publication is current? | Internal shipment cause or a local HTML file called a live URL |
+| Work IQ | What did the review request, policy discussion or meeting actually say? | A summary that has not been checked against the original |
+| Web IQ | Which publication is current? | Evidence of internal shipment cause |
 | Fabric semantic models | Which governed measure answers this scoped KPI question? | A report title, commentary, summed percentages or incompatible filters |
 | Fabric data agents | Which selected model/measure route was actually used? | Independent corroboration of the same model data |
 | Fabric ontology | Which batch, supplier, period and task keys connect? | Causality, authorization or an additional financial total |
-| Foundry IQ | Which retrieved passage/version supports this policy conclusion? | A Search index, project or connection that has not retrieved anything |
+| Foundry IQ | Which retrieved passage/version supports this policy conclusion? | A knowledge-source name without a supporting passage |
 | Salesforce / Asana / ServiceNow | What are the recorded opportunity/task/incident fields? | Proposed owners/dates, recognition, proven impact or approval to mutate |
 
 ## Finish
