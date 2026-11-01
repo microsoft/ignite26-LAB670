@@ -32,9 +32,7 @@ save/reopen, document drafting and specialist business processes.
 
 ### Session description
 
-Start your workday as a business analyst at Zava. Your manager needs a monthly business review, but decisions, duplicate files, similarly named reports, semantic models and business-system records are spread across the enterprise. Curate a Microsoft IQ playbook, save and reopen it, then use Copilot to prepare a grounded review document. Change business hats and design approval-bounded processes for Zava's agent factory.
-
-**Current state:** Content draft; native setup, target-build screenshots, and the proposed 75-minute timing still need validation.
+Get hands-on with Microsoft IQ and build an intelligence playbook that agents can use across your organization. Learn how to organize, govern, and publish business context from data, workflows, and knowledge sources. Explore how shared intelligence improves agent reasoning and discover how Microsoft IQ enables trusted context to be reused across Copilot, Agent 365, and custom AI applications.
 
 ### 🚀 Getting started
 
