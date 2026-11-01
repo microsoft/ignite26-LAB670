@@ -1,6 +1,6 @@
 # Zava's agent factory: connected business processes
 
-[Participant workbook](README.md) | [Process scenarios](zava-scenarios.md) | [Playbook curation recipes](zava-business-playbooks.md)
+[Lab guide](README.md) | [Process scenarios](zava-scenarios.md) | [Playbook curation recipes](zava-business-playbooks.md)
 
 **The MBR is one consumer of business work, not the whole agent factory.**
 Start with a sales commitment, supply exception, campaign opportunity or

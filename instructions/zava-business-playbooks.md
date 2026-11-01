@@ -1,6 +1,6 @@
 # Create playbooks for Zava's business processes
 
-[Participant workbook](README.md) | [Persona scenarios](zava-scenarios.md) | [Connected agent-factory journeys](zava-agent-factory.md)
+[Lab guide](README.md) | [Persona scenarios](zava-scenarios.md) | [Connected agent-factory journeys](zava-agent-factory.md)
 
 Choose a business process, create its playbook, add reusable guidance and test
 it with Copilot. For the guided lab, follow the
