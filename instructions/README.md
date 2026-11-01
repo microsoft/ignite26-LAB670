@@ -2,140 +2,281 @@
 
 ## First: what is Microsoft IQ?
 
-**Trusted agents need trusted context.** Microsoft IQ brings organizational
-intelligence together so agents can understand how employees work, how the
-business operates and the institutional knowledge behind its decisions. Its
-broader platform connects this context with agent capabilities and enterprise
-governance. This lab focuses on **Microsoft IQ context and playbooks**.
+Microsoft IQ connects workplace context, business data and institutional
+knowledge so agents can use the right sources for a business question.
+A **playbook** pairs selected sources with reusable guidance: when to use
+them, which questions they answer and what to produce.
 
-### Your enterprise intelligence, brought together
-
-| Context source | What it contributes | Example at Zava |
+| Context | What it answers | Zava example |
 |---|---|---|
-| Work IQ | How employees work: workplace conversations, meetings and files | Avery's MBR request, review decisions and the current policy document |
-| Fabric IQ | How the business operates: analytical data, semantic models and business relationships | Revenue/margin measures, fulfillment analysis, data agents and supplier/batch ontology |
-| Foundry IQ | Institutional knowledge from curated knowledge sources | Department knowledge and controlling policy passages |
-| Web IQ | Context from selected web references | Approved market bulletins or authoritative technical guidance |
-| Business connectors | Context from other business systems | Salesforce commitments, Asana recovery tasks, ServiceNow incidents and Azure DevOps release evidence |
+| Work IQ | What did people request, discuss or decide? | The manager's email, review charter and customer commitments |
+| Fabric IQ | What do the business measures show? | Revenue, margin, bookings, fulfillment and freight |
+| Foundry IQ | Which institutional knowledge or policy applies? | Recognition rules, expedite review and decision roles |
+| Business connectors | What state is recorded in business applications? | Salesforce opportunities, Asana tasks and ServiceNow incidents |
+| Web IQ | What external information provides useful context? | A market bulletin or authoritative technical guidance |
 
-These are complementary sources, not interchangeable answers. For example,
-a meeting can explain a commitment, but the financial model owns the revenue
-measure. Use the provider that owns each sub-question, not every provider for
-every prompt.
+A playbook is a working guide, not a saved answer or a permission grant.
+Choose the sources that own the question rather than attach everything.
 
-### Why agents need playbooks
+## Your challenge: save Zava's business review
 
-When a new employee joins Zava, a handbook, wiki or Teams site tells them where
-to find the information needed for their job. Agents need the same orientation.
-A **playbook** makes that routing explicit: *when you need to do this, use
-these sources and follow this guidance*.
+You are a business analyst at **Zava**, an equipment and replenishment-services
+enterprise. Your manager, Avery Chen, sends this request:
 
-Microsoft IQ playbooks provide a central place to **curate, discover and use
-organizational context** across agents and tools. They connect a business
-process to selected enterprise references and reusable guidance, rather than
-require every user to rediscover the right files, models and policies.
+> "The September business review is coming up. Sales says we had a strong
+> month, Operations is worried about fulfillment, and Finance wants us to
+> check recognition. Give me a review I can trust, then show how the teams
+> can reuse this work next time."
 
-For Zava's MBR: use the manager's request to establish intent, the authoritative
-Finance model for financial measures, Operations for fulfillment, and the
-current policy for decision rules. A similarly named archive report or a
-copied policy is not an equally good substitute.
+The evidence is scattered across emails, meetings, policies, reports and
+business applications. Several reports have the same name, **Zava MBR**.
+Some documents are copies; one policy is superseded. A confident answer
+can still use the wrong source.
 
-The broader playbook model includes hierarchical organization with inherited
-context, certification, sensitivity labeling, governance and auditability.
-These are product concepts, **not claims that every feature is available or
-verified in this lab build**. Use native hierarchy and governance controls only
-when supported and admitted; otherwise follow the explicitly reviewed flat
-composition in the workbook.
+You will solve six business challenges, get feedback from a Copilot judge,
+improve your playbooks and save a reusable Zava agent-factory catalog.
+The learning path introduces one kind of context at a time before combining it.
 
-Think of your playbook as the process's **context contract**, not a saved monthly
-answer: when to use it, which sources own which questions, how to resolve
-conflicts, what to produce and which actions require human approval. An admitted
-Copilot or custom-agent client applies the saved context, while the underlying
-providers still supply the actual evidence and current data.
+Use **September 2026, USD and business evidence effective by
+2026-10-06T18:00:00Z**. This is a fictional October review, not today's date.
+Keep source-refresh and actual retrieval times separate.
 
-| Concept | What it means for your Zava workday |
-|---|---|
-| Business process | Prepare an MBR, review a customer, assess a launch or investigate an incident |
-| Curated references | Deliberately selected documents, conversations, reports/models, knowledge and business records |
-| Reusable guidance | Scope, source routing, authority/freshness, reconciliations and draft-output boundaries |
-| Playbook consumption | Use the saved context through the issued supported client, then read authorized sources |
-| Human review | Verify citations, numbers, unresolved evidence and the actual document/app draft |
+## Your mission board
 
-A playbook does **not** grant permissions, turn copies into independent
-evidence, freeze current KPIs, or authorize sends and business-system changes.
-Supported curation and consumption routes vary by the issued build and
-admission. You will check what actually worked rather than assume integration
-from a convincing response.
+| Mission | Business problem | Context you curate | Deliverable |
+|---|---|---|---|
+| [1. Decode the request](#mission-1-decode-the-request-with-work-iq) | What does Avery actually need? | Work IQ | Review brief |
+| [2. Find the right numbers](#mission-2-find-the-right-numbers-with-fabric-iq) | Which reports and measures support the story? | Fabric IQ | Scoped KPI evidence |
+| [3. Resolve the policy](#mission-3-resolve-the-policy-with-foundry-iq) | What can Zava conclude or approve? | Foundry IQ | Policy and review-role checklist |
+| [4. Build the MBR](#mission-4-combine-work-fabric-and-foundry-iq) | Can you turn the scattered evidence into a decision-ready review? | Work + Fabric + Foundry IQ | Internal MBR document |
+| [5. Check commitments](#mission-5-check-commitments-with-work-iq-and-salesforce) | What can Sales substantiate before a handoff? | Work IQ + Salesforce | Commitment-risk brief |
+| [6. Investigate recovery](#mission-6-investigate-recovery-with-iq-and-business-connectors) | What is known, proposed or still missing? | Work + Fabric + Foundry IQ + business connectors | Operations/recovery brief |
+| [7. Publish your factory](#mission-7-publish-your-zava-agent-factory) | How will the teams reuse your playbooks together? | Your six saved playbooks | Saved process catalog and a reviewed handoff |
 
-Now put this into practice: start your Zava workday, ask Copilot, curate your
-first MBR playbook, save/reopen it, then ask again and inspect the deliverable.
-
-## Your workday at Zava
-
-You are a business analyst at **Zava**, a fictional equipment and replenishment-services enterprise. You support Avery Chen, the Commercial Director. Zava has grown faster than its information architecture: decisions sit in email and meetings, policies in SharePoint, performance in dashboards and semantic models, supplier relationships in an ontology, and execution state in business applications.
-
-Your manager asks:
-
-> "Our monthly business review is coming up. Prepare a decision-ready September review: how are revenue, margin and fulfillment tracking, which commitments are at risk, and what should we investigate next? Give me a cited draft I can review, not another collection of dashboard links."
-
-The lab's fictional review takes place in October 2026. Use September 2026, USD and the business-content cutoff **2026-10-06T18:00:00Z**. These are scenario dates, not your real clock or a calendar invitation. Preserve actual retrieval and source-refresh times separately.
-
-Zava has hundreds of files and meeting/email records, twenty analytical model definitions, multiple reporting perspectives, three knowledge collections, and third-party business records. The provisioned lab should expose approved reports and dashboards over those models. Some files are copies; some policies are superseded; several reports intentionally share the display name **Zava MBR**. A title alone cannot tell you which one owns a financial claim.
-
-**You start as a Zava user in a prepared environment. You do not generate, upload, hydrate or deploy context.** The provisioning team completes those tasks before the lab. Your work is to curate useful context, save a playbook and use it to produce a grounded business deliverable.
-
-**Validation status:** the journey and source definitions are implemented. Actual tenant hydration, report/dashboard admission, native curation, source reads, Copilot outputs and target-build screenshots require rehearsal. A prepared environment is a delivery prerequisite, not a claim that it has already been verified.
-
-## Agenda
-
-| Part | Proposed time | What you accomplish |
-|---|---|---|
-| [Start your day](#orientation-and-setup) | 5 minutes | Confirm your issued user, client and ready sources |
-| [S01: Ask Copilot before curation](#s01-baseline-and-context-gaps) | 8 minutes | Observe the answer and its evidence gaps |
-| [S02: Curate your MBR playbook](#s02-create-and-curate-your-first-playbook) | 22 minutes | Choose authoritative cross-estate context, save and reopen |
-| [S03: Ask again and build your deliverable](#s03-scope-and-guidance-composition) | 15 minutes | Compare grounded output in a clean session |
-| [S04: Change your business hat](#s04-review-a-curation-proposal) | 15 minutes | Curate one role-specific process |
-| [S05: Design Zava's agent factory](#s05-draft-a-work-iq-briefing) | 7 minutes | Package repeatable, approval-bounded business work |
-| [Debrief](#debrief-and-finish) | 3 minutes | Show evidence, gaps and no-action boundaries |
-
-The 75-minute schedule is proposed and unrehearsed. Additional persona scenarios are self-paced extensions, not all mandatory within that time.
+Allow about **90 minutes**: 5 to start, about 10 for each specialist mission,
+15 for the combined MBR, 10 for the factory and 10 for feedback and debrief.
+Additional customer, campaign, checkout and launch scenarios are
+[optional extensions](zava-scenarios.md#hero-scenario-pathways).
 
 ## Orientation and setup
 
-### What should already be ready
+Open Microsoft IQ and Copilot from the lab links using your learner account.
+Find the lab workspace and source list. Choose a prefix, such as `Alex`, for
+your playbook names; do not type the brackets in `<your-prefix>`.
 
-Sign in using the issued learner identity and open the issued Copilot and Microsoft IQ clients. The instructor gives you a **learner-safe source card**, not an administrator runbook or private deployment report.
+**Your boundary:** create your own playbooks and internal drafts. Keep
+membership and source permissions unchanged. Do not send messages, assign
+tasks, change business records, buy services or deploy applications.
 
-| Issued item | Your readiness check |
-|---|---|
-| Zava identity and approved client | Confirm your own account and admitted target build |
-| Private authoring location and learner namespace | Confirm where you may create drafts without sharing or changing permissions |
-| Work sources | Open the current review request/policy and an admitted email or meeting source |
-| Reporting catalog | Find the issued reports, their owning workspaces and underlying semantic models |
-| Fabric data agents and ontology | Confirm the assigned published agent and readable, refreshed relationship source |
-| Web and Foundry IQ | Confirm issued HTTPS references and admitted knowledge-retrieval connections |
-| Business connectors | Confirm read-only Salesforce, Asana and ServiceNow references, where admitted |
-| Source card and support | Check authority, business period, freshness, exact locator and permitted reader for each source |
+If a mission's sources or Copilot playbook selection are unavailable, create
+its name, description and guidance, then move on to the next available
+mission. Return to testing later. The judge cannot verify business answers
+without the relevant evidence.
 
-If a lane is missing, contact the instructor. Do not install clients, create tenants, upload archives, consent to plugins, buy capacity or run hydration scripts. An explicitly labelled manual source-reading lane can support a partial rehearsal; it is not proof of native provider retrieval.
+### The six steps you repeat
 
-### What you are building
+1. **Create.** Open **New playbook** or **Create** in Microsoft IQ. Enter
+   the mission's name and description. Select the existing lab workspace
+   under **Where this playbook lives**. Leave **Add members and curators**
+   unchanged. Select **Create**.
+2. **Guide.** Add the [common guidance](zava-business-playbooks.md#common-guidance-include-in-every-candidate)
+   and the mission's guidance block below. The business question is the test
+   prompt, not the reusable guidance.
+3. **Curate.** Open the add-context control. Search for the mission's sources,
+   preview the actual content and metadata, select the relevant references
+   and review the selection. Follow the provider-specific checks in each
+   mission. Ask for help if you cannot identify the intended source.
+4. **Save and reopen.** Save, return to the list and reopen your playbook.
+   Check the description, complete guidance and selected references.
+5. **Solve.** Open a fresh Copilot conversation, select or discover the saved
+   playbook and submit the mission's question. Open the cited sources and
+   inspect the result. If your client cannot select the playbook, ask the
+   instructor; pasted guidance is not the same as using the saved item.
+6. **Judge and improve.** Use the [Copilot judge](zava-copilot-judge.md).
+   Review its feedback, change your own guidance or source selection where
+   needed, save/reopen and try the same question in another fresh conversation.
 
-A playbook records **when a process applies, which sources own which questions, how to reconcile evidence, and what output/actions are allowed**. It is not a frozen monthly answer or an access grant.
+The [creation guide](zava-business-playbooks.md#create-your-first-playbook)
+includes the field examples and optional Zava cover.
 
-Your first draft is `<your-namespace> Zava Monthly Business Review`, with Overview, Evidence and Review Output sections if the issued UI supports sections. Use an explicitly reviewed flat composition if it does not; do not invent native inheritance.
+### Keep a mission scorecard
 
-Use only authorized Zava synthetic sources. Do not attach this implementation repository, source-generator code, manifests, private tenant configuration, instructor answers or another role's restricted fixtures to the consuming agent. Operational files under `infra` and source fixtures under `data` are for the provisioning team; they are not a shortcut around native reads.
+Record this privately. Leave scores blank until the judge has checked evidence.
 
-All business outputs are **internal drafts**. Do not send, invite, assign, purchase, approve spend, alter accounting entries, close incidents, update CRM/task records, publish apps, change permissions or delete resources.
+| Mission | Saved playbook | Draft reviewed? | Judge score or evidence gap | Change for next attempt |
+|---|---|---|---|---|
+| 1: Work IQ | | | | |
+| 2: Fabric IQ | | | | |
+| 3: Foundry IQ | | | | |
+| 4: Combined MBR | | | | |
+| 5: Commitments | | | | |
+| 6: Recovery | | | | |
+
+Aim for **80/100 or better**, with evidence verified and no critical issue.
+This is a classroom practice target, not certification. A missing-source
+result is **needs evidence**, not a passing score. Do not force a poor
+baseline or manufacture improvement.
 
 <a id="s01-baseline-and-context-gaps"></a>
 
-## S01: Ask Copilot before curation
+## Mission 1: Decode the request with Work IQ
 
-### Ask Copilot as you start your day
+**Business problem:** Avery needs a decision brief, but email opinions,
+meeting notes and proposed actions are being mixed together.
 
-Use a clean conversation and submit this prompt. Save the response privately, including any citations and disclosed source gaps.
+Before creating this playbook, ask the business question below once in a
+fresh Copilot conversation and keep the response as your baseline. Then
+create, curate and select the saved playbook and ask the same question in
+another fresh conversation, keeping the account, tools and source access fixed.
+
+| Creation field | Enter |
+|---|---|
+| Name | `<your-prefix> Zava Review Brief` |
+| Description | Clarify the review request, recorded decisions, open questions and business reviewer roles. |
+
+**Curate Work IQ:**
+
+1. Find Avery's current review request and the commercial review charter.
+2. Preview relevant sales, operations, Finance and customer-commitment
+   discussions. Read the messages or documents, not just search summaries.
+3. Check who wrote each source, its date and whether it records a decision,
+   an opinion or a proposal. Omit unrelated conversations and duplicate copies.
+4. Keep this first playbook focused on workplace evidence. Do not use an
+   email's headline as the authoritative financial number.
+
+Add this mission guidance after the common guidance:
+
+```text
+Clarify Avery's review request from workplace evidence. Identify recorded
+decisions, opinions, unresolved questions and reviewer roles. Use source
+dates and authors to explain conflicts. Do not turn a proposal into an
+assignment or an email's sales claim into a Finance result. Produce a short
+review brief and identify which questions need financial or policy evidence.
+```
+
+```text
+What does Avery need for Zava's September 2026 review? Prepare an internal
+brief with the business question, recorded decisions, conflicting opinions,
+open evidence questions and reviewer roles. Cite the workplace sources.
+Do not send messages, assign work or treat email commentary as financial proof.
+```
+
+**Submit to the judge:** the brief, source citations and this mission's request.
+Ask it to check decisions versus proposals, relevant source selection and
+whether the brief correctly identifies questions Work IQ alone cannot settle.
+
+## Mission 2: Find the right numbers with Fabric IQ
+
+**Business problem:** three reports say **Zava MBR**, but they do not answer
+the same questions. Sales bookings and Finance revenue are not interchangeable.
+
+| Creation field | Enter |
+|---|---|
+| Name | `<your-prefix> Zava Performance Review` |
+| Description | Reconcile financial, commercial and fulfillment measures under a consistent reporting scope. |
+
+**Curate Fabric IQ:**
+
+1. Search for the issued Zava reports and semantic models.
+2. For each **Zava MBR** result, preview its workspace, owner, underlying
+   model, reporting period, currency and refresh. Do not pick the first title match.
+3. Select Finance for recognized revenue/margin, Commercial for
+   bookings/deferral and Operations for fulfillment/freight.
+4. Leave the archive report out of current-authority selection. Inspect
+   the selected measures, definitions and filters; let Copilot perform the
+   supported query rather than writing one yourself.
+5. If you use a data agent, check its underlying model route. It is not
+   independent confirmation of the same numbers.
+
+```text
+Use the exact Finance, Commercial and Operations models for their own
+measures. Preserve September 2026, USD and Actual/Budget scope. Inspect
+definitions, model instructions and filters before querying. Separate
+bookings, deferral and recognized revenue. Reconcile fulfillment and freight
+without double counting costs or averaging percentages. Report unavailable
+measures and incompatible scope rather than inventing a result.
+```
+
+```text
+Prepare Zava's September 2026 KPI evidence table in USD. Compare September
+Actual with September Budget where supported. Reconcile bookings, recognized
+revenue, gross profit/margin, fulfillment and freight. Identify the exact
+report/model and measure behind each result, include filters and refresh,
+and explain why similarly named reports are not interchangeable.
+Keep the output an internal draft; do not alter models or records.
+```
+
+**Submit to the judge:** the table, citations and query/result evidence exposed
+by your client. Ask it to check model choice, units, scope, reconciliation
+and numbers against independently readable evidence.
+
+## Mission 3: Resolve the policy with Foundry IQ
+
+**Business problem:** a current policy and a superseded procedure disagree.
+Which one governs the October review, and what evidence or review is needed?
+
+| Creation field | Enter |
+|---|---|
+| Name | `<your-prefix> Zava Policy Review` |
+| Description | Identify current recognition and expedite rules, required evidence and decision roles. |
+
+**Curate Foundry IQ:**
+
+1. Find the issued policy knowledge source. Select it through the lab's
+   context picker; participants do not create an index or connect a service.
+2. Retrieve and inspect the relevant policy passages and their underlying
+   source/version. Prefer current **DOC-03 version 2**, effective October 1,
+   for the October review.
+3. Inspect superseded **DOC-02** only to explain the conflict. Label it
+   historical if you keep it for comparison.
+4. Check scope and effective dates. A knowledge-source name alone does not
+   establish what the policy says.
+
+```text
+Resolve recognition and expedite questions from applicable policy passages.
+Check source identity, version, effective date and scope. Distinguish
+current DOC-03 from superseded DOC-02 without assuming retroactive effect.
+Explain required evidence, review conditions and accountable roles.
+Do not treat a sales stage as customer acceptance, a named role as an
+assignment, or a policy passage as a recorded approval.
+```
+
+```text
+For Zava's October review of September 2026, which recognition and expedite
+rules apply? Explain the current policy, required evidence, review conditions
+and decision roles. Cite the supporting passages and identify what the
+superseded procedure cannot establish. Do not approve recognition or spending.
+```
+
+**Submit to the judge:** the checklist and policy citations. Ask it to verify
+authority, effective date, conditions and roles without supplying an answer key.
+
+<a id="s02-create-and-curate-your-first-playbook"></a>
+<a id="s03-scope-and-guidance-composition"></a>
+
+## Mission 4: Combine Work, Fabric and Foundry IQ
+
+**Business problem:** Avery does not want three disconnected answers.
+Prepare one review that connects decisions, business measures and policy.
+
+| Creation field | Enter |
+|---|---|
+| Name | `<your-prefix> Zava Monthly Business Review` |
+| Description | Prepare a cited internal review of performance, commitments, exceptions and decisions needing human review. |
+
+**Combine the context:**
+
+1. Create a new MBR playbook rather than overwrite a specialist playbook.
+2. Add the relevant Work references from Mission 1, exact model/report
+   references from Mission 2 and policy knowledge from Mission 3.
+3. Review the combined selection. Shared references are still one source,
+   not three independent confirmations.
+4. Add the common guidance and the
+   [MBR process guidance](zava-business-playbooks.md#monthly-business-review).
+   Save and reopen. Check that all three context types and the guidance remain.
+5. Use the same business question below in fresh baseline and playbook
+   conversations. Keep account, tools, source versions and access fixed.
+   Do not paste a previous answer as a substitute for source evidence.
 
 ```text
 I am preparing Zava's September 2026 monthly business review for my manager.
@@ -145,194 +286,187 @@ identify exceptions and missing evidence, and propose role-based next steps.
 Do not send, approve, assign, publish or update any business record.
 ```
 
-Do not force Copilot to fail. It may already give a good answer. Keep the same tools and source permissions enabled before and after curation.
-
-Inspect the response:
-
-| Question | What to record |
-|---|---|
-| Which files and conversations supported the narrative? | Actual sources read, not plausible document titles |
-| Which **Zava MBR** report was used? | Exact report, workspace, model lineage, audience and reporting period |
-| Were repeated files treated as separate evidence? | Same-source copies and alternate formats, not an inflated corroboration count |
-| Was the policy current? | DOC-03 version 2 versus superseded DOC-02 |
-| Were metrics comparable? | Actual/Budget, account, period, currency and measure definitions |
-| What could not be verified? | Missing permissions, stale refresh, unavailable providers or unknown tool traces |
-
-**Checkpoint:** explain what the answer supports and what it does not. "It sounds convincing" is not a source-selection test. Do not infer tool execution from progress narration.
-
-<a id="s02-create-and-curate-your-first-playbook"></a>
-
-## S02: Curate your MBR playbook
-
-### 1. Define the business process
-
-Open your issued Microsoft IQ authoring location. Create your namespaced **Zava Monthly Business Review** draft. Confirm visibility before saving; creating a draft does not authorize organization-wide sharing.
-
-Set its purpose to preparing an internal MBR, its audience to business-review analysts and managers, and its avoid conditions to unrelated periods/accounts, external communications and consequential actions.
-
-Use the [complete common and MBR guidance](zava-business-playbooks.md#common-guidance-include-in-every-candidate). Keep monthly numeric answers out of reusable guidance.
-
-### 2. Curate evidence, not a folder dump
-
-Open the supported add-context/source picker. Search within the issued Zava scope, preview full sources, then select the **smallest relevant authoritative set**. Hundreds of available files are background context, not a requirement to attach everything.
-
-| Context | Select for this MBR | Why it belongs |
-|---|---|---|
-| Work IQ | Current review charter, manager request/decisions, current policy, relevant operating review and meeting/email evidence | Business intent, authority, disputed commitments and recorded decisions |
-| Fabric IQ reports/models | The issued Finance report/model for financial measures; Commercial for bookings/deferral; Operations for fulfillment/freight | The source that owns each quantitative question |
-| Fabric data agent | The published review agent whose selected sources match the admitted models | A supported analytical route with inspectable underlying provenance |
-| Fabric ontology | Relevant batch, supplier, period and recovery-task relationships | Investigation context, not proof of cause or a second financial total |
-| Web IQ | Issued current synthetic HTTPS market bulletin | External context and publication freshness, not Zava's shipment cause |
-| Foundry IQ | Current-policy collection and relevant operations/commitment knowledge sources | Retrieved policy passages and supporting evidence with versions |
-| Business connectors | Relevant Salesforce opportunities, Asana recovery tasks and ServiceNow incidents | Recorded business-system state rather than commentary |
-
-Do not attach an unavailable connection or label a local file as a live URL/agent. Ask support to admit the lane; keep the gap visible.
-
-### 3. Resolve identical report names and duplicate files
-
-For each result titled **Zava MBR**, inspect its workspace, business owner, audience, underlying model, definitions, reporting period, currency/scenario, refresh and authority. The provisioned source card should distinguish:
-
-| Same display title | Intended use | Curation decision |
-|---|---|---|
-| Zava MBR in the approved Finance scope | Finance Actual/Budget, recognized revenue and profit | Select for financial claims after lineage/schema checks |
-| Zava MBR in the approved Commercial scope | Bookings, opportunity state and deferral | Select for commercial questions; do not substitute for recognition |
-| Zava MBR in the archive scope | Prior period or superseded perspective | Do not use as current authority |
-
-These are provisioning requirements, not invented native workspace names or verified deployed reports. Use the exact issued bindings. If lineage is ambiguous, stop and resolve it rather than choosing the first search result.
-
-For repeated policies or meeting copies, identify the source family, version and effective date. Word, email, transcript and indexed copies of the same discussion are not independent corroboration. Preserve a historical source only when the task requires comparison and label it historical.
-
-### 4. Add reusable routing and output guidance
-
-Specify the reporting scope; full-body/source-version checks; which provider owns each question; analytical measures and filters; conflict/copy handling; and the internal-draft boundary.
-
-For every selected reference, record: **task fit, owner/authority, version, business period, refresh, exact locator, permitted reader and duplicate family**. Never infer access from playbook membership or hierarchy.
-
-### 5. Review, save, leave and reopen
-
-Review the complete reference basket and guidance before confirming. Save using the issued supported control, leave the item, reopen it and inspect the full persisted guidance and references. Check local versus inherited origins where the UI exposes them; placement alone does not establish inheritance.
-
-**Checkpoint:** show the saved MBR draft, why each source was chosen, which same-named report was rejected, and a visible source/provider gap if one exists. A proposal, screenshot or local Markdown file alone is not saved native state.
-
-See [the native screenshot checkpoints](zava-business-playbooks.md#msit-authoring-and-screenshot-checkpoints). Only actual, reviewed and redacted target-build captures belong in the guide.
-
-<a id="s03-scope-and-guidance-composition"></a>
-
-## S03: Use curated context for your deliverable
-
-### Ask again using the saved playbook
-
-Start a distinct clean conversation under the same issued identity and client/model configuration. Select or discover the saved playbook through the admitted supported path. Do not paste the baseline answer as hidden context.
-
-Submit the **same S01 prompt**. Inspect the actual playbook/guidance activation, cited source bodies, report/model lineage, measures and filters. Missing trace access remains unknown, not a successful retrieval event.
-
-Compare before and after:
-
-| Dimension | Evidence of a useful change |
-|---|---|
-| Source selection | Correct current policy and exact report/model route, not name matching |
-| Grounding | Claim-level citations that open and support the statement |
-| Reconciliation | Bookings separated from recognized revenue; compatible Actual/Budget comparisons |
-| Completeness | Work decisions, analytical exceptions and business-system state considered where admitted |
-| Uncertainty | Duplicate families, stale sources, missing acceptance and provider gaps remain visible |
-| Safety | No message, permission change, business-system mutation or publication occurred |
-
-Report unchanged quality or regressions honestly. One paired exercise is not a measured production uplift or a guarantee that curation always makes an answer correct.
-
-### Turn the answer into a review deliverable
-
-After the same-prompt comparison, ask:
+After comparing the answers, ask for the deliverable:
 
 ```text
-Using the reviewed Zava MBR evidence and saved playbook, prepare a manager-ready
-internal MBR document: executive summary, scope/as-of, KPI table with units and
-source references, exceptions, unresolved evidence, and proposed role-based
-next steps. Keep bookings separate from recognized revenue and hypotheses
-separate from proven causes. Create a Word draft if this client supports it;
-otherwise provide structured document content and state that no file was made.
-Do not send, publish, approve, assign or update records.
+Turn the reviewed MBR evidence into a manager-ready internal document:
+executive summary, scope/as-of, KPI table with units and source references,
+exceptions, conflicting or missing evidence, and proposed next steps.
+Keep bookings separate from recognized revenue and hypotheses from proven
+causes. Create a Word draft if supported; otherwise provide structured content
+and state that no file was created. Do not send, publish or update records.
 ```
 
-Open any actually created file and verify the contents, citations and numeric provenance. Do not accept a filename or download button as proof of a correct document.
+Open any actual file and check its contents. A download link alone does not
+prove that the document is correct. An optional private read-only app preview
+can use the same evidence if the client supports it; do not deploy or share it.
 
-**Optional Rayfin app output:** only if the issued client exposes that capability, request a private, read-only MBR app draft over the same admitted evidence. Require KPI provenance, freshness, units, gaps and no write-back or hard-coded invented values. Preview it without deployment or sharing. If unavailable, retain the document and record the app lane as blocked; an HTML mockup is not a tested Rayfin integration.
+**Submit to the judge:** the review and its evidence. Ask it to check whether
+Work, Fabric and Foundry each support the right claims. Compare evidence
+quality with the baseline, not just writing style.
 
 <a id="s04-review-a-curation-proposal"></a>
 
-## S04: Change your business hat
+## Mission 5: Check commitments with Work IQ and Salesforce
 
-### Change your business hat
+**Business problem:** a customer commitment looks promising, but a CRM stage
+does not prove delivery, acceptance or recognized revenue.
 
-The MBR raises a question needing deeper work. Choose one [persona scenario](zava-scenarios.md): operations, finance, sales, service, procurement or data stewardship.
+| Creation field | Enter |
+|---|---|
+| Name | `<your-prefix> Zava Sales Commitment Review` |
+| Description | Prepare an internal commitment-risk handoff from recorded opportunities and workplace evidence. |
 
-A persona changes the business question and guidance—not your real identity or permissions. Use the same learner account unless the instructor explicitly issues a separate role account and clean session. Do not borrow a fictional colleague's credentials or copy context across security boundaries.
+**Curate workplace and connector context:**
 
-Create a **separate namespaced role-specific playbook** instead of adding every specialist rule to the MBR. Read the matching [business-process recipe](zava-business-playbooks.md), preview its admitted references and review a curation proposal:
+1. Add the relevant customer-commitment documents and discussions through Work IQ.
+2. Find the issued Salesforce connection or its sources in the context picker.
+   Preview opportunity identity, stage, amount, currency and period.
+3. Select only records relevant to the question. Link a customer/opportunity
+   across sources only when the actual identifiers support it.
+4. If the connector is unavailable, leave it out and record the missing
+   evidence. Do not enable accounts, import records or substitute unrelated data.
+5. Add the common guidance and the
+   [sales guidance](zava-business-playbooks.md#sales-commitment-review).
+   Save, reopen and use the playbook in a fresh Copilot conversation.
 
 ```text
-For my selected Zava business process, propose a curation diff: the question,
-sources to add or omit, exact source/model fit, authority and freshness,
-duplicate handling, output and action boundaries. Do not apply the proposal.
-Separate a proposed owner/date from recorded business-system state.
+Draft Zava's September sales-commitment review from recorded Salesforce
+opportunities and workplace commitment evidence. Separate signed business,
+open pipeline, proposed follow-up and missing acceptance/delivery evidence.
+Cite the source owning each claim and propose a role-based Operations handoff
+only where the relationship is supported. Do not promise dates, edit CRM,
+assign work or contact customers.
 ```
 
-Accept, omit or defer each suggestion. Manually apply only individually approved changes to your own draft, save, leave, reopen and inspect. Run the scenario prompt in a fresh conversation and review its business deliverable.
+**Submit to the judge:** the brief and cited records. Ask it to check actual
+stage/amount/currency, customer scope and proposals versus recorded commitments.
 
-**Checkpoint:** demonstrate a changed persona/question, a deliberately different source set, persisted guidance and a cited internal draft—not a source-system action.
+## Mission 6: Investigate recovery with IQ and business connectors
+
+**Business problem:** Operations needs to know what the evidence supports,
+what is merely proposed and what investigation should happen next.
+
+| Creation field | Enter |
+|---|---|
+| Name | `<your-prefix> Zava Supply Chain Exception Review` |
+| Description | Review fulfillment/freight exceptions, recorded recovery work and evidence needed for next steps. |
+
+**Curate the process context:**
+
+1. Add relevant operating discussions through Work IQ.
+2. Select Operations measures through Fabric IQ. Add batch/supplier ontology
+   references where relevant; relationships are not proof of cause.
+3. Add the applicable policy knowledge through Foundry IQ.
+4. Preview the issued Asana recovery records: check completed, assignee and
+   due-date fields rather than infer state from descriptions.
+5. Add relevant ServiceNow incidents only when available and supported by
+   actual record relationships. An incident's priority or timing does not
+   establish shipment cause or financial loss.
+6. Add the common guidance and the
+   [supply-chain guidance](zava-business-playbooks.md#supply-chain-exception-review).
+   Save and reopen before asking Copilot.
+
+```text
+Prepare Zava's September fulfillment/freight exception brief. Reconcile the
+Operations evidence, relevant workplace discussion, current policy and
+recorded recovery work. Use incident evidence only where the source-owned
+relationships support it. Separate findings, causal hypotheses, task state
+and proposed investigations. Identify evidence needed for Procurement or
+Finance review. Do not assign tasks, change dates, close incidents or spend.
+```
+
+**Optional Web IQ extension:** add the current Zava market bulletin.
+Ask what it adds to the investigation and what it cannot prove about internal
+shipments. Judge this separately from the original attempt using the same rubric.
+
+**Submit to the judge:** the exception brief, model/record evidence and source
+citations. Ask it to check missing relationships, task state and unsupported
+causal or savings claims.
 
 <a id="s05-draft-a-work-iq-briefing"></a>
 
-## S05: Design Zava's agent factory
+## Mission 7: Publish your Zava agent factory
 
-### From one playbook to Zava's agent factory
+**Business problem:** the teams should reuse your work rather than rebuild
+six unrelated prompts every month.
 
-An **agent factory** is a governed catalog of reusable business-process specifications. Each process has a human owner, applicability, authorized context, expected output, evaluation checks and an approval boundary. It is not a fleet with blanket enterprise write access.
+For this exercise, **publish** means save and reopen a reusable catalog in
+the existing lab workspace, with its current audience unchanged. It does not
+mean deploy autonomous agents or publish to a new audience.
 
-Turn your MBR and specialist process into two catalog entries:
+1. Reopen your six process playbooks. Review their descriptions, guidance,
+   sources and latest judge feedback. Mark untested processes as needing evidence.
+2. Create `<your-prefix> Zava Agent Factory` in the same lab workspace.
+   Describe it as a catalog for business review, commitments and recovery.
+3. Add the catalog guidance below, replacing brackets with your actual
+   saved playbook names and links where the client exposes them.
+4. List each process's business question, owning sources, internal output,
+   human reviewer and next process. Use the actual saved references; a typed
+   name alone does not create a workflow or bind another playbook.
+5. Save, leave and reopen the catalog. Check the process list and guidance.
+6. Demonstrate one two-step handoff: review a Sales Commitment draft, then
+   pass its minimal supported evidence to the Supply Chain playbook in a
+   fresh conversation. The next process checks its own sources and identifiers.
+   If no operational relationship is supported, stop that route and explain why.
+7. Return the reviewed commitment/recovery findings to the MBR process.
+   Add any relevant supporting source references to your own MBR playbook,
+   save/reopen and ask for an updated internal review. Keep source versions,
+   gaps and provenance visible; the handoff summary is not a replacement for
+   the original evidence. Judge this final draft separately from the earlier MBR.
 
-| Field | What to specify |
-|---|---|
-| Process and human owner role | MBR analyst, operations lead, finance controller or another selected role |
-| Trigger | A user request in this lab; a future schedule/event is only a design proposal |
-| Context contract | Exact admitted sources, lineage, authority, freshness and permitted reader |
-| Work to automate | Retrieve, reconcile and draft a review/document or read-only app |
-| Human handoff | Review evidence and accept/reject proposed next steps |
-| Restricted actions | Sends, assignments, purchases, accounting entries, incident/CRM writes and deployment |
-| Checks | Grounding, filters, conflicts, duplicate provenance, gaps and no-action evidence |
-| Lifecycle | Version, saved readback, review owner and revalidation after source changes |
+```text
+This catalog routes Zava business questions to my saved process playbooks:
+Review intent -> [Review Brief].
+Performance and measures -> [Performance Review].
+Recognition/expedite policy -> [Policy Review].
+Leadership synthesis -> [Monthly Business Review].
+Customer commitments -> [Sales Commitment Review].
+Fulfillment/recovery investigation -> [Supply Chain Exception Review].
 
-Draft a briefing explaining how these two processes could be reused by Copilot or an approved custom harness. A harness must use authenticated Microsoft IQ retrieval and source adapters with the same authorization/safety contract; a copied local skill file is not proof of service retrieval.
+For a monthly review: intent -> performance -> policy -> MBR.
+For a commitment risk: Sales -> relevant Operations -> policy review -> MBR.
+Use only applicable steps. Review each draft before handing it to another
+process. Carry scope, cited findings, source identity/version and unresolved
+evidence. Each next process independently checks the sources it owns.
+Do not double count shared facts, guess record relationships or promote a
+proposal to an approval. Stop dependent conclusions when evidence is missing.
+Keep outputs internal; do not send, assign, update, spend or deploy.
+```
 
-Do not create schedules, deploy agents or mutate systems during this exercise. Any operational automation needs its own exact targets, permission/cost plan and explicit approval.
+Use the [evidence-brief template](zava-agent-factory.md#the-shared-evidence-handoff-contract)
+for the handoff. Ask the judge to review the final two-step draft against the
+business request and evidence. Its score does not prove the catalog was saved;
+you must reopen and inspect it yourself.
 
-## Provider concepts
-
-Provider concepts are exercised through business questions, not a separate connection/setup tour. Work IQ owns workplace intent and decisions; Fabric models own quantitative measures; data agents expose an analytical route; ontologies expose relationships; Web IQ supplies external context; Foundry IQ retrieves knowledge passages; business connectors own recorded state.
-
-Preserve source permissions and RLS/CLS/OLS. A role change, playbook share, agent route or duplicated report does not grant access or create independent evidence.
+Your factory can grow with
+[customer, campaign, checkout, launch and procurement processes](zava-scenarios.md).
+Add one process at a time with its own relevant context and reviewed output.
 
 ## Safe recovery and troubleshooting
 
-| Problem | Safe response |
+| Problem | Continue safely |
 |---|---|
-| Provisioned source or client is unavailable | Contact the instructor; participants do not hydrate or buy services |
-| Reports share a title or lineage is unclear | Inspect issued ownership/model/period metadata; defer selection if unresolved |
-| A source is stale, duplicated or superseded | Retain provenance and current authority; do not count copies as independent facts |
-| A body, model or connector is inaccessible | Record the gap; do not broaden permissions or copy another user's data |
-| Save/reopen does not match the reviewed draft | Record the difference and stop before claiming persistence |
-| Playbook activation or provider traces are not visible | Mark unknown; do not infer calls from the answer |
-| Word/Rayfin output is unavailable | Keep a structured draft and explicitly label the missing artifact |
-
-Use at most two documented safe retries without changing identity or scope, then contact support. Deletion, resets, permission changes and tenant repair are operator-only and separately approved.
+| A source is missing | Save the guidance; mark the mission needs evidence and return later |
+| Several results have the same title | Inspect owner, model, scope and freshness before selecting |
+| Copilot cannot select the saved playbook | Ask the instructor; do not claim pasted guidance is service use |
+| Guidance or references are missing after reopening | Check the save and ask for help before testing |
+| A cover upload fails | Skip the optional cover |
+| A citation does not open or support the claim | Retain the gap and revise; do not invent a replacement |
+| The judge cannot read the evidence | Get qualitative feedback only; do not record a verified score |
+| Document/app creation is unavailable | Keep structured draft content; do not claim a file or app exists |
 
 ## Debrief and finish
 
-- [ ] Captured the baseline without forcing a poor answer.
-- [ ] Selected current sources and disambiguated same-named reports by lineage, owner and scope.
-- [ ] Saved/reopened the MBR playbook and inspected complete guidance/references.
-- [ ] Repeated the same prompt in a clean session and compared actual evidence.
-- [ ] Reviewed a document or explicitly labelled unavailable artifact.
-- [ ] Curated one different persona/process without changing access.
-- [ ] Designed two approval-bounded agent-factory entries; deployed no autonomous actions.
+- [ ] Created and reopened the six process playbooks.
+- [ ] Selected Work, Fabric, Foundry and connector context for the questions each owns.
+- [ ] Compared at least one unchanged prompt before and after curation.
+- [ ] Used judge feedback to improve a playbook or explained unchanged quality.
+- [ ] Reviewed the MBR document and the commitment/recovery drafts.
+- [ ] Saved/reopened the factory catalog and demonstrated a relevant handoff.
+- [ ] Kept unsupported claims, unavailable sources and untested steps visible.
 
-Leave business records and shared sources unchanged. Retain only approved, redacted evidence. Report completed, blocked and unverified capabilities separately.
+If sources were unavailable, show the saved guidance and catalog instead of
+claiming the missions were verified. You can finish preparation without a
+judge score. Tell Avery what the evidence supports,
+what still needs investigation and which human should review the next step.
