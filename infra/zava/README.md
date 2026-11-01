@@ -19,54 +19,6 @@ generation, artifact definitions, approval/tenant guards and mocked provisioning
 **NOT_RUN:** live Microsoft/Skillable provisioning, native source access, MSIT candidate
 creation/curation and end-to-end consumption. Local tests are not tenant evidence.
 
-## Authoring evidence and participant-content separation
-
-Participant pages now contain the business story, creation steps, process
-guidance, Copilot comparisons and connected-process exercises. Environment
-names, automation diagnostics, publication/redaction procedures and native
-release status belong here, not in the participant instructions.
-
-The creation guide uses the inspected creation-form labels: Name, Description,
-Add members and curators, and Where this playbook lives. Guidance/context editor
-controls are described generically until they can be read back in a working
-session. The latest browser attempt showed a blank page and stale accessibility
-content from other tabs; active user input interrupted further navigation.
-No new candidate creation, guidance save or usable creation screenshot was
-verified. Do not publish blank captures or claim native execution.
-
-**Subsequent cover attempt:** a new browser exposed the existing Zava MBR
-Playbook and its cover picker. The picker explicitly recommends 1600 x 400 px.
-An original PNG at that exact size is included in `img/zava-enterprise-cover.png`.
-The user approved a cover-only upload/save, leaving name, guidance, context
-and access unchanged. The upload returned: "That cover could not be saved.
-Try again. The requested resource could not be found." No saved cover is
-verified, and no retry or different target was authorized by that failure.
-The user subsequently reported fixing screenshot handling and requested moving
-on. No local screenshot paths were supplied; a later read still showed the
-target window minimized and no verified new creation dialog. The original
-artwork is not a screenshot or evidence of native playbook persistence.
-
-Source-specific screenshots are deliberately deferred. First capture actual
-playbook-list/create-form, names/descriptions, guidance, saved-item and reopened
-views for the approved candidates without attaching enterprise sources. Review
-and redact real images before publication. Persistent source attachments, new
-sharing scopes and additional candidate writes remain subject to resolved
-targets and exact action approval; the participant creation guide is not an
-operator authorization.
-
-Participants can complete creation and guidance before Zava sources appear.
-The evidence-based baseline/comparison and connected-process tests require
-independently readable sources. Keep those activities separate; an empty
-playbook is not a successful provider test.
-
-The connected factory guide defines twelve processes, three business journeys,
-cross-journey routes and a shared evidence packet. It is curriculum, not an
-implemented orchestrator. The user-mediated Copilot chain, additional hero
-datasets/joins, new release/policy evidence and actual 75-minute timing remain
-unverified. A future harness requires authenticated service/source adapters,
-dependency and permission enforcement, visible failure handling and separately
-approved triggers/costs/actions. No autonomous deployment is part of this update.
-
 ## One implementation, two responsibilities
 
 [Zava Enterprise Context](https://github.com/santhoshravindran7/zava-enterprise-context)
@@ -183,16 +135,10 @@ licenses and incremental cost approval are still required; no service purchase
 or permission grant is automatic. Obtain Microsoft's tenant/site policy
 approval rather than trying to bypass denied self-service creation or API access.
 
-After admitted source reads, curate the MSIT candidates and capture their
-saved/reopened guidance and source references. Current authoring is blocked:
-the observed creation dialog defaults to a new workspace/capacity path,
-and no approved existing authoring scope was resolved. Background picker
-actions did not show choices. Later captures were blank; refresh exposed the
-loading screen, and active browser input interrupted navigation. Do not
-create infrastructure, change sharing or bypass UI safety to proceed.
-No candidate save,
-source attachment or creation screenshot has been verified. This is an
-automation limitation, not a confirmed product defect.
+After verifying source access, prepare example playbooks in the approved lab
+workspace. Save and reopen each example to check its guidance and source
+references. Do not create additional infrastructure or change sharing to
+complete this step.
 
 For Verify, use the same arguments with `-Phase Verify`. Retain actual private
 resource/file-size/job/index-count and knowledge-base retrieval evidence.
