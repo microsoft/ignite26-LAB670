@@ -42,10 +42,12 @@ Changing hats does not change your account or source access.
 
 ## Choose a connected journey
 
-The guided lab starts with the MBR, then designs one chain in S05. A self-paced
-extension may start at any journey below and rehearse at least two connected
-steps. Rehearsal is additional work outside the proposed 75-minute agenda.
-Do not require every learner to create every playbook.
+The guided lab introduces Work, Fabric and Foundry IQ, combines them into the
+MBR and adds commitment/recovery processes. In
+[Mission 7](README.md#mission-7-publish-your-zava-agent-factory), save the
+factory catalog and demonstrate one relevant handoff. The more detailed
+journeys below are optional practice beyond the 90-minute mission path;
+you do not need to create every extension playbook.
 
 ### A. Commitment to fulfillment to revenue assurance
 
@@ -255,4 +257,6 @@ is not enough.
 Show two saved playbooks, the first process's reviewed evidence brief and the
 next process's cited draft. Explain why the handoff was relevant, what evidence
 was independently checked, what remained unresolved and which human should
-review the result. Keep the business records unchanged.
+review the result. Add the route to your saved factory catalog. Use the
+[Copilot judge](zava-copilot-judge.md) for draft feedback, then check its
+corrections against the sources. Keep the business records unchanged.

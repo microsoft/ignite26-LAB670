@@ -2,17 +2,21 @@
 
 [Participant workbook](README.md) | [Curation recipes](zava-business-playbooks.md)
 
-Begin with the Zava MBR journey in the guided workbook, or choose a non-MBR
-entry point in the [connected agent-factory journeys](zava-agent-factory.md).
-Choose one specialist process during S04; use the remaining processes for
-self-paced practice. You can create the playbook and guidance first, then add
+Follow the [guided mission board](README.md#your-mission-board) to introduce
+Work, Fabric and Foundry IQ before combining them with business connectors.
+Use the additional processes here for self-paced practice or choose a
+non-MBR entry point in the [connected journeys](zava-agent-factory.md).
+You can create the playbook and guidance first, then add
 business sources and test it when those sources are available.
 
 ## One enterprise story
 
 Zava sells equipment and replenishment services. September bookings, recognized revenue, margin, freight and fulfillment need reconciliation. The October review must distinguish current policy from an archive, business-system state from commentary, duplicated evidence from corroboration, and relationships from proven causes.
 
-The analyst begins with a broad MBR. Each exception then becomes a focused process with a different human owner and deliberately selected context. The agent factory reuses these process specifications; it does not give agents unconstrained enterprise write access.
+The analyst starts by clarifying the manager's request, checks the measures
+and policy, then combines the evidence into an MBR. Commitments and exceptions
+become focused processes with different reviewers and context. The saved
+factory catalog makes those playbooks reusable together.
 
 ## Persona rotations
 
@@ -72,7 +76,8 @@ basket, not the learner's identity, permissions or authority to act.
 5. Add the complete common guidance plus the matching process guidance from the recipes. Keep business answers out of reusable instructions.
 6. Review the context and guidance, save, return to the list and reopen.
 7. Ask the role's prompt in a new conversation and check the citations and draft.
-8. Record missing evidence and what you would need to complete the review.
+8. Use the [Copilot judge](zava-copilot-judge.md), review its feedback and improve the playbook.
+9. Record missing evidence and what you would need to complete the review.
 
 ## Zava's agent-factory catalog
 

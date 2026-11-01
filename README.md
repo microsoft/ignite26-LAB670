@@ -25,8 +25,9 @@ The agent still reads sources you can access to produce current, grounded
 output; a playbook is neither a frozen answer nor a permission grant.
 
 [Read the introduction](instructions/README.md#first-what-is-microsoft-iq),
-then follow Zava's workday from a manager's request through curation,
-save/reopen, document drafting and specialist business processes.
+then solve Zava's business challenges: start with Work IQ, add Fabric and
+Foundry IQ, combine the evidence, connect business records and publish your
+saved playbooks as a reusable process catalog.
 
 ### Session description
 
@@ -44,29 +45,36 @@ You do not need to run setup scripts. If business sources are not available
 yet, create the playbook and guidance first, then return to context selection
 and Copilot testing later.
 
+After each business challenge, use the
+[Copilot judge](instructions/zava-copilot-judge.md) for evidence-based feedback.
+Improve a source choice or guidance rule, then retry the same question.
+Finish with six process playbooks and a saved Zava Agent Factory catalog.
+
 #### In a guided session
 
 1. Open the lab links and find the lab workspace.
 2. Choose a learner prefix so your playbooks are easy to find.
-3. Follow S01–S05; ask the instructor if a workspace or source is missing.
+3. Follow Missions 1–7; ask the instructor if a workspace or source is missing.
 
 #### On your own
 
 1. Use Microsoft IQ and Copilot with sources you can access.
-2. Follow the [creation guide](instructions/zava-business-playbooks.md#create-your-first-playbook).
-3. Choose one business process, then try a connected journey.
+2. Follow the [mission board](instructions/README.md#your-mission-board).
+3. Use judge feedback to improve your playbooks, then try an optional business journey.
 
 #### Lab agenda
 
-| Part | Proposed time |
-|------|---------------|
-| [Start your day](instructions/README.md#orientation-and-setup) | 5 minutes |
-| [S01: Ask Copilot before curation](instructions/README.md#s01-baseline-and-context-gaps) | 8 minutes |
-| [S02: Curate the MBR playbook](instructions/README.md#s02-create-and-curate-your-first-playbook) | 22 minutes |
-| [S03: Ask again and build a deliverable](instructions/README.md#s03-scope-and-guidance-composition) | 15 minutes |
-| [S04: Change your business hat](instructions/README.md#s04-review-a-curation-proposal) | 15 minutes |
-| [S05: Design the agent factory](instructions/README.md#s05-draft-a-work-iq-briefing) | 7 minutes |
-| [Debrief](instructions/README.md#debrief-and-finish) | 3 minutes |
+| Mission | Business challenge |
+|---|---|
+| [1: Work IQ](instructions/README.md#mission-1-decode-the-request-with-work-iq) | Decode Avery's request and separate decisions from opinions |
+| [2: Fabric IQ](instructions/README.md#mission-2-find-the-right-numbers-with-fabric-iq) | Find the right models and reconcile the KPI evidence |
+| [3: Foundry IQ](instructions/README.md#mission-3-resolve-the-policy-with-foundry-iq) | Resolve current policy and required review |
+| [4: Combined IQ](instructions/README.md#mission-4-combine-work-fabric-and-foundry-iq) | Build the decision-ready MBR |
+| [5: Work IQ + Salesforce](instructions/README.md#mission-5-check-commitments-with-work-iq-and-salesforce) | Check commitments before an Operations handoff |
+| [6: IQ + business connectors](instructions/README.md#mission-6-investigate-recovery-with-iq-and-business-connectors) | Investigate recovery without inventing cause or task state |
+| [7: Agent factory](instructions/README.md#mission-7-publish-your-zava-agent-factory) | Save the process catalog and demonstrate a reviewed handoff |
+
+Allow about 90 minutes for the missions, judging and debrief.
 
 ### 🎯 Learning outcomes
 
@@ -74,7 +82,7 @@ By the end of this session, you will be able to:
 
 - Create reusable business-process playbooks with current sources and clear guidance.
 - Use Copilot to compare cited answers and prepare an internal document or read-only app draft, if supported.
-- Connect business processes through reviewed evidence handoffs and human decisions.
+- Improve drafts with Copilot-judge feedback and connect saved playbooks through reviewed evidence handoffs.
 
 ### One company, multiple business processes
 

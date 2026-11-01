@@ -3,8 +3,10 @@
 [Participant workbook](README.md) | [Persona scenarios](zava-scenarios.md) | [Connected agent-factory journeys](zava-agent-factory.md)
 
 Choose a business process, create its playbook, add reusable guidance and test
-it with Copilot. Start with the MBR or choose a sales, supply, service, customer
-or commerce process below. You can create the playbook and its guidance before
+it with Copilot. For the guided lab, follow the
+[progressive missions](README.md#your-mission-board): Work IQ, Fabric IQ,
+Foundry IQ, combined MBR, commitments, recovery and the factory catalog.
+Use the additional recipes below for self-paced practice. You can create the playbook and its guidance before
 the business context is available, then add sources and run the evidence-based
 comparison when they become available.
 
@@ -28,6 +30,9 @@ the shared handoff in the factory exercise.
 
 | Example playbook name | Business process | Principal evidence | Required distinction |
 |---|---|---|---|
+| `<your-prefix> Zava Review Brief` | Clarify the manager's request | Work email, charter and decisions | Recorded decisions versus opinions and proposals |
+| `<your-prefix> Zava Performance Review` | Reconcile the business measures | Finance, Commercial and Operations models | Exact model and compatible scope, not display-title matching |
+| `<your-prefix> Zava Policy Review` | Resolve policy and review roles | Foundry policy knowledge and source passages | Current authority and required review, not recorded approval |
 | `<your-prefix> Zava Monthly Business Review` | Monthly leadership review | Work decisions, Finance/Commercial/Operations models, policy knowledge | Actual versus Budget; bookings versus recognized revenue; evidence versus proposals |
 | `<your-prefix> Zava Supply Chain Exception Review` | Fulfillment and freight investigation | Operations model, batch/supplier ontology, Work reviews, market URLs, recovery tasks | Internal causal evidence versus external context or graph relationships |
 | `<your-prefix> Zava Revenue Recognition Review` | Customer acceptance and recognition | Current DOC-03, Finance/Commercial models, Salesforce opportunities, policy knowledge | Closed Won or a commitment is not customer acceptance/recognized revenue |
@@ -75,13 +80,14 @@ continue with the guidance.
 ### 3. Add reusable guidance
 
 Open your new playbook's guidance editor. Add the
-[common guidance](#common-guidance-include-in-every-candidate) and the
-[guidance for your selected process](#process-specific-guidance-and-learner-prompts).
+[common guidance](#common-guidance-include-in-every-candidate), then the
+[mission guidance](README.md#your-mission-board) or the
+[guidance for your selected extension process](#process-specific-guidance-and-learner-prompts).
 Save the guidance using the editor's save control.
 
-Copy the common text block first, then the paragraphs under your process
-heading. The separate prompt block is what you ask Copilot later; it is not
-the reusable guidance.
+Copy the common text block first, then your mission's guidance block or the
+paragraphs under your extension process heading. The separate business-question
+block is what you ask Copilot later; it is not the reusable guidance.
 
 Describe when to use the playbook, which sources answer which questions,
 how to handle conflicting evidence and what draft to produce. Do not paste
@@ -117,6 +123,9 @@ Check that the answer addresses your business question, cites the right
 sources, preserves missing evidence and stays an internal draft. Compare it
 with the same prompt in a separate conversation without the playbook.
 Keep the account, tools and source access the same in both conversations.
+
+Use the [Copilot judge](zava-copilot-judge.md) to review your draft against
+the actual sources, improve your playbook and retry the unchanged question.
 
 ## Business-process curation recipes
 
@@ -200,9 +209,9 @@ exceptions and evidence-backed next steps; do not state that recovery is
 verified merely because tasks or commitments exist.
 
 For the MBR comparison, use the **exact same**
-[S01 prompt](README.md#s01-baseline-and-context-gaps) in the baseline and
-playbook conversations. Request document formatting only after comparing
-the answers in S03.
+[Mission 4 question](README.md#mission-4-combine-work-fabric-and-foundry-iq)
+in the baseline and playbook conversations. Request document formatting only
+after comparing the answers.
 
 ### Supply Chain Exception Review
 
