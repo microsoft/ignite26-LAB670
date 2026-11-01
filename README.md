@@ -31,6 +31,8 @@ save/reopen, document drafting and specialist business processes.
 
 ### Session description
 
+![Zava enterprise: connected business, trusted decisions.](img/zava-enterprise-cover.png)
+
 Start your workday as a business analyst at Zava. Your manager needs a monthly business review, but decisions, duplicate files, similarly named reports, semantic models and business-system records are spread across the enterprise. Curate a Microsoft IQ playbook, save and reopen it, then use Copilot to prepare a grounded review document. Change business hats and design approval-bounded processes for Zava's agent factory.
 
 ### 🚀 Getting started

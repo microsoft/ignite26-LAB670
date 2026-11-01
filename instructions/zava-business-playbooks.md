@@ -60,6 +60,14 @@ Use the lab workspace under **Where this playbook lives**. Keep
 **Add members and curators** unchanged for this exercise. Select **Create**.
 If the lab workspace is not listed, ask the instructor for help.
 
+### Add a Zava cover (optional)
+
+Open **Add a cover** on your playbook and select **Upload an image**.
+Use the [Zava cover](../img/zava-enterprise-cover.png): **1600 × 400 px (4:1)**,
+matching the recommended size in the cover picker.
+
+![Zava enterprise cover showing connected teams, business knowledge and reporting.](../img/zava-enterprise-cover.png)
+
 ### 3. Add reusable guidance
 
 Open your new playbook's guidance editor. Add the

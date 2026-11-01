@@ -34,6 +34,18 @@ content from other tabs; active user input interrupted further navigation.
 No new candidate creation, guidance save or usable creation screenshot was
 verified. Do not publish blank captures or claim native execution.
 
+**Subsequent cover attempt:** a new browser exposed the existing Zava MBR
+Playbook and its cover picker. The picker explicitly recommends 1600 x 400 px.
+An original PNG at that exact size is included in `img/zava-enterprise-cover.png`.
+The user approved a cover-only upload/save, leaving name, guidance, context
+and access unchanged. The upload returned: "That cover could not be saved.
+Try again. The requested resource could not be found." No saved cover is
+verified, and no retry or different target was authorized by that failure.
+The user subsequently reported fixing screenshot handling and requested moving
+on. No local screenshot paths were supplied; a later read still showed the
+target window minimized and no verified new creation dialog. The original
+artwork is not a screenshot or evidence of native playbook persistence.
+
 Source-specific screenshots are deliberately deferred. First capture actual
 playbook-list/create-form, names/descriptions, guidance, saved-item and reopened
 views for the approved candidates without attaching enterprise sources. Review
