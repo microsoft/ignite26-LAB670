@@ -2,11 +2,10 @@
 
 ## First: what is Microsoft IQ?
 
-**Trusted agents need trusted context.** Microsoft IQ brings organizational
-intelligence together so agents can understand how employees work, how the
-business operates and the institutional knowledge behind its decisions. Its
-broader platform connects this context with agent capabilities and enterprise
-governance. This lab focuses on **Microsoft IQ context and playbooks**.
+Microsoft IQ connects workplace context, business data and institutional
+knowledge so agents can use the right sources for a business question.
+This lab focuses on choosing that context and writing reusable playbook
+guidance.
 
 ### Your enterprise intelligence, brought together
 
@@ -40,10 +39,8 @@ Finance model for financial measures, Operations for fulfillment, and the
 current policy for decision rules. A similarly named archive report or a
 copied policy is not an equally good substitute.
 
-Playbooks can organize shared context and guidance in a hierarchy, with
-governance features such as certification and sensitivity labels. For your
-first playbook, keep the structure simple: one process, its relevant context
-and clear guidance.
+For your first playbook, keep the structure simple: one process, its relevant
+context and clear guidance.
 
 Think of your playbook as the process's **working guide**, not a saved monthly
 answer: when to use it, which sources own which questions, how to resolve
@@ -142,8 +139,8 @@ A playbook records **when a process applies, which sources own which questions, 
 Your first draft is `<your-prefix> Zava Monthly Business Review`. Start with a
 description, relevant context and reusable guidance.
 
-Use the Zava business sources in the lab, not setup scripts or instructor
-answers. Do not copy another person's restricted context.
+Use the Zava business sources available in the lab. Do not substitute unrelated
+data or copy another person's restricted context.
 
 All business outputs are **internal drafts**. Do not send, invite, assign, purchase, approve spend, alter accounting entries, close incidents, update CRM/task records, publish apps, change permissions or delete resources.
 
@@ -349,7 +346,10 @@ internal draft. Without sources, explain what evidence you will add later.
 
 ### From one playbook to Zava's agent factory
 
-An **agent factory** is a governed catalog of reusable business-process specifications. Each process has a human owner, applicability, authorized context, expected output, evaluation checks and an approval boundary. It is not a fleet with blanket enterprise write access.
+Now connect two business processes. Each playbook defines a question, relevant
+sources and an internal draft. You review the first draft before passing its
+supported findings to the next process. Each process has a human reviewer;
+saving the playbooks does not automatically run the chain.
 
 Choose a [connected business journey](zava-agent-factory.md#choose-a-connected-journey):
 commitment-to-revenue assurance, market-to-commerce launch, or

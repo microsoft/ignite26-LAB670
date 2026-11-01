@@ -10,10 +10,9 @@
 
 ### What is Microsoft IQ?
 
-**Trusted agents need trusted context.** Microsoft IQ brings together
-intelligence about how employees work (**Work IQ**), how the business operates
-(**Fabric IQ**) and its institutional knowledge (**Foundry IQ**), alongside
-**Web IQ** and context from connected business systems.
+Microsoft IQ brings together workplace context (**Work IQ**), business data
+(**Fabric IQ**) and institutional knowledge (**Foundry IQ**), alongside
+**Web IQ** and connected business systems.
 
 **Playbooks** give people a central place to curate, discover and reuse that
 organizational context across agents and tools. Think of the handbooks,
@@ -73,13 +72,9 @@ and Copilot testing later.
 
 By the end of this session, you will be able to:
 
-- Create and reopen a governed Microsoft IQ playbook.
-- Curate sources and guidance with explicit scope and human review.
-- Disambiguate duplicate files and same-named reports using authority, lineage, scope and freshness.
-- Produce a cited internal MBR document or a private read-only app draft, if supported.
-- Curate role-specific processes over Work, Web, Fabric, Foundry and business-connector context.
-- Design governed, human-reviewed business automation without blanket write access.
-- Connect business processes through evidence handoffs, conditional branches and explicit stop conditions.
+- Create reusable business-process playbooks with current sources and clear guidance.
+- Use Copilot to compare cited answers and prepare an internal document or read-only app draft, if supported.
+- Connect business processes through reviewed evidence handoffs and human decisions.
 
 ### One company, multiple business processes
 
@@ -92,24 +87,12 @@ supply chain, recognition, sales, service, procurement and data stewardship.
 Each recipe has a specific source set, curation decisions, prompt, draft
 deliverable and human-approval boundary.
 
-**The MBR is one process, not the whole agent factory.** The
+For processes beyond the MBR, the
 [connected business journeys](instructions/zava-agent-factory.md) start from
 sales commitments, campaign opportunities or incidents and integrate
 fulfillment, procurement, Finance, policy, launch and customer-review work.
 The guide provides Copilot prompts, evidence briefs and checks for each handoff.
 Start with two connected steps and keep the output as an internal draft.
-
-<details>
-<summary>For lab instructors and the provisioning team</summary>
-
-The [provisioning handoff](infra/zava/provisioning-handoff.md) defines the
-enterprise readiness contract, same-named report challenge and learner-safe
-source card. The [operator setup guide](infra/zava/README.md), pinned public
-[Zava Enterprise Context toolkit](https://github.com/santhoshravindran7/zava-enterprise-context)
-and [source-pack reference](instructions/zava-commercial.md) belong to this
-pre-lab lane, not the participant agenda.
-
-</details>
 
 ### 💻 Technologies used
 

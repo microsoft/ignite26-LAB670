@@ -135,12 +135,12 @@ inventory, filenames or another role's cached answer for source reads.
 | Process / persona | Select and justify | Exclude or label explicitly | Output and human handoff |
 |---|---|---|---|
 | MBR / business analyst supporting Avery Chen | Manager request, current policy and exact Finance/Commercial/Operations routes; relevant agent/commitments | Archive **Zava MBR** report, duplicate policy families; unavailable sources | MBR Word draft or read-only app draft if supported; manager reviews proposed decisions |
-| Supply chain / Jordan Okafor | Operations measures, batch/supplier graph, operating evidence, current Web URL and Asana state | Market context or a graph edge presented as shipment cause | Exception brief with evidence requests; human reviews investigations |
-| Recognition / Morgan Patel | Current Foundry policy passages, full DOC-03, Finance/Commercial scope and CRM fields | Superseded policy and Closed Won presented as recognition | Acceptance checklist; human accounting approval remains outside the lab |
-| Sales / Quinn Garcia | Exact Salesforce opportunity fields, Commercial measures and commitments/policy | Narrative owners/dates presented as recorded commitments | Handoff/risk draft; no CRM edits or customer messages |
-| Service / Taylor Reed | ServiceNow state/priority, incident discussions, operational evidence and task keys | Suspected impact presented as proven financial loss | Triage draft; human approval needed for closure or notification |
-| Procurement / Riley Santos | Current expedite policy, supplier evidence, Operations/ontology/task state | Recommendations presented as authorized purchases, dates or savings | Options brief; no spend, order or assignment |
-| Source selection / Devon Malik | Same-named reports' exact lineage/owner/audience/scope/refresh, current/archive policy families | The first title match, copied evidence or a summary presented as authoritative data | Source-selection map and proposed changes; no model, source or permission edits |
+| Supply chain / Morgan Ellis | Operations measures, batch/supplier graph, operating evidence, current Web URL and Asana state | Market context or a graph edge presented as shipment cause | Exception brief with evidence requests; human reviews investigations |
+| Recognition / Riley Morgan | Current Foundry policy passages, full DOC-03, Finance/Commercial scope and CRM fields | Superseded policy and Closed Won presented as recognition | Acceptance checklist; human accounting approval remains outside the lab |
+| Sales / Jordan Patel | Exact Salesforce opportunity fields, Commercial measures and commitments/policy | Narrative owners/dates presented as recorded commitments | Handoff/risk draft; no CRM edits or customer messages |
+| Service / Taylor Reed, supporting the service team | ServiceNow state/priority, incident discussions, operational evidence and task keys | Suspected impact presented as proven financial loss | Triage draft; human approval needed for closure or notification |
+| Procurement / Casey Nguyen | Current expedite policy, supplier evidence, Operations/ontology/task state | Recommendations presented as authorized purchases, dates or savings | Options brief; no spend, order or assignment |
+| Source selection / Data Steward | Same-named reports' exact lineage/owner/audience/scope/refresh, current/archive policy families | The first title match, copied evidence or a summary presented as authoritative data | Source-selection map and proposed changes; no model, source or permission edits |
 
 Capture why each selected source owns a sub-question and why at least one
 source was omitted. Preserve units, filters, duplicate families and

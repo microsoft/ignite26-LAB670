@@ -1,2 +1,2 @@
-# Preserve manifest hashes and RFC email line endings across platforms.
-/data/zava-commercial/** -text
+*.md text
+*.png binary

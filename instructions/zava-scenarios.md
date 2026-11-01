@@ -23,14 +23,15 @@ you can read.
 | Scenario / business hat | Request you receive | Relevant context | Draft deliverable / automation boundary |
 |---|---|---|---|
 | Z01: Business-review analyst supporting Avery Chen, Commercial Director | "Prepare my September MBR; tell me what needs a decision." | Work request/decisions, current policy, exact Finance/Commercial/Operations report-model routes, relevant agent and commitments | Cited MBR Word draft or read-only app draft if supported; no sends or approvals |
-| Z02: Jordan Okafor, Operations Lead | "Explain the fulfillment/freight exceptions and which batches need investigation." | Operations report/model, batch/supplier ontology, operating reviews, current market URLs, Asana recovery state | Exception brief and investigation proposals; no causal claims from links, no task edits |
-| Z03: Morgan Patel, Finance Controller | "Which recognition conclusions have supporting acceptance evidence?" | Current policy knowledge, full DOC-03, Finance and Commercial measures, Salesforce stage/amount/currency, commitment sources | Acceptance-evidence checklist; no accounting entries or recognition approval |
-| Z04: Quinn Garcia, Sales Operations Lead | "Which commitments can we substantiate before a handoff?" | Salesforce opportunity fields, Commercial model, commitment documents and communication policy | Sales risk/handoff draft; no CRM update, promised date or customer message |
-| Z05: Taylor Reed, Service Manager | "Which incidents are recorded, and what impact is still only suspected?" | ServiceNow incidents, Operations measures, meeting/incident evidence, relevant task and relationship keys | Triage brief; no closure, customer notification or invented financial impact |
-| Z06: Riley Santos, Procurement Lead | "Give me expedite options and their evidence requirements." | Current expedite policy, supplier evidence, Operations model, ontology and recovery-task state | Options brief with proposed role handoffs; no purchase, spend or assignment |
-| Z07: Devon Malik, Data Steward | "Why do several Zava MBR reports and policy copies disagree?" | Exact reporting catalog/lineage, model definitions, refresh metadata, current/archived document families | Source-selection map and curation proposal; no model, source or permission changes |
+| Z02: Morgan Ellis, Operations Lead | "Explain the fulfillment/freight exceptions and which batches need investigation." | Operations report/model, batch/supplier ontology, operating reviews, current market URLs, Asana recovery state | Exception brief and investigation proposals; no causal claims from links, no task edits |
+| Z03: Riley Morgan, Finance Controller | "Which recognition conclusions have supporting acceptance evidence?" | Current policy knowledge, full DOC-03, Finance and Commercial measures, Salesforce stage/amount/currency, commitment sources | Acceptance-evidence checklist; no accounting entries or recognition approval |
+| Z04: Jordan Patel, Sales Lead | "Which commitments can we substantiate before a handoff?" | Salesforce opportunity fields, Commercial model, commitment documents and communication policy | Sales risk/handoff draft; no CRM update, promised date or customer message |
+| Z05: Taylor Reed, Account Lead supporting the service team | "Which incidents are recorded, and what impact is still only suspected?" | ServiceNow incidents, Operations measures, meeting/incident evidence, relevant task and relationship keys | Triage brief; no closure, customer notification or invented financial impact |
+| Z06: Casey Nguyen, Procurement Lead | "Give me expedite options and their evidence requirements." | Current expedite policy, supplier evidence, Operations model, ontology and recovery-task state | Options brief with proposed role handoffs; no purchase, spend or assignment |
+| Z07: Data Steward | "Why do several Zava MBR reports and policy copies disagree?" | Exact reporting catalog/lineage, model definitions, refresh metadata, current/archived document families | Source-selection map and curation proposal; no model, source or permission changes |
 
-Casey Nguyen, Customer Success Lead, is a referenced collaborator for commitment and service handoffs. Named owners in suggestions remain proposals until the business system records an independently authorized change.
+Taylor Reed reviews customer commitments and draft language. Proposed
+follow-ups remain suggestions, not recorded assignments.
 
 ## Hero-scenario pathways
 
