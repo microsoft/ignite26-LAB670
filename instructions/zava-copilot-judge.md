@@ -1,6 +1,6 @@
 # Get feedback from the Copilot judge
 
-[Mission workbook](README.md) | [Playbook creation](zava-business-playbooks.md)
+[Lab guide](README.md) | [Playbook creation](zava-business-playbooks.md)
 
 The judge is a **separate Copilot conversation** using a shared rubric.
 It gives feedback on your business draft, not an official grade or permission

@@ -39,7 +39,8 @@ Start your workday as a business analyst at Zava. Your manager needs a monthly b
 
 **[Start the lab →](instructions/README.md)**
 
-The workbook is the single path for guided and self-paced participation.
+The lab guide provides step-by-step instructions for the seven missions,
+whether you join a guided session or work at your own pace.
 Use the lab's Microsoft IQ and Copilot links and your learner account.
 You do not need to run setup scripts. If business sources are not available
 yet, create the playbook and guidance first, then return to context selection

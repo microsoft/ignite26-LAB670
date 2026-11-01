@@ -1,6 +1,6 @@
 # Zava: business hats and agent-factory scenarios
 
-[Participant workbook](README.md) | [Curation recipes](zava-business-playbooks.md)
+[Lab guide](README.md) | [Curation recipes](zava-business-playbooks.md)
 
 Follow the [guided mission board](README.md#your-mission-board) to introduce
 Work, Fabric and Foundry IQ before combining them with business connectors.
