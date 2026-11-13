@@ -1,12 +1,12 @@
 # Zava: business hats and agent-factory scenarios
 
-[Lab guide](README.md) | [Curation recipes](zava-business-playbooks.md)
+[Lab guide](README.md) | [Curation recipes](zava-business-plugins.md)
 
 Follow the [guided mission board](README.md#your-mission-board) to introduce
 Work, Fabric and Foundry IQ before combining them with business connectors.
 Use the additional processes here for self-paced practice or choose a
 non-MBR entry point in the [connected journeys](zava-agent-factory.md).
-You can create the playbook and guidance first, then add
+You can create the business plugin and guidance first, then add
 business sources and test it when those sources are available.
 
 ## One enterprise story
@@ -16,7 +16,7 @@ Zava sells equipment and replenishment services. September bookings, recognized 
 The analyst starts by clarifying the manager's request, checks the measures
 and policy, then combines the evidence into an MBR. Commitments and exceptions
 become focused processes with different reviewers and context. The saved
-factory catalog makes those playbooks reusable together.
+factory catalog makes those business plugins reusable together.
 
 ## Persona rotations
 
@@ -61,22 +61,22 @@ Each process needs its own evidence: adoption data for customer reviews,
 campaign data for campaign decisions, checkout measurements for experience
 reviews and controlling policies for launch decisions. The MBR's models and
 recognition policy do not answer all of those questions. If a required source
-is missing, finish the playbook guidance and return to evidence testing later.
+is missing, finish the business plugin guidance and return to evidence testing later.
 
-Use the [hero curation recipes](zava-business-playbooks.md#additional-hero-curation-recipes)
+Use the [hero curation recipes](zava-business-plugins.md#additional-hero-curation-recipes)
 for these extensions. Each changes business intent and the minimal source
 basket, not the learner's identity, permissions or authority to act.
 
 ## Repeat the curation loop for your selected process
 
 1. Read the role's request and define scope, avoid conditions and internal output.
-2. Create a separate playbook using your learner prefix in the lab workspace.
+2. Create a separate business plugin using your learner prefix in the lab workspace.
 3. Preview relevant full sources; resolve exact IDs, report/model lineage, owner, period, units, freshness and source permissions.
 4. Exclude irrelevant, duplicate and superseded sources from current-authority selection. Preserve a labelled historical source only when comparison is needed.
 5. Add the complete common guidance plus the matching process guidance from the recipes. Keep business answers out of reusable instructions.
 6. Review the context and guidance, save, return to the list and reopen.
 7. Ask the role's prompt in a new conversation and check the citations and draft.
-8. Use the [Copilot judge](zava-copilot-judge.md), review its feedback and improve the playbook.
+8. Use the [Copilot judge](zava-copilot-judge.md), review its feedback and improve the business plugin.
 9. Record missing evidence and what you would need to complete the review.
 
 ## Zava's agent-factory catalog
