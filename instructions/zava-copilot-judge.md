@@ -1,6 +1,6 @@
 # Get feedback from the Copilot judge
 
-[Lab guide](README.md) | [Playbook creation](zava-business-playbooks.md)
+[Lab guide](README.md) | [Business plugin creation](zava-business-plugins.md)
 
 The judge is a **separate Copilot conversation** using a shared rubric.
 It gives feedback on your business draft, not an official grade or permission
@@ -10,19 +10,19 @@ to act. No separate grading application is required.
 
 1. Review your draft and open its cited sources yourself.
 2. Open a fresh Copilot conversation using the same learner account.
-   Do not select the candidate process playbook as the judge's instructions.
+   Do not select the candidate process business plugin as the judge's instructions.
 3. Give the judge the mission's business request, your draft and its source
    references. Make the relevant authorized sources available through the
    client's context controls where supported. Do not copy inaccessible data.
 4. Paste the judge prompt below. Replace the bracketed fields.
 5. Inspect the feedback and reopen the sources supporting any correction.
    Challenge a judge claim that is unsupported; AI reviewers can be wrong.
-6. Improve your playbook's guidance or source selection, save/reopen it and
+6. Improve your business plugin's guidance or source selection, save/reopen it and
    rerun the unchanged business question in a new conversation.
 
 Keep the same request, rubric, source versions and available tools between
 attempts. Judge baseline and curated drafts separately with the same rubric;
-do not penalize the baseline for not using a playbook.
+do not penalize the baseline for not using a business plugin.
 
 ## The 100-point rubric
 
@@ -39,7 +39,7 @@ issue. A fabricated important number/citation, disclosure of inaccessible
 data or an unconfirmed consequential-action claim requires revision regardless
 of the total.
 
-The judge grades the submitted draft. It cannot certify that a playbook
+The judge grades the submitted draft. It cannot certify that a business plugin
 persisted, a query executed or an action occurred solely from answer narration.
 Those require separate observation or independently readable results.
 
@@ -67,7 +67,7 @@ return NEEDS EVIDENCE, no overall verified score, and specific qualitative
 feedback. Otherwise give justified criterion scores and a total out of 100.
 Use integer points from zero to each criterion's maximum; the total must
 equal their sum. Do not award points for evidence you could not verify.
-Apply the same rubric whether or not the answer used a playbook.
+Apply the same rubric whether or not the answer used a business plugin.
 
 Flag any fabricated important number/citation, inaccessible-data disclosure
 or unconfirmed consequential-action claim. A critical issue prevents READY
@@ -84,7 +84,7 @@ Return:
 Do not send, assign, approve, change records or publish anything.
 ```
 
-## Improve the playbook, not just the wording
+## Improve the business plugin, not just the wording
 
 | Judge feedback | Useful improvement |
 |---|---|

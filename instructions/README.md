@@ -1,10 +1,10 @@
-# LAB670: Build your first Microsoft IQ playbook
+# LAB670: Build your first Microsoft IQ Business plugin
 
 ## First: what is Microsoft IQ?
 
 Microsoft IQ connects workplace context, business data and institutional
 knowledge so agents can use the right sources for a business question.
-A **playbook** pairs selected sources with reusable guidance: when to use
+A **business plugin** pairs selected sources with reusable guidance: when to use
 them, which questions they answer and what to produce.
 
 | Context | What it answers | Zava example |
@@ -15,7 +15,7 @@ them, which questions they answer and what to produce.
 | Business connectors | What state is recorded in business applications? | Salesforce opportunities, Asana tasks and ServiceNow incidents |
 | Web IQ | What external information provides useful context? | A market bulletin or authoritative technical guidance |
 
-A playbook is a working guide, not a saved answer or a permission grant.
+A business plugin is a working guide, not a saved answer or a permission grant.
 Choose the sources that own the question rather than attach everything.
 
 ## Your challenge: save Zava's business review
@@ -34,7 +34,7 @@ Some documents are copies; one policy is superseded. A confident answer
 can still use the wrong source.
 
 You will solve six business challenges, get feedback from a Copilot judge,
-improve your playbooks and save a reusable Zava agent-factory catalog.
+improve your business plugins and save a reusable Zava agent-factory catalog.
 The learning path introduces one kind of context at a time before combining it.
 
 Use **September 2026, USD and business evidence effective by
@@ -51,7 +51,7 @@ Keep source-refresh and actual retrieval times separate.
 | [4. Build the MBR](#mission-4-combine-work-fabric-and-foundry-iq) | Can you turn the scattered evidence into a decision-ready review? | Work + Fabric + Foundry IQ | Internal MBR document |
 | [5. Check commitments](#mission-5-check-commitments-with-work-iq-and-salesforce) | What can Sales substantiate before a handoff? | Work IQ + Salesforce | Commitment-risk brief |
 | [6. Investigate recovery](#mission-6-investigate-recovery-with-iq-and-business-connectors) | What is known, proposed or still missing? | Work + Fabric + Foundry IQ + business connectors | Operations/recovery brief |
-| [7. Publish your factory](#mission-7-publish-your-zava-agent-factory) | How will the teams reuse your playbooks together? | Your six saved playbooks | Saved process catalog and a reviewed handoff |
+| [7. Publish your factory](#mission-7-publish-your-zava-agent-factory) | How will the teams reuse your business plugins together? | Your six saved business plugins | Saved process catalog and a reviewed handoff |
 
 Allow about **90 minutes**: 5 to start, about 10 for each specialist mission,
 15 for the combined MBR, 10 for the factory and 10 for feedback and debrief.
@@ -62,48 +62,48 @@ Additional customer, campaign, checkout and launch scenarios are
 
 Open Microsoft IQ and Copilot from the lab links using your learner account.
 Find the lab workspace and source list. Choose a prefix, such as `Alex`, for
-your playbook names; do not type the brackets in `<your-prefix>`.
+your business plugin names; do not type the brackets in `<your-prefix>`.
 
-**Your boundary:** create your own playbooks and internal drafts. Keep
+**Your boundary:** create your own business plugins and internal drafts. Keep
 membership and source permissions unchanged. Do not send messages, assign
 tasks, change business records, buy services or deploy applications.
 
-If a mission's sources or Copilot playbook selection are unavailable, create
+If a mission's sources or Copilot business plugin selection are unavailable, create
 its name, description and guidance, then move on to the next available
 mission. Return to testing later. The judge cannot verify business answers
 without the relevant evidence.
 
 ### The six steps you repeat
 
-1. **Create.** Open **New playbook** or **Create** in Microsoft IQ. Enter
-   the mission's name and description. Select the existing lab workspace
-   under **Where this playbook lives**. Leave **Add members and curators**
-   unchanged. Select **Create**.
-2. **Guide.** Add the [common guidance](zava-business-playbooks.md#common-guidance-include-in-every-candidate)
+1. **Create.** Open **Business plugins** in Microsoft IQ and choose **New**
+   or **Create** (the label may vary). Enter the mission's name and description.
+   Select the existing lab workspace in the workspace/location field.
+   Leave **Add members and curators** unchanged. Select **Create**.
+2. **Guide.** Add the [common guidance](zava-business-plugins.md#common-guidance-include-in-every-candidate)
    and the mission's guidance block below. The business question is the test
    prompt, not the reusable guidance.
 3. **Curate.** Open the add-context control. Search for the mission's sources,
    preview the actual content and metadata, select the relevant references
    and review the selection. Follow the provider-specific checks in each
    mission. Ask for help if you cannot identify the intended source.
-4. **Save and reopen.** Save, return to the list and reopen your playbook.
+4. **Save and reopen.** Save, return to the list and reopen your business plugin.
    Check the description, complete guidance and selected references.
 5. **Solve.** Open a fresh Copilot conversation, select or discover the saved
-   playbook and submit the mission's question. Open the cited sources and
-   inspect the result. If your client cannot select the playbook, ask the
+   business plugin and submit the mission's question. Open the cited sources and
+   inspect the result. If your client cannot select the business plugin, ask the
    instructor; pasted guidance is not the same as using the saved item.
 6. **Judge and improve.** Use the [Copilot judge](zava-copilot-judge.md).
    Review its feedback, change your own guidance or source selection where
    needed, save/reopen and try the same question in another fresh conversation.
 
-The [creation guide](zava-business-playbooks.md#create-your-first-playbook)
+The [creation guide](zava-business-plugins.md#create-your-first-business-plugin)
 includes the field examples and optional Zava cover.
 
 ### Keep a mission scorecard
 
 Record this privately. Leave scores blank until the judge has checked evidence.
 
-| Mission | Saved playbook | Draft reviewed? | Judge score or evidence gap | Change for next attempt |
+| Mission | Saved business plugin | Draft reviewed? | Judge score or evidence gap | Change for next attempt |
 |---|---|---|---|---|
 | 1: Work IQ | | | | |
 | 2: Fabric IQ | | | | |
@@ -124,9 +124,9 @@ baseline or manufacture improvement.
 **Business problem:** Avery needs a decision brief, but email opinions,
 meeting notes and proposed actions are being mixed together.
 
-Before creating this playbook, ask the business question below once in a
+Before creating this business plugin, ask the business question below once in a
 fresh Copilot conversation and keep the response as your baseline. Then
-create, curate and select the saved playbook and ask the same question in
+create, curate and select the saved business plugin and ask the same question in
 another fresh conversation, keeping the account, tools and source access fixed.
 
 | Creation field | Enter |
@@ -141,7 +141,7 @@ another fresh conversation, keeping the account, tools and source access fixed.
    discussions. Read the messages or documents, not just search summaries.
 3. Check who wrote each source, its date and whether it records a decision,
    an opinion or a proposal. Omit unrelated conversations and duplicate copies.
-4. Keep this first playbook focused on workplace evidence. Do not use an
+4. Keep this first business plugin focused on workplace evidence. Do not use an
    email's headline as the authoritative financial number.
 
 Add this mission guidance after the common guidance:
@@ -251,7 +251,7 @@ superseded procedure cannot establish. Do not approve recognition or spending.
 **Submit to the judge:** the checklist and policy citations. Ask it to verify
 authority, effective date, conditions and roles without supplying an answer key.
 
-<a id="s02-create-and-curate-your-first-playbook"></a>
+<a id="s02-create-and-curate-your-first-business-plugin"></a>
 <a id="s03-scope-and-guidance-composition"></a>
 
 ## Mission 4: Combine Work, Fabric and Foundry IQ
@@ -266,15 +266,15 @@ Prepare one review that connects decisions, business measures and policy.
 
 **Combine the context:**
 
-1. Create a new MBR playbook rather than overwrite a specialist playbook.
+1. Create a new MBR business plugin rather than overwrite a specialist business plugin.
 2. Add the relevant Work references from Mission 1, exact model/report
    references from Mission 2 and policy knowledge from Mission 3.
 3. Review the combined selection. Shared references are still one source,
    not three independent confirmations.
 4. Add the common guidance and the
-   [MBR process guidance](zava-business-playbooks.md#monthly-business-review).
+   [MBR process guidance](zava-business-plugins.md#monthly-business-review).
    Save and reopen. Check that all three context types and the guidance remain.
-5. Use the same business question below in fresh baseline and playbook
+5. Use the same business question below in fresh baseline and business plugin
    conversations. Keep account, tools, source versions and access fixed.
    Do not paste a previous answer as a substitute for source evidence.
 
@@ -327,8 +327,8 @@ does not prove delivery, acceptance or recognized revenue.
 4. If the connector is unavailable, leave it out and record the missing
    evidence. Do not enable accounts, import records or substitute unrelated data.
 5. Add the common guidance and the
-   [sales guidance](zava-business-playbooks.md#sales-commitment-review).
-   Save, reopen and use the playbook in a fresh Copilot conversation.
+   [sales guidance](zava-business-plugins.md#sales-commitment-review).
+   Save, reopen and use the business plugin in a fresh Copilot conversation.
 
 ```text
 Draft Zava's September sales-commitment review from recorded Salesforce
@@ -364,7 +364,7 @@ what is merely proposed and what investigation should happen next.
    actual record relationships. An incident's priority or timing does not
    establish shipment cause or financial loss.
 6. Add the common guidance and the
-   [supply-chain guidance](zava-business-playbooks.md#supply-chain-exception-review).
+   [supply-chain guidance](zava-business-plugins.md#supply-chain-exception-review).
    Save and reopen before asking Copilot.
 
 ```text
@@ -395,28 +395,28 @@ For this exercise, **publish** means save and reopen a reusable catalog in
 the existing lab workspace, with its current audience unchanged. It does not
 mean deploy autonomous agents or publish to a new audience.
 
-1. Reopen your six process playbooks. Review their descriptions, guidance,
+1. Reopen your six process business plugins. Review their descriptions, guidance,
    sources and latest judge feedback. Mark untested processes as needing evidence.
 2. Create `<your-prefix> Zava Agent Factory` in the same lab workspace.
    Describe it as a catalog for business review, commitments and recovery.
 3. Add the catalog guidance below, replacing brackets with your actual
-   saved playbook names and links where the client exposes them.
+   saved business plugin names and links where the client exposes them.
 4. List each process's business question, owning sources, internal output,
    human reviewer and next process. Use the actual saved references; a typed
-   name alone does not create a workflow or bind another playbook.
+   name alone does not create a workflow or bind another business plugin.
 5. Save, leave and reopen the catalog. Check the process list and guidance.
 6. Demonstrate one two-step handoff: review a Sales Commitment draft, then
-   pass its minimal supported evidence to the Supply Chain playbook in a
+   pass its minimal supported evidence to the Supply Chain business plugin in a
    fresh conversation. The next process checks its own sources and identifiers.
    If no operational relationship is supported, stop that route and explain why.
 7. Return the reviewed commitment/recovery findings to the MBR process.
-   Add any relevant supporting source references to your own MBR playbook,
+   Add any relevant supporting source references to your own MBR business plugin,
    save/reopen and ask for an updated internal review. Keep source versions,
    gaps and provenance visible; the handoff summary is not a replacement for
    the original evidence. Judge this final draft separately from the earlier MBR.
 
 ```text
-This catalog routes Zava business questions to my saved process playbooks:
+This catalog routes Zava business questions to my saved process business plugins:
 Review intent -> [Review Brief].
 Performance and measures -> [Performance Review].
 Recognition/expedite policy -> [Policy Review].
@@ -449,7 +449,7 @@ Add one process at a time with its own relevant context and reviewed output.
 |---|---|
 | A source is missing | Save the guidance; mark the mission needs evidence and return later |
 | Several results have the same title | Inspect owner, model, scope and freshness before selecting |
-| Copilot cannot select the saved playbook | Ask the instructor; do not claim pasted guidance is service use |
+| Copilot cannot select the saved business plugin | Ask the instructor; do not claim pasted guidance is service use |
 | Guidance or references are missing after reopening | Check the save and ask for help before testing |
 | A cover upload fails | Skip the optional cover |
 | A citation does not open or support the claim | Retain the gap and revise; do not invent a replacement |
@@ -458,10 +458,10 @@ Add one process at a time with its own relevant context and reviewed output.
 
 ## Debrief and finish
 
-- [ ] Created and reopened the six process playbooks.
+- [ ] Created and reopened the six process business plugins.
 - [ ] Selected Work, Fabric, Foundry and connector context for the questions each owns.
 - [ ] Compared at least one unchanged prompt before and after curation.
-- [ ] Used judge feedback to improve a playbook or explained unchanged quality.
+- [ ] Used judge feedback to improve a business plugin or explained unchanged quality.
 - [ ] Reviewed the MBR document and the commitment/recovery drafts.
 - [ ] Saved/reopened the factory catalog and demonstrated a relevant handoff.
 - [ ] Kept unsupported claims, unavailable sources and untested steps visible.

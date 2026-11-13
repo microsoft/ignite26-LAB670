@@ -1,34 +1,34 @@
-# Create playbooks for Zava's business processes
+# Create Business plugins for Zava's business processes
 
 [Lab guide](README.md) | [Persona scenarios](zava-scenarios.md) | [Connected agent-factory journeys](zava-agent-factory.md)
 
-Choose a business process, create its playbook, add reusable guidance and test
+Choose a business process, create its business plugin, add reusable guidance and test
 it with Copilot. For the guided lab, follow the
 [progressive missions](README.md#your-mission-board): Work IQ, Fabric IQ,
 Foundry IQ, combined MBR, commitments, recovery and the factory catalog.
-Use the additional recipes below for self-paced practice. You can create the playbook and its guidance before
+Use the additional recipes below for self-paced practice. You can create the business plugin and its guidance before
 the business context is available, then add sources and run the evidence-based
 comparison when they become available.
 
-## From organizational knowledge to a reusable playbook
+## From organizational knowledge to a reusable business plugin
 
 [Start with the Microsoft IQ introduction](README.md#first-what-is-microsoft-iq).
 The curation pattern is the same orientation you would give a Zava employee:
 **when you need to do this process, use these sources and follow this guidance**.
 Microsoft IQ brings the different kinds of enterprise intelligence together;
-the playbook makes their use specific to the business process.
+the business plugin makes their use specific to the business process.
 
 For the MBR, do not simply attach a folder called "Monthly Review." Establish
 the manager's intent, identify which exact models own the measures, select the
 current policy and relevant decisions, and explain how to handle conflicts.
 Save that routing and guidance for reuse, not this month's numeric answer.
-Then use the saved playbook in Copilot and check the cited sources. Keep the
+Then use the saved business plugin in Copilot and check the cited sources. Keep the
 first version focused on one process; connect it to other processes through
 the shared handoff in the factory exercise.
 
-## Choose your playbook
+## Choose your business plugin
 
-| Example playbook name | Business process | Principal evidence | Required distinction |
+| Example business plugin name | Business process | Principal evidence | Required distinction |
 |---|---|---|---|
 | `<your-prefix> Zava Review Brief` | Clarify the manager's request | Work email, charter and decisions | Recorded decisions versus opinions and proposals |
 | `<your-prefix> Zava Performance Review` | Reconcile the business measures | Finance, Commercial and Operations models | Exact model and compatible scope, not display-title matching |
@@ -45,30 +45,30 @@ Replace `<your-prefix>` with your learner prefix; do not type the brackets.
 For example: `Alex Zava Sales Commitment Review`. Create your own copy rather
 than edit a shared example.
 
-## Create your first playbook
+## Create your first business plugin
 
 ### 1. Open Microsoft IQ
 
-Open Microsoft IQ from the lab link. In the navigation, find **New playbook**
-or **Create** and open the playbook creation form.
+Open Microsoft IQ from the lab link. Open **Business plugins** and choose
+**New** or **Create** (the label may vary) to open the creation form.
 
 ### 2. Name the business process
 
 In the creation form, enter a **Name** and **Description** that explain
-what this playbook helps you do.
+what this business plugin helps you do.
 
 | Field | MBR example | Sales example |
 |---|---|---|
 | Name | `<your-prefix> Zava Monthly Business Review` | `<your-prefix> Zava Sales Commitment Review` |
 | Description | Prepare a cited internal monthly review of revenue, margin, fulfillment and commitments. | Prepare an internal handoff brief from recorded customer commitments and commercial evidence. |
 
-Use the lab workspace under **Where this playbook lives**. Keep
+Select the lab workspace in the workspace/location field. Keep
 **Add members and curators** unchanged for this exercise. Select **Create**.
 If the lab workspace is not listed, ask the instructor for help.
 
 ### Add a Zava cover (optional)
 
-Open **Add a cover** on your playbook and select **Upload an image**.
+Open **Add a cover** on your business plugin and select **Upload an image**.
 Use the [Zava cover](../img/zava-enterprise-cover.png): **1600 × 400 px (4:1)**,
 matching the recommended size in the cover picker.
 
@@ -79,7 +79,7 @@ continue with the guidance.
 
 ### 3. Add reusable guidance
 
-Open your new playbook's guidance editor. Add the
+Open your new business plugin's guidance editor. Add the
 [common guidance](#common-guidance-include-in-every-candidate), then the
 [mission guidance](README.md#your-mission-board) or the
 [guidance for your selected extension process](#process-specific-guidance-and-learner-prompts).
@@ -89,13 +89,13 @@ Copy the common text block first, then your mission's guidance block or the
 paragraphs under your extension process heading. The separate business-question
 block is what you ask Copilot later; it is not the reusable guidance.
 
-Describe when to use the playbook, which sources answer which questions,
+Describe when to use the business plugin, which sources answer which questions,
 how to handle conflicting evidence and what draft to produce. Do not paste
 this month's answer or numeric results into reusable guidance.
 
 ### 4. Add context when it is available
 
-Open the playbook's add-context control. Use the source list in the recipe
+Open the business plugin's add-context control. Use the source list in the recipe
 below to find and preview relevant Zava sources. Choose the current policy,
 the exact report/model that owns each measure and the relevant business records.
 Do not select an entire folder simply because its name matches your process.
@@ -106,26 +106,26 @@ later. Do not substitute unrelated company data or invented references.
 
 ### 5. Save and reopen
 
-Save your changes. Return to the playbook list, reopen your playbook and check
+Save your changes. Return to the business plugin list, reopen your business plugin and check
 its description, guidance and any sources you selected.
 
 ### 6. Try it with Copilot
 
 Once the business sources are available, open a new Copilot conversation and
-use your playbook through the playbook selection or discovery option provided
+use your business plugin through the business plugin selection or discovery option provided
 in the lab. Submit the matching process prompt below.
 
 If that option is unavailable, ask the instructor and continue creating
-playbooks and designing their handoffs. Do not treat pasted guidance as use
-of the saved playbook.
+business plugins and designing their handoffs. Do not treat pasted guidance as use
+of the saved business plugin.
 
 Check that the answer addresses your business question, cites the right
 sources, preserves missing evidence and stays an internal draft. Compare it
-with the same prompt in a separate conversation without the playbook.
+with the same prompt in a separate conversation without the business plugin.
 Keep the account, tools and source access the same in both conversations.
 
 Use the [Copilot judge](zava-copilot-judge.md) to review your draft against
-the actual sources, improve your playbook and retry the unchanged question.
+the actual sources, improve your business plugin and retry the unchanged question.
 
 ## Business-process curation recipes
 
@@ -158,13 +158,13 @@ attaching the entire estate.
 
 <a id="common-guidance-include-in-every-candidate"></a>
 
-## Common guidance: include in every playbook
+## Common guidance: include in every business plugin
 
 Copy this block into the guidance editor, then add your selected process's
 guidance. These rules describe how to work, not the answer to a business review.
 
 ```text
-Prepare an internal Zava draft for this playbook's business process.
+Prepare an internal Zava draft for this business plugin's business process.
 Use September 2026, USD and business evidence effective by
 2026-10-06T18:00:00Z for the supplied scenario. Clarify a different period,
 account, currency or decision scope instead of assuming it. Record actual
@@ -210,7 +210,7 @@ verified merely because tasks or commitments exist.
 
 For the MBR comparison, use the **exact same**
 [Mission 4 question](README.md#mission-4-combine-work-fabric-and-foundry-iq)
-in the baseline and playbook conversations. Request document formatting only
+in the baseline and business plugin conversations. Request document formatting only
 after comparing the answers.
 
 ### Supply Chain Exception Review
@@ -292,7 +292,7 @@ Inspect each report titled Zava MBR using exact workspace/report/model
 identity, audience, authority, measure definitions, period/currency/scenario
 and refresh. Map document families to current, historical and copied sources.
 Recommend a minimal per-process context set; do not edit datasets, reports,
-files, permissions or someone else's playbook. Keep proposed source selections
+files, permissions or someone else's business plugin. Keep proposed source selections
 separate from accepted and saved changes.
 
 ```text
@@ -305,7 +305,7 @@ Do not edit models, sources, permissions or business records.
 
 ## Additional hero curation recipes
 
-Create a separate playbook with your learner prefix for each selected process.
+Create a separate business plugin with your learner prefix for each selected process.
 Reuse the common guidance and save/reopen steps. Use the actual scenario
 sources when available; an MBR model is not a substitute for checkout,
 campaign or customer-adoption data.
@@ -335,7 +335,7 @@ before and after curation in clean sessions, keeping identity, tools and source
 versions fixed. A stronger-sounding response is not measured improvement.
 
 Copy the common guidance and **only your selected process's paragraphs**
-below into its playbook. Use that process's separate prompt for Copilot.
+below into its business plugin. Use that process's separate prompt for Copilot.
 Use the scope confirmed in the source preview; do not invent an account,
 campaign, release or incident identifier.
 
@@ -352,7 +352,7 @@ account changes.
 
 ```text
 Prepare Zava's Customer 01 review from engagement, adoption, support,
-commitments and current public updates. Use the reviewed scope in my playbook.
+commitments and current public updates. Use the reviewed scope in my business plugin.
 Cite sources, distinguish measured facts from commentary and list missing
 evidence. Keep this an internal draft; do not contact customers or edit records.
 ```
@@ -435,7 +435,7 @@ proposed next steps. Cite sources and retain missing relationships.
 Do not close incidents, assign tasks or update records.
 ```
 
-## Connect your playbooks
+## Connect your business plugins
 
 After testing individual processes, choose a
 [connected business journey](zava-agent-factory.md#choose-a-connected-journey).
