@@ -7,6 +7,11 @@ Nothing installs tools, grants permissions, buys capacity or accepts terms.
 
 Start with the [learner prerequisites](../instructions/lab-setup.md).
 Organizers must read the [operator handoff](operator-handoff.md) first.
+After hydration, use the separate
+[GitHub Copilot client setup](../instructions/lab-setup.md#3-configure-github-copilot-after-context-hydration).
+The supplied Work IQ archive, direct-client JSON and copy-ready prompts are
+under `bundles`, `mcp` and `prompts`; the hydration script does not install them
+or change client settings.
 
 | Scope | Original full bundle | Quick core |
 |---|---|---|

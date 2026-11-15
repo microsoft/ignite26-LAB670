@@ -115,6 +115,12 @@ Once the business sources are available, open a new Copilot conversation and
 use your business plugin through the business plugin selection or discovery option provided
 in the lab. Submit the matching process prompt below.
 
+For the GitHub Copilot client, complete the post-hydration
+[Work IQ setup and saved-plugin test flow](lab-setup.md#3-configure-github-copilot-after-context-hydration).
+The agent must identify the exact saved entry and read its actual guidance
+before answering; merely attaching a bundle or pasting guidance is not a
+verified saved-plugin run.
+
 If that option is unavailable, ask the instructor and continue creating
 business plugins and designing their handoffs. Do not treat pasted guidance as use
 of the saved business plugin.

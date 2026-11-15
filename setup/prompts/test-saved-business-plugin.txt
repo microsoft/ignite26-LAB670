@@ -1,0 +1,46 @@
+Use the loaded workiq-preview skill and connected Work IQ service to answer
+this LAB670 business question using my existing saved Microsoft IQ business
+plugin. This is read-only business-question testing, not M365 agent lifecycle
+validation, deployment or publishing. Do not install WIQD.
+
+Saved business plugin/playbook name: <exact saved name including my prefix>
+Saved link or identifier, if the authoring experience provides one: <value or unavailable>
+Mission question, copied unchanged from the lab: <paste the mission question>
+
+Before answering:
+1. Confirm that workiq-preview is loaded and identify the actual connected
+   Work IQ tool catalog. Use only its advertised names and schemas.
+2. For this advice/analysis request, use the skill's discover route when the
+   tool is exposed. Find the exact saved business plugin for the stated
+   question; verify identity, scope and version, not just a similar title.
+   Discovery does not create, import or execute a business plugin by itself.
+3. Read the selected entry's original guidance and required companion
+   artifacts using the skill's documented, authorized retrieval/download
+   route. Read the actual SKILL.md/instructions and required references before
+   dependent source queries or drafting. A summary or title is not a loaded
+   playbook. Do not execute downloaded scripts or install another plugin
+   without a reviewed plan and explicit permission.
+4. If discover is unavailable, the exact saved entry is absent/ambiguous,
+   a required artifact cannot be read, or access is denied, stop the
+   plugin-dependent test and report NEEDS EVIDENCE / NOT VERIFIED. Do not
+   silently substitute pasted guidance, default Copilot, another plugin,
+   another tenant/account, or a guessed tool/endpoint.
+5. State the actual entry/reference and version loaded. If this client
+   cannot expose a native saved-plugin selection event, label the run as
+   discovery-loaded guidance, not verified native UI selection.
+
+Then answer the unchanged mission question from accessible relevant sources.
+Preserve September 2026, USD and the business cutoff 2026-10-06T18:00:00Z where
+applicable. Separate bookings, acceptance and recognized revenue; preserve
+policy effective dates and the unassigned/undated recovery-task state.
+Use retrieve/entity reads as the skill requires and synthesize locally.
+Do not use ask unless I explicitly request a delegated Copilot/named-agent
+answer. The Work IQ connection alone does not establish access to Fabric,
+Foundry, Asana, Airtable or Salesforce; report missing source tools/bindings.
+
+Return an internal draft with source citations, applicable query/filter
+evidence, known gaps, and a small test record: client, Microsoft lab identity
+check (no secrets), saved entry/version, guidance actually read, tools/sources
+used and outcome. Do not claim successful saved-plugin use from narration.
+Do not send messages, modify records/tasks, change permissions, buy/deploy
+services, schedule work, or publish the business plugin.

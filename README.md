@@ -46,10 +46,14 @@ Before Mission 1, complete the **[lab setup prerequisites](instructions/lab-setu
    must be prepared by the organizer; do not create or purchase a capacity.
 3. Use the prehydrated context, or download/extract this repository and run the
    [reviewed quick setup](setup/README.md) only when instructed.
-4. Verify the required source connections before starting the missions.
+4. After context hydration, follow the
+   [GitHub Copilot client setup](instructions/lab-setup.md#3-configure-github-copilot-after-context-hydration)
+   to connect Work IQ and add the supplied skill bundle.
+5. Verify the required source connections before starting the missions.
 
 The quick setup targets 5-10 minutes on an already prepared environment;
 cold signup, capacity provisioning and indexing may take longer.
+GitHub Copilot setup/authentication is separate from that hydration target.
 
 ### 🚀 Getting started
 

@@ -13,3 +13,8 @@ Business entities and source correspondence in the canonical dataset are
 fictional training material.
 
 The separate private access-and-connections document is not distributed.
+
+`bundles/MicrosoftIQ-preview.zip` is the user-supplied Work IQ preview 3.1.2
+archive, retained byte-for-byte; its original README, manifests, references,
+scripts and upstream attribution remain inside. It is not automatically
+installed or executed by the hydration script.

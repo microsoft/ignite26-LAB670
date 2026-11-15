@@ -1,4 +1,5 @@
 *.md text
 *.png binary
+/setup/bundles/*.zip binary
 # Canonical fixture hashes require the original bytes on every platform.
 /setup/data/zava-enterprise/** -text whitespace=trailing-space,space-before-tab,cr-at-eol

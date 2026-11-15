@@ -85,8 +85,16 @@ prerequisites, timing and quick-profile caveats.
 
 **Delivery choice:** distribute a reviewed repository ZIP/version or preinstall
 it in the VM. Do not ask learners to have Copilot generate provisioning code or
-infer resources from an attached bundle. If Copilot is used for assistance,
-keep it diagnostic/read-only; authentication and approval remain with the user.
+infer tenant resources from an attached bundle. After hydration, the separate
+[GitHub Copilot setup](../instructions/lab-setup.md#3-configure-github-copilot-after-context-hydration)
+allows an agent to propose/install reviewed **client skill/configuration files**,
+not provision the tenant. Authentication and approval remain with the user.
+For web sessions, validate the managed Work IQ connector, organization policy,
+learner-owned skill-enabled workspace, actual preview tool availability and
+exact saved-playbook discovery before making this the classroom default.
+The provided direct OAuth configuration is not a repository-cloud-MCP setup.
+The archive also has a `workiq-preview` MCP definition: do not activate that
+alongside the separate `Work-IQ-MCP` definition.
 
 References:
 
