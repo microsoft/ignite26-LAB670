@@ -35,6 +35,22 @@ saved business plugins as a reusable process catalog.
 
 Start your workday as a business analyst at Zava. Your manager needs a monthly business review, but decisions, duplicate files, similarly named reports, semantic models and business-system records are spread across the enterprise. Curate a Microsoft IQ business plugin to organize and govern business context from data, workflows and knowledge sources, then save and reopen it and use Copilot to prepare a grounded review document. Explore how shared intelligence can be reused across Copilot, Agent 365 and custom AI applications. Change business hats and design approval-bounded processes for Zava's agent factory.
 
+### Lab setup prerequisites
+
+Before Mission 1, complete the **[lab setup prerequisites](instructions/lab-setup.md)**:
+
+1. Open [Microsoft Fabric](https://app.fabric.microsoft.com) with your issued
+   Skillable account, complete any first-time signup form and review/accept
+   the terms yourself if authorized.
+2. Confirm that the assigned workspace opens. Capacity and ScoringApp access
+   must be prepared by the organizer; do not create or purchase a capacity.
+3. Use the prehydrated context, or download/extract this repository and run the
+   [reviewed quick setup](setup/README.md) only when instructed.
+4. Verify the required source connections before starting the missions.
+
+The quick setup targets 5-10 minutes on an already prepared environment;
+cold signup, capacity provisioning and indexing may take longer.
+
 ### 🚀 Getting started
 
 **[Start the lab →](instructions/README.md)**
@@ -42,7 +58,9 @@ Start your workday as a business analyst at Zava. Your manager needs a monthly b
 The lab guide provides step-by-step instructions for the seven missions,
 whether you join a guided session or work at your own pace.
 Use the lab's Microsoft IQ and Copilot links and your learner account.
-You do not need to run setup scripts. If business sources are not available
+Prehydrated labs do not require setup scripts; run the reviewed quick setup only
+when the instructor explicitly asks you to hydrate your isolated tenant.
+If business sources are not available
 yet, create the business plugin and guidance first, then return to context selection
 and Copilot testing later.
 
@@ -53,7 +71,7 @@ Finish with six process business plugins and a saved Zava Agent Factory catalog.
 
 #### In a guided session
 
-1. Open the lab links and find the lab workspace.
+1. Complete [prerequisites](instructions/lab-setup.md), then open the lab links and find the lab workspace.
 2. Choose a learner prefix so your business plugins are easy to find.
 3. Follow Missions 1–7; ask the instructor if a workspace or source is missing.
 
@@ -75,7 +93,10 @@ Finish with six process business plugins and a saved Zava Agent Factory catalog.
 | [6: IQ + business connectors](instructions/README.md#mission-6-investigate-recovery-with-iq-and-business-connectors) | Investigate recovery without inventing cause or task state |
 | [7: Agent factory](instructions/README.md#mission-7-publish-your-zava-agent-factory) | Save the process catalog and demonstrate a reviewed handoff |
 
-Allow about 90 minutes for the missions, judging and debrief.
+Allow about 90 minutes for the missions, judging and debrief, plus a separate
+5-10-minute setup target on an already prepared environment. Cold signup,
+capacity provisioning and indexing can take longer. The quick profile includes
+three authoritative models, not the full report/connector/optional-scenario corpus.
 
 ### 🎯 Learning outcomes
 

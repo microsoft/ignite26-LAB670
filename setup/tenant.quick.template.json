@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "profile": "LAB670-Quick",
+  "tenantId": null,
+  "tenantDomain": null,
+  "learnerUpn": null,
+  "environmentLabel": "LAB670 isolated Skillable tenant",
+  "resourcePrefix": "zava-lab670",
+  "providers": ["SharePoint", "Fabric", "Search"],
+  "sharePoint": {
+    "siteUrl": null,
+    "locations": [
+      {"key": "mbr", "displayName": "Zava MBR evidence", "siteId": null, "driveId": null}
+    ]
+  },
+  "fabric": {
+    "workspaceId": null,
+    "capacityId": null,
+    "ontologyAdmitted": false,
+    "dataAgentAdmitted": false
+  },
+  "search": {
+    "searchResourceId": null,
+    "searchEndpoint": null,
+    "apiVersion": "2026-04-01"
+  },
+  "costApprovalReference": null,
+  "createDisabledPeople": false,
+  "createOutlookDrafts": false,
+  "createCalendarAppointments": false,
+  "mailboxObjectId": null
+}

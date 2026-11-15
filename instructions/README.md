@@ -58,6 +58,14 @@ Allow about **90 minutes**: 5 to start, about 10 for each specialist mission,
 Additional customer, campaign, checkout and launch scenarios are
 [optional extensions](zava-scenarios.md#hero-scenario-pathways).
 
+## Lab setup prerequisites
+
+Complete the separate **[lab setup prerequisites](lab-setup.md)** before Mission 1.
+It covers first-time Fabric registration, the prepared-context route and the
+instructor-approved quick PowerShell route. Allow an additional 5-10 minutes
+only on a warm, prepared environment; cold tenant/capacity/indexing work is
+not part of that target.
+
 ## Orientation and setup
 
 Open Microsoft IQ and Copilot from the lab links using your learner account.
@@ -176,6 +184,11 @@ the same questions. Sales bookings and Finance revenue are not interchangeable.
 | Description | Reconcile financial, commercial and fulfillment measures under a consistent reporting scope. |
 
 **Curate Fabric IQ:**
+
+**Quick-context variation:** the reduced setup supplies the three authoritative
+models below, but no duplicate/archive reports. Inspect and query those models
+directly. Complete report disambiguation only if the organizer has also supplied
+the full report set; do not claim it was tested from quick setup alone.
 
 1. Search for the issued Zava reports and semantic models.
 2. For each **Zava MBR** result, preview its workspace, owner, underlying
