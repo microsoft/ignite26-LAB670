@@ -34,6 +34,14 @@ active capacity, and existing Azure AI Search service. Never put passwords,
 tokens, application secrets or the supplied access document in this repository.
 The public template intentionally produces a blocked plan.
 
+**New-tenant boundary:** first-time Fabric portal signup removes the onboarding
+blocker; it does not create capacity. Capacity/workspace provisioning can be
+automated using an approved Azure subscription and permissions, but this reduced
+script does not implement that stage. Its `Apply` phase hydrates existing targets.
+The desired single-script flow from signup through capacity creation and context
+hydration is therefore not yet available here. Have the organizer provision the
+targets and supply the resolved configuration before following these commands.
+
 ```powershell
 # Run in an approved PowerShell 7 terminal from the extracted setup directory.
 .\Setup-LabContext.ps1 -Phase SignUp

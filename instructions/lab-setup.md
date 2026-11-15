@@ -21,10 +21,35 @@ Do not spend the mission time debugging tenant administration; ask the instructo
    enrolls the user/tenant experience; it does **not** create an Azure F capacity,
    assign a workspace to capacity, or enable service-principal API permissions.
 
-Do **not** create a paid capacity, start a trial, change tenant settings, consent
-for an organization or grant ScoringApp permissions. Those are organizer tasks.
-A Fabric trial is not a guaranteed substitute for the lab's configured capacity
-and AI features.
+**First-time Fabric signup and capacity creation are separate steps.** In the
+setup-team test, signing in to the Fabric portal removed the "Tenant wasn't
+recognized" error; the tester could then deploy a capacity. Signing in did not
+create that capacity. This is portal onboarding, not an instruction to purchase
+or assign a paid user license.
+
+The intended new-tenant sequence is:
+
+1. **Learner:** sign in to Fabric and complete the authorized first-time signup.
+2. **Approved provisioning automation / organizer:** create the approved capacity
+   if needed, create/assign the workspace, and prepare the other source resources.
+   If automation uses ScoringApp, its Fabric API access and resource permissions
+   must also be configured separately.
+3. **Learner or organizer:** run context hydration against those prepared targets.
+
+**Current script limitation:** `Setup-LabContext.ps1` implements signup-page
+opening and context hydration, **not step 2**. It requires an existing workspace,
+active assigned capacity, SharePoint library and Search service in the private
+configuration. On a new tenant, signup alone is therefore **not enough to run
+this reduced script**. The intended "sign in, then one script creates capacity
+and hydrates context" flow is not implemented in this version.
+
+Do not manually purchase capacity or start a trial to work around that gap.
+Capacity creation can be automated, but must use the organizer-approved Azure
+subscription, region, SKU, permissions and cost approval. Ask the instructor to
+complete that provisioning stage before continuing. Learners should not change
+tenant settings, grant organization-wide application consent or authorize
+ScoringApp. A trial does not by itself establish the lab's required capacity,
+AI features, permissions or source connections.
 
 From the extracted `setup` directory, the optional command below opens the
 same signup page; it does not fill or submit the form:

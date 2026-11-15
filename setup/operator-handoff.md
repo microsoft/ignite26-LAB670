@@ -2,6 +2,16 @@
 
 ## Prepare before the learner clock starts
 
+**Interpretation of the setup-team test:** Zeke reported, "After, I was
+immediately able to deploy a fabric capacity with the account after signing
+into the fabric portal." This confirms signup unblocked a subsequent capacity
+deployment, not that signup created capacity or that the reduced script does so.
+The intended new-tenant flow is learner signup, approved automated provisioning,
+then context hydration. The current quick script implements only portal opening
+and the last stage; capacity/workspace provisioning remains an explicit gap in
+the single-script learner experience. Do not describe a fresh tenant as ready
+after signup alone.
+
 1. Enroll each new tenant/user through the approved Fabric portal first-sign-in
    process. The setup command opens the portal only; the user reviews and
    accepts terms. No supported automatic signup API is implemented. Do not
