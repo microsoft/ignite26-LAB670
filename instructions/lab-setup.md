@@ -146,18 +146,18 @@ sessions such as issue-assigned agent runs.
    repository as in step 2, or give the cloud agent access to the approved
    repository files. A cloud agent cannot open a `C:\...` path on your computer.
 2. Locate/download the supplied
-   **[MicrosoftIQ-preview.zip](../setup/bundles/MicrosoftIQ-preview.zip)**.
-   On its GitHub file page, choose **Download raw file**. This is the original
-   supplied archive, distributed without the space before `.zip` in its filename.
+   **[microsofiq-preview.zip](../setup/bundles/microsofiq-preview.zip)**.
+   On its GitHub file page, choose **Download raw file**. This is the latest
+   organizer-supplied archive, distributed byte-for-byte with its supplied name.
    It contains the **`workiq-preview` plugin version 3.1.2**, not a separate
    Fabric/Foundry plugin.
 3. Verify its SHA256 if downloading separately:
 
    ```powershell
-   Get-FileHash .\MicrosoftIQ-preview.zip -Algorithm SHA256
+   Get-FileHash .\microsofiq-preview.zip -Algorithm SHA256
    ```
 
-   Expected: `0c151074926e644a95c619f0a181f509bb92754206dd195ee0701a7f9dcca07f`.
+   Expected: `537afa1f91a7441868c7a9f8d04db2ce7cc21fece72ee0832a67ab0950131072`.
 4. Locate **[work-iq.json](../setup/mcp/work-iq.json)** and the
    **[copy-ready setup prompt](../setup/prompts/configure-work-iq.txt)**.
    In a local client, reference these files from the extracted lab folder.
@@ -209,7 +209,7 @@ operations. Do not enable unattended/all-tools approval.
 4. Give the agent the approved ZIP and JSON repository files/links above, then
    paste the complete **[setup prompt](../setup/prompts/configure-work-iq.txt)**.
    The prompt asks it to inspect the archive and propose copying only
-   `workiq-preview\skills\workiq-preview` to
+   `microsofiq-preview\skills\workiq-preview` to
    `.github\skills\workiq-preview` in your own workspace, preserving references
    and scripts. It must not activate the plugin-root `.mcp.json`, hooks or a
    second server named `workiq-preview`.
@@ -323,15 +323,20 @@ For later playbooks, go directly to [run the saved-playbook test](#c-run-the-sav
    When Microsoft sign-in opens, use your **issued Skillable Microsoft account**.
    GitHub signup and Outlook email verification do not connect that account
    to Work IQ.
-2. Open an approved Copilot cloud sandbox with a writable **learner-owned**
-   repository/workspace. Give it the approved
-   [Microsoft IQ bundle](../setup/bundles/MicrosoftIQ-preview.zip) and
-   [configuration file](../setup/mcp/work-iq.json) as repository context or
-   supported attachments, then paste the complete
+2. Download the [Microsoft IQ bundle, microsofiq-preview.zip](../setup/bundles/microsofiq-preview.zip)
+   using **Download raw file**, and verify the hash in
+   [Get the configuration and Microsoft IQ bundle](#get-the-configuration-and-microsoft-iq-bundle).
+   Open an approved Copilot cloud sandbox with a writable **learner-owned**
+   repository/workspace. If this host supports ZIP attachments, attach the
+   downloaded archive to the conversation. Otherwise, make the approved bundle
+   available as repository context in your own workspace. A cloud session cannot
+   open the organizer's local Windows path.
+   Provide the [configuration file](../setup/mcp/work-iq.json) as context too,
+   then paste the complete
    [Work IQ setup prompt](../setup/prompts/configure-work-iq.txt).
    The direct OAuth JSON is for the local route, not a web-chat installation.
 3. Review the agent's proposed changes. Approve copying the complete
-   `workiq-preview\skills\workiq-preview` directory to
+   `microsofiq-preview\skills\workiq-preview` directory to
    `.github\skills\workiq-preview` in your own workspace, including its references
    and scripts. Do not modify the shared lab repository or activate the bundled
    root MCP configuration alongside the managed connector.
@@ -342,6 +347,21 @@ For later playbooks, go directly to [run the saved-playbook test](#c-run-the-sav
 5. If the required web capabilities are unavailable, ask the instructor to use
    the [approved local route](#local-route-let-the-agent-merge-the-direct-mcp-configuration).
    Do not mark the web setup as passed.
+
+**What to ask Copilot after adding the bundle:** paste the full linked setup
+prompt above, then use this short request to state your intent:
+
+```text
+Use the supplied microsofiq-preview.zip and the LAB670 Work IQ setup prompt.
+Help me install its workiq-preview skill in this learner-owned workspace.
+Inspect and verify the archive first. Show the proposed skill-file changes
+and ask for approval before writing. Preserve all references and existing
+skills. Do not execute bundled scripts or activate a duplicate MCP server.
+Use the managed Work IQ connector on the web; I will complete Microsoft
+sign-in myself. If this session cannot install/load project skills, stop
+and report the limitation instead of claiming the attachment is installed.
+Tell me when to start a fresh session and how to verify the skill and tools.
+```
 
 ### C. Run the saved-playbook test
 
@@ -355,6 +375,8 @@ After each mission's **save and reopen** step:
    Replace the three placeholders with the exact saved name, actual link/ID
    (or `unavailable`), and the mission's **unchanged business question**.
    Paste it into the session. Do not paste the mission answer into the prompt.
+   For a first Work IQ test, use the Mission 1 question shown below. For other
+   missions, use their own unchanged question, not this example.
 4. The agent must use the skill's live **`discover`** route when exposed,
    identify the exact saved entry, and retrieve/read the original guidance
    and required companion artifacts before answering. A matching title or
@@ -372,6 +394,21 @@ After each mission's **save and reopen** step:
    source access fixed. Use the [Copilot judge](zava-copilot-judge.md) in another
    fresh, equally configured session; the candidate plugin's guidance must
    not become the judge's instructions.
+
+**Example Zava question after setup:** in the linked saved-plugin test prompt,
+fill in your exact saved playbook name and link/ID, then replace its mission
+question placeholder with this unchanged Mission 1 question:
+
+```text
+What does Avery need for Zava's September 2026 review? Prepare an internal
+brief with the business question, recorded decisions, conflicting opinions,
+open evidence questions and reviewer roles. Cite the workplace sources.
+Do not send messages, assign work or treat email commentary as financial proof.
+```
+
+The test must load your saved playbook's actual guidance before answering.
+The installed Work IQ skill enables the retrieval workflow; it does not contain
+your tenant's Zava evidence or replace the playbook you saved in Microsoft IQ.
 
 The supplied Work IQ plugin provides workplace retrieval guidance; it does
 **not** automatically connect Fabric IQ, Foundry IQ or SaaS tools, publish

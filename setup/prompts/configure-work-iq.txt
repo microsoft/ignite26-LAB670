@@ -3,8 +3,8 @@ This request authorizes planning only until I approve the specific local or
 learner-repository file changes. It does not authorize tenant provisioning.
 
 Inputs in microsoft/ignite26-LAB670 at my instructor-approved revision:
-- setup/bundles/MicrosoftIQ-preview.zip
-  SHA256: 0c151074926e644a95c619f0a181f509bb92754206dd195ee0701a7f9dcca07f
+- setup/bundles/microsofiq-preview.zip (or my supplied attachment of that file)
+  SHA256: 537afa1f91a7441868c7a9f8d04db2ce7cc21fece72ee0832a67ab0950131072
 - setup/mcp/work-iq.json (organizer-supplied direct-client configuration)
 - instructions/lab-setup.md (client-specific setup and testing instructions)
 
@@ -21,7 +21,7 @@ Inputs in microsoft/ignite26-LAB670 at my instructor-approved revision:
    while reviewing it. Before extraction, reject absolute paths, parent
    traversal, symlinks and any destination outside the approved workspace.
 3. Propose copying only the complete
-   workiq-preview/skills/workiq-preview directory, including its references
+   microsofiq-preview/skills/workiq-preview directory, including its references
    and scripts, to this learner workspace's .github/skills/workiq-preview.
    The provided skill is workiq-preview, version 3.1.2 in the plugin manifests.
    Do not copy the plugin-root .mcp.json or install the plugin root as well:
