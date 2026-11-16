@@ -193,7 +193,9 @@ operations. Do not enable unattended/all-tools approval.
 ### Web route: connect Work IQ, then let the agent prepare the skill
 
 1. Sign in to GitHub Copilot with the **issued/approved GitHub account that has
-   Copilot access**. This is separate from the Microsoft lab account.
+   Copilot access**. This is separate from the Microsoft lab account. If you
+   need a new account, follow [the signup and Outlook verification steps](#a-first-time-only-create-or-sign-in-to-your-github-account)
+   below first.
 2. Open [Copilot Customize](https://github.com/copilot/customize), find the
    **Work IQ** connector and follow its displayed connection flow. Complete
    Microsoft sign-in yourself with the **issued Skillable Microsoft identity**,
@@ -276,7 +278,74 @@ guidance-only fallback. Do not invent evidence or report a passing judge score.
 ## 5. Test each saved business plugin in GitHub Copilot
 
 Continue creating business plugins/playbooks in **Microsoft IQ**, not in the
-Work IQ skill bundle. After each mission's **save and reopen** step:
+Work IQ skill bundle. After saving and reopening your first playbook, complete
+the first-time account and Work IQ setup below if you have not already done so.
+For later playbooks, go directly to [run the saved-playbook test](#c-run-the-saved-playbook-test).
+
+### A. First time only: create or sign in to your GitHub account
+
+1. Open [github.com](https://github.com). If the instructor has already supplied
+   an approved GitHub account, or you already have an approved account with the
+   required Copilot access, **sign in instead of creating another account**.
+2. Otherwise, open [Sign up for GitHub](https://github.com/signup?return_to=https%3A%2F%2Fgithub.com%2Ffeatures%2Fcopilot&source=login).
+   Use the email address approved by your instructor. Use the issued lab email
+   only if external GitHub registration is permitted and you can open that
+   mailbox in Outlook. A temporary lab mailbox is not suitable for an account
+   you intend to retain after the lab.
+3. Choose an available username and create a **unique password**. Recommended:
+   use a password manager to generate at least 20 random characters, or generate
+   a unique passphrase of at least five unrelated random words that meets the
+   displayed requirements. **There is no shared lab password for GitHub.**
+   Do not reuse your Microsoft/Skillable password or put your password in chat,
+   an issue, a script or the repository. Store it privately in your approved
+   password manager.
+4. Follow GitHub's displayed signup and account-verification prompts yourself.
+   When asked to verify your email, open a separate browser tab for
+   [Outlook on the web](https://outlook.office.com) and sign in to the mailbox
+   for the email address you used. If you used another approved email provider,
+   open that mailbox instead.
+5. Open the GitHub verification email. Enter its code on the GitHub verification
+   page, or follow its verification link if that is what GitHub sends. Check
+   Junk Email and request a new message from GitHub if necessary; use the newest
+   code. Never paste the code into Copilot or share it with another learner.
+   This verifies the GitHub email address; it does not authenticate Work IQ.
+6. Finish signup and open [GitHub Copilot](https://github.com/copilot).
+   **Creating a free GitHub account does not guarantee access to the required
+   Copilot cloud sandbox or Work IQ connector.** Ask the instructor to confirm
+   the required access. Do not start a paid plan/trial or enter billing details
+   to bypass an access restriction. If signup or email verification is blocked,
+   stop and ask the instructor; do not switch to an unapproved identity.
+
+### B. First time only: add the Work IQ skill and connect your lab identity
+
+1. Open [Copilot Customize](https://github.com/copilot/customize) and connect
+   **Work IQ**, following the [web route](#web-route-connect-work-iq-then-let-the-agent-prepare-the-skill).
+   When Microsoft sign-in opens, use your **issued Skillable Microsoft account**.
+   GitHub signup and Outlook email verification do not connect that account
+   to Work IQ.
+2. Open an approved Copilot cloud sandbox with a writable **learner-owned**
+   repository/workspace. Give it the approved
+   [Microsoft IQ bundle](../setup/bundles/MicrosoftIQ-preview.zip) and
+   [configuration file](../setup/mcp/work-iq.json) as repository context or
+   supported attachments, then paste the complete
+   [Work IQ setup prompt](../setup/prompts/configure-work-iq.txt).
+   The direct OAuth JSON is for the local route, not a web-chat installation.
+3. Review the agent's proposed changes. Approve copying the complete
+   `workiq-preview\skills\workiq-preview` directory to
+   `.github\skills\workiq-preview` in your own workspace, including its references
+   and scripts. Do not modify the shared lab repository or activate the bundled
+   root MCP configuration alongside the managed connector.
+4. Save the reviewed skill files in your own workspace and start a fresh session
+   there. Confirm the skill is loaded, actual Work IQ tools are available and a
+   minimal read-only source check succeeds. An attached ZIP or a successful
+   GitHub login alone is not a working skill/connection.
+5. If the required web capabilities are unavailable, ask the instructor to use
+   the [approved local route](#local-route-let-the-agent-merge-the-direct-mcp-configuration).
+   Do not mark the web setup as passed.
+
+### C. Run the saved-playbook test
+
+After each mission's **save and reopen** step:
 
 1. Record your exact saved name (including your prefix) and the actual
    link/identifier if Microsoft IQ exposes one.
@@ -336,6 +405,7 @@ Continue to [Orientation and setup](README.md#orientation-and-setup).
 
 Client references:
 
+- [Creating a GitHub account and verifying email](https://docs.github.com/en/account-and-profile/how-tos/account-management/creating-an-account-on-github)
 - [GitHub Copilot connectors and supported surfaces](https://docs.github.com/en/copilot/concepts/customizations/copilot-connectors)
 - [Supported connectors, including Work IQ](https://docs.github.com/en/copilot/reference/supported-connectors)
 - [Repository MCP setup and OAuth limitations](https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/configure-mcp-servers)
