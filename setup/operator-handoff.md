@@ -74,9 +74,29 @@ validation evidence until those checks have been executed.
 
 ## Flow review
 
+Load the numbered learner pages in this order; `instructions/lab-setup.md`
+is the index, not an extra exercise:
+
+1. [`instructions/01-github-account.md`](../instructions/01-github-account.md)
+2. [`instructions/02-work-iq-setup.md`](../instructions/02-work-iq-setup.md)
+3. [`instructions/03-context-hydration.md`](../instructions/03-context-hydration.md)
+4. [`instructions/04-playbook-curation.md`](../instructions/04-playbook-curation.md)
+5. [`instructions/05-test-playbooks.md`](../instructions/05-test-playbooks.md)
+
+Keep the [mission guide](../instructions/README.md) and
+[curation reference](../instructions/zava-business-plugins.md) available during
+pages 4-5. Page 5 is reused after each save/reopen, not only after all missions.
+Supply the exact Microsoft IQ home-page URL before classroom delivery; it is
+currently pending from the lab owner. No OneDrive download URL is assumed:
+use the reviewed setup delivery link actually provided to the class. The
+previously distributed ZIP is a snapshot and does not update when these pages
+change on GitHub.
+
 | Stage | Recommended learner experience | Remaining dependency / decision |
 |---|---|---|
-| Prerequisites (new) | Fabric sign-in/form/terms, account check, then prepared context or approved deterministic setup | First signup is manual; cold capacity/indexing must be completed outside the timed core |
+| Client setup | GitHub signup/Outlook verification, then Work IQ skill installation and authentication | Eligible client, writable learner workspace and connector policy must be checked before hydration; do not require Zava evidence yet |
+| Context setup | Fabric sign-in/form/terms, then prepared context or approved PowerShell hydration and source checks | First signup is manual; capacity/indexing must be prepared outside the timed core |
+| Authoring | Open the supplied Microsoft IQ home page, then curate/save/reopen each mission's playbook | Exact home-page URL is pending; preserve Mission 1's pre-creation baseline |
 | Mission 1: Work | Find Avery's request, charter and source dates | Work IQ indexing must be independently verified; email archives are not native mail |
 | Mission 2: Fabric | Inspect/query the three canonical models | Quick setup omits duplicate/archive reports. Full report-disambiguation exercise needs precreated reports, otherwise use the explicitly documented model-only variation |
 | Mission 3: Foundry | Retrieve current/historical policy passages | Quick profile uses one actual MBR KB rather than all three enterprise KB targets; host binding and learner OAuth remain required |
@@ -95,8 +115,8 @@ prerequisites, timing and quick-profile caveats.
 
 **Delivery choice:** distribute a reviewed repository ZIP/version or preinstall
 it in the VM. Do not ask learners to have Copilot generate provisioning code or
-infer tenant resources from an attached bundle. After hydration, the separate
-[GitHub Copilot setup](../instructions/lab-setup.md#3-configure-github-copilot-after-context-hydration)
+infer tenant resources from an attached bundle. Before hydration, the separate
+[GitHub Copilot setup](../instructions/02-work-iq-setup.md)
 allows an agent to propose/install reviewed **client skill/configuration files**,
 not provision the tenant. Authentication and approval remain with the user.
 For web sessions, validate the managed Work IQ connector, organization policy,

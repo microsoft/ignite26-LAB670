@@ -1,4 +1,4 @@
-Help me configure the LAB670 Work IQ client after tenant context hydration.
+Help me configure the LAB670 Work IQ client before tenant context hydration.
 This request authorizes planning only until I approve the specific local or
 learner-repository file changes. It does not authorize tenant provisioning.
 
@@ -6,7 +6,8 @@ Inputs in microsoft/ignite26-LAB670 at my instructor-approved revision:
 - setup/bundles/microsofiq-preview.zip (or my supplied attachment of that file)
   SHA256: 537afa1f91a7441868c7a9f8d04db2ce7cc21fece72ee0832a67ab0950131072
 - setup/mcp/work-iq.json (organizer-supplied direct-client configuration)
-- instructions/lab-setup.md (client-specific setup and testing instructions)
+- instructions/02-work-iq-setup.md (client setup before PowerShell hydration)
+- instructions/05-test-playbooks.md (testing after hydration and save/reopen)
 
 1. Identify this host: GitHub Copilot cloud/web workspace, or local Copilot
    CLI. Report whether it has a writable learner-owned workspace, project-skill
@@ -52,11 +53,15 @@ Inputs in microsoft/ignite26-LAB670 at my instructor-approved revision:
    Resolve tool names/schemas from the live catalog, not server-name guesses.
    When the installed reference mentions workiq-preview, do not invent that
    server if this host uses Work-IQ-MCP or a managed connector instead.
-   Perform only a minimal supported read-only identity/source check after I
-   confirm the issued account. No broad mailbox searches or tenant mutations.
+   Perform only a minimal supported read-only identity/authentication check
+   after I confirm the issued account, if the tool catalog supports one.
+   Do not query Zava or require its evidence at this pre-hydration stage.
+   Defer Zava source checks until hydration, and saved-plugin tests until
+   curation/save/reopen. No broad mailbox searches or tenant mutations.
 8. Report separately: files installed/read back, skill loaded, connection
-   authenticated, tools available, source read verified, and saved business
-   plugin discovery not yet tested. Missing capabilities remain NOT VERIFIED.
+   authenticated, tools available, Zava source checks deferred until hydration,
+   and saved business plugin discovery deferred until save/reopen.
+   Missing capabilities remain NOT VERIFIED.
    tools ["*"] exposes all advertised tools; it is not permission to send,
    create/update/delete business records, assign tasks, or grant access.
 

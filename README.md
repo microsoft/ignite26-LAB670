@@ -39,17 +39,15 @@ Start your workday as a business analyst at Zava. Your manager needs a monthly b
 
 Before Mission 1, complete the **[lab setup prerequisites](instructions/lab-setup.md)**:
 
-1. Open [Microsoft Fabric](https://app.fabric.microsoft.com) with your issued
-   Skillable account, complete any first-time signup form and review/accept
-   the terms yourself if authorized.
-2. Confirm that the assigned workspace opens. Capacity and ScoringApp access
-   must be prepared by the organizer; do not create or purchase a capacity.
-3. Use the prehydrated context, or download/extract this repository and run the
-   [reviewed quick setup](setup/README.md) only when instructed.
-4. After context hydration, follow the
-   [GitHub Copilot client setup](instructions/lab-setup.md#3-configure-github-copilot-after-context-hydration)
-   to connect Work IQ and add the supplied skill bundle.
-5. Verify the required source connections before starting the missions.
+1. [Create/sign in to GitHub and verify your email](instructions/01-github-account.md).
+2. [Add Work IQ to GitHub Copilot](instructions/02-work-iq-setup.md): supply the
+   Microsoft IQ skill bundle, paste the installation prompt and authenticate.
+3. [Run the approved PowerShell context setup](instructions/03-context-hydration.md):
+   complete Fabric onboarding, hydrate only when instructed, then verify sources.
+4. [Open Microsoft IQ and curate playbooks](instructions/04-playbook-curation.md)
+   using the lab-provided home-page link and mission guide.
+5. [Test each saved playbook in GitHub Copilot](instructions/05-test-playbooks.md)
+   after saving/reopening it.
 
 The quick setup targets 5-10 minutes on an already prepared environment;
 cold signup, capacity provisioning and indexing may take longer.
@@ -57,7 +55,8 @@ GitHub Copilot setup/authentication is separate from that hydration target.
 
 ### 🚀 Getting started
 
-**[Start the lab →](instructions/README.md)**
+**[Start setup in order →](instructions/01-github-account.md)** |
+**[Open the mission guide →](instructions/README.md)**
 
 The lab guide provides step-by-step instructions for the seven missions,
 whether you join a guided session or work at your own pace.

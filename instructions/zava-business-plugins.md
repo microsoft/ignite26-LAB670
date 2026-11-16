@@ -116,9 +116,10 @@ use your business plugin through the business plugin selection or discovery opti
 in the lab. Submit the matching process prompt below.
 
 For the GitHub Copilot client, follow the
-[post-save signup, Outlook verification, Work IQ skill setup and playbook test steps](lab-setup.md#5-test-each-saved-business-plugin-in-github-copilot).
-If your approved GitHub account and Work IQ setup are already ready, skip the
-first-time steps and run the saved-playbook test.
+[saved-playbook test steps](05-test-playbooks.md).
+The [ordered setup pages](lab-setup.md) prepare your GitHub account and Work IQ
+client before PowerShell hydration and playbook curation; do not reinstall
+the skill after each save.
 The agent must identify the exact saved entry and read its actual guidance
 before answering; merely attaching a bundle or pasting guidance is not a
 verified saved-plugin run.

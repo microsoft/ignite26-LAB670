@@ -61,14 +61,15 @@ Additional customer, campaign, checkout and launch scenarios are
 ## Lab setup prerequisites
 
 Complete the separate **[lab setup prerequisites](lab-setup.md)** before Mission 1.
-It covers first-time Fabric registration, the prepared-context route and the
-instructor-approved quick PowerShell route. Allow an additional 5-10 minutes
-only on a warm, prepared environment; cold tenant/capacity/indexing work is
+Follow the numbered pages in order:
+[GitHub account](01-github-account.md), [Work IQ client setup](02-work-iq-setup.md),
+[PowerShell hydration/source checks](03-context-hydration.md), then
+[Microsoft IQ and playbook curation](04-playbook-curation.md).
+Allow an additional 5-10 minutes for hydration only on a warm, prepared
+environment; account/client setup and cold tenant/capacity/indexing work are
 not part of that target.
-After hydration, complete the
-[GitHub Copilot client setup](lab-setup.md#3-configure-github-copilot-after-context-hydration).
 Once each business plugin is saved and reopened, use the
-[saved-plugin testing steps](lab-setup.md#5-test-each-saved-business-plugin-in-github-copilot)
+[saved-plugin testing steps](05-test-playbooks.md)
 with the configured GitHub Copilot experience. The web route uses the managed
 Work IQ connector; the supplied direct OAuth JSON is for the local route.
 
@@ -107,7 +108,7 @@ without the relevant evidence.
    inspect the result. If your client cannot select the business plugin, ask the
    instructor; pasted guidance is not the same as using the saved item.
    For GitHub Copilot, follow the
-   [discovery and guidance-loading checks](lab-setup.md#5-test-each-saved-business-plugin-in-github-copilot);
+   [discovery and guidance-loading checks](05-test-playbooks.md);
    do not treat a discovery summary as the saved guidance or a native selection event.
 6. **Judge and improve.** Use the [Copilot judge](zava-copilot-judge.md).
    Review its feedback, change your own guidance or source selection where
