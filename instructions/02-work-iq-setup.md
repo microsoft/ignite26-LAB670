@@ -139,8 +139,50 @@ exposes potentially mutating tools but does not authorize their use. Keep
 approval controls enabled; no unattended all-tools approval, tenant writes,
 WIQD installation, capacity deployment or organization consent is authorized.
 
-**Checkpoint:** skill files, skill loading, tools and authentication are
-reported separately. No Zava retrieval or saved-playbook test is claimed.
+## Additional Microsoft IQ skills: after Work IQ installation
+
+Complete and verify the Work IQ installation/authentication above before
+adding further skills, then continue to PowerShell hydration.
+
+1. Open the **[organizer-provided Microsoft IQ skills download](https://1drv.ms/u/c/014eee29eb05bb56/IQBE2dpNyACASKH3fMUxGJxbATWC6ROgyu9sGpEWaJ4_s0c?e=cFwHyq)**.
+   **The organizer supplied the same URL for this entry and the PowerShell
+   setup bundle.** Check the downloaded filename and contents; the link has
+   not been independently verified as a separate additional-skills archive.
+   A setup bundle or a second copy of `workiq-preview` is not a new skill.
+2. Provide the instructor-approved skill files to your same learner-owned
+   Copilot workspace, using supported attachments or repository context.
+   Do not include private tenant configuration, credentials or setup ledgers.
+3. Paste the following prompt. Review the proposed skill names, paths and
+   differences before approving installation. If the download has no separate
+   additional skills, obtain the correct package from the instructor instead
+   of reinstalling Work IQ or running the hydration scripts in Copilot.
+
+   ```text
+   Work IQ is already installed in this learner-owned LAB670 workspace.
+   Inspect the supplied Microsoft IQ download without executing scripts.
+   Identify which additional skills actually exist from their SKILL.md files,
+   manifests and required references. Do not invent skill names or treat the
+   PowerShell setup files or a duplicate workiq-preview copy as new skills.
+   If there are no additional skills, stop and report that the instructor
+   needs to provide the correct package.
+
+   Propose installing only the instructor-approved additional skill folders
+   into this workspace's supported project-skill directory, preserving their
+   references and scripts. Show names, versions when available, destination
+   paths and conflicts; ask for approval before writing or replacing files.
+   Preserve the working Work IQ connection. Do not activate hooks, execute
+   bundled scripts, install dependencies, add duplicate MCP servers, grant
+   permissions, run hydration, commit/push or create cloud resources.
+   After approval, make only the reviewed file changes and read them back.
+   Tell me when to save the changes and start a fresh session in this workspace.
+   Verify each skill's loading separately from its required tools/connections.
+   Mark missing capabilities NOT VERIFIED; defer Zava queries until hydration.
+   ```
+
+**Checkpoint:** each approved skill's files/loading, tools and authentication
+are reported separately. An absent or duplicate additional package is reported,
+not treated as a successful installation. No Zava retrieval or saved-playbook
+test is claimed.
 
 **Next:** [Step 3: run the PowerShell context setup](03-context-hydration.md).
 

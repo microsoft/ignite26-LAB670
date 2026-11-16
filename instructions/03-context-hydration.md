@@ -41,8 +41,11 @@ sources and go to [source checks](#4-check-source-readiness).
 Otherwise, proceed only when the instructor asks you to hydrate your isolated
 tenant:
 
-1. Download the **complete organizer-approved setup ZIP**, or use the prepared
-   copy on the VM. The repository's **Code > Download ZIP** is an alternative
+1. Download the **[complete organizer-provided setup bundle](https://1drv.ms/u/c/014eee29eb05bb56/IQBE2dpNyACASKH3fMUxGJxbATWC6ROgyu9sGpEWaJ4_s0c?e=cFwHyq)**,
+   or use the prepared copy on the VM. Confirm the download contains
+   `setup\Setup-LabContext.ps1`, `setup\infra` and `setup\data`; do not run a
+   skills-only archive as tenant setup. If sharing is blocked, ask the instructor.
+   The repository's **Code > Download ZIP** is an alternative
    when that revision is approved. Extract All before running anything.
    `Setup-LabContext.ps1` alone is not sufficient: keep its `infra`, `data` and
    other supplied dependencies. The Microsoft IQ skill ZIP from Step 2 is a

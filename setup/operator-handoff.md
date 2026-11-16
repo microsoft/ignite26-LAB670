@@ -87,8 +87,12 @@ Keep the [mission guide](../instructions/README.md) and
 [curation reference](../instructions/zava-business-plugins.md) available during
 pages 4-5. Page 5 is reused after each save/reopen, not only after all missions.
 Use the supplied [Microsoft IQ home-page URL](https://aka.ms/AA146gyq)
-for classroom authoring. No OneDrive download URL is assumed:
-use the reviewed setup delivery link actually provided to the class. The
+for classroom authoring. The supplied
+[OneDrive delivery URL](https://1drv.ms/u/c/014eee29eb05bb56/IQBE2dpNyACASKH3fMUxGJxbATWC6ROgyu9sGpEWaJ4_s0c?e=cFwHyq)
+is now linked from both the PowerShell setup and additional-skills instructions,
+matching the lab owner's supplied URLs. Those URLs are identical: verify
+download contents, anonymous learner access and actual additional-skill names
+before delivery. Do not assume two distinct archives or install duplicates. The
 previously distributed ZIP is a snapshot and does not update when these pages
 change on GitHub.
 

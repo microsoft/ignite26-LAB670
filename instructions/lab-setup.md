@@ -13,7 +13,7 @@ navigation/index page, not an additional setup exercise.
 | Order | Markdown file | Learner action |
 |---|---|---|
 | 1 | [01-github-account.md](01-github-account.md) | Sign up/sign in, create a unique password and verify the email through Outlook. |
-| 2 | [02-work-iq-setup.md](02-work-iq-setup.md) | Add the supplied Microsoft IQ bundle to an eligible GitHub Copilot workspace, paste the installation prompt, approve skill-file changes and authenticate Work IQ. |
+| 2 | [02-work-iq-setup.md](02-work-iq-setup.md) | Install/authenticate Work IQ, then inspect and add approved additional Microsoft IQ skills using the supplied download and copy-ready prompts. |
 | 3 | [03-context-hydration.md](03-context-hydration.md) | Complete Fabric onboarding, run the reviewed PowerShell bundle if needed, and check source readiness. |
 | 4 | [04-playbook-curation.md](04-playbook-curation.md) | Open [Microsoft IQ](https://aka.ms/AA146gyq), follow the mission guide and curate/save/reopen playbooks. |
 | 5 | [05-test-playbooks.md](05-test-playbooks.md) | Load the exact saved playbook in the configured client, ask the unchanged mission question and inspect citations. Repeat after each mission's save/reopen. |
@@ -34,6 +34,8 @@ to begin authoring.
   those capabilities; do not buy a plan to bypass a restriction.
 - The Microsoft IQ skill ZIP is **not** the PowerShell hydration bundle.
   Attaching either ZIP does not install it or authorize running its scripts.
+  The supplied OneDrive URLs for setup and additional skills are identical;
+  verify the contents for each purpose rather than assuming two separate files.
 - The reduced PowerShell script requires existing approved Fabric capacity/
   workspace, SharePoint library and Search service plus a private configuration.
   It does **not** create capacity. New-tenant infrastructure provisioning
