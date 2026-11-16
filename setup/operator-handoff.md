@@ -86,8 +86,8 @@ is the index, not an extra exercise:
 Keep the [mission guide](../instructions/README.md) and
 [curation reference](../instructions/zava-business-plugins.md) available during
 pages 4-5. Page 5 is reused after each save/reopen, not only after all missions.
-Supply the exact Microsoft IQ home-page URL before classroom delivery; it is
-currently pending from the lab owner. No OneDrive download URL is assumed:
+Use the supplied [Microsoft IQ home-page URL](https://aka.ms/AA146gyq)
+for classroom authoring. No OneDrive download URL is assumed:
 use the reviewed setup delivery link actually provided to the class. The
 previously distributed ZIP is a snapshot and does not update when these pages
 change on GitHub.
@@ -96,7 +96,7 @@ change on GitHub.
 |---|---|---|
 | Client setup | GitHub signup/Outlook verification, then Work IQ skill installation and authentication | Eligible client, writable learner workspace and connector policy must be checked before hydration; do not require Zava evidence yet |
 | Context setup | Fabric sign-in/form/terms, then prepared context or approved PowerShell hydration and source checks | First signup is manual; capacity/indexing must be prepared outside the timed core |
-| Authoring | Open the supplied Microsoft IQ home page, then curate/save/reopen each mission's playbook | Exact home-page URL is pending; preserve Mission 1's pre-creation baseline |
+| Authoring | Open [Microsoft IQ](https://aka.ms/AA146gyq), then curate/save/reopen each mission's playbook | Preserve Mission 1's pre-creation baseline |
 | Mission 1: Work | Find Avery's request, charter and source dates | Work IQ indexing must be independently verified; email archives are not native mail |
 | Mission 2: Fabric | Inspect/query the three canonical models | Quick setup omits duplicate/archive reports. Full report-disambiguation exercise needs precreated reports, otherwise use the explicitly documented model-only variation |
 | Mission 3: Foundry | Retrieve current/historical policy passages | Quick profile uses one actual MBR KB rather than all three enterprise KB targets; host binding and learner OAuth remain required |

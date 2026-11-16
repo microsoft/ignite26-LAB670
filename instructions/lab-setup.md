@@ -15,14 +15,14 @@ navigation/index page, not an additional setup exercise.
 | 1 | [01-github-account.md](01-github-account.md) | Sign up/sign in, create a unique password and verify the email through Outlook. |
 | 2 | [02-work-iq-setup.md](02-work-iq-setup.md) | Add the supplied Microsoft IQ bundle to an eligible GitHub Copilot workspace, paste the installation prompt, approve skill-file changes and authenticate Work IQ. |
 | 3 | [03-context-hydration.md](03-context-hydration.md) | Complete Fabric onboarding, run the reviewed PowerShell bundle if needed, and check source readiness. |
-| 4 | [04-playbook-curation.md](04-playbook-curation.md) | Open the lab-provided Microsoft IQ home page, follow the mission guide and curate/save/reopen playbooks. |
+| 4 | [04-playbook-curation.md](04-playbook-curation.md) | Open [Microsoft IQ](https://aka.ms/AA146gyq), follow the mission guide and curate/save/reopen playbooks. |
 | 5 | [05-test-playbooks.md](05-test-playbooks.md) | Load the exact saved playbook in the configured client, ask the unchanged mission question and inspect citations. Repeat after each mission's save/reopen. |
 
 Keep the [mission guide](README.md) and [business-plugin curation reference](zava-business-plugins.md)
 available during pages 4-5. The mission guide contains the original questions,
 source-selection checks and mission-specific guidance; the numbered pages do
-not replace it. The exact Microsoft IQ home-page URL is pending from the lab
-owner; use the instructor-provided link, not a guessed endpoint.
+not replace it. Use the lab's [Microsoft IQ home-page link](https://aka.ms/AA146gyq)
+to begin authoring.
 
 ## Before you start
 

@@ -5,9 +5,8 @@ then PowerShell context hydration/source checks.
 
 ## 1. Open the lab's Microsoft IQ home page
 
-1. Open the **Microsoft IQ home-page link provided in the lab instructions or
-   by the instructor**. Its exact environment URL is pending from the lab
-   owner; this page deliberately does not guess a production or preview URL.
+1. Open **[Microsoft IQ](https://aka.ms/AA146gyq)** to start creating your
+   playbooks.
 2. Sign in with the issued Microsoft lab account and check the assigned
    workspace. Do not use your GitHub credentials here.
 3. Locate **Business plugins** or the lab's playbook authoring entry point.
